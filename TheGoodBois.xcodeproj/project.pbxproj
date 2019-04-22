@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19171FF0226E1356006CF2D1 /* regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19171FEF226E1356006CF2D1 /* regular.ttf */; };
+		19171FF4226E1385006CF2D1 /* italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19171FF3226E1385006CF2D1 /* italic.ttf */; };
+		19171FF6226E14B6006CF2D1 /* Geomanist-Regular-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 19171FF5226E14B6006CF2D1 /* Geomanist-Regular-Italic.otf */; };
+		19171FF8226E14C1006CF2D1 /* Geomanist-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 19171FF7226E14C1006CF2D1 /* Geomanist-Regular.otf */; };
 		1978D4E6226A438F00ABA4EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1978D4E5226A438F00ABA4EF /* AppDelegate.swift */; };
 		1978D4E8226A438F00ABA4EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1978D4E7226A438F00ABA4EF /* ViewController.swift */; };
 		1978D4EB226A438F00ABA4EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1978D4E9226A438F00ABA4EF /* Main.storyboard */; };
@@ -17,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19171FEF226E1356006CF2D1 /* regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = regular.ttf; path = "../../../School/S19/CS329E_Web/Geomanist-Regular&Italic/Webfont/Geomanist-Regular-Webfont/regular.ttf"; sourceTree = "<group>"; };
+		19171FF3226E1385006CF2D1 /* italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = italic.ttf; path = "../../../School/S19/CS329E_Web/Geomanist-Regular&Italic/Webfont/Geomanist-Regular-Italic-Webfont/italic.ttf"; sourceTree = "<group>"; };
+		19171FF5226E14B6006CF2D1 /* Geomanist-Regular-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geomanist-Regular-Italic.otf"; path = "../../../School/S19/CS329E_Web/Geomanist-Regular&Italic/Desktop/Geomanist-Regular-Italic.otf"; sourceTree = "<group>"; };
+		19171FF7226E14C1006CF2D1 /* Geomanist-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geomanist-Regular.otf"; path = "../../../School/S19/CS329E_Web/Geomanist-Regular&Italic/Desktop/Geomanist-Regular.otf"; sourceTree = "<group>"; };
 		1978D4E2226A438F00ABA4EF /* TheGoodBois.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheGoodBois.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1978D4E5226A438F00ABA4EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1978D4E7226A438F00ABA4EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +47,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19171FEE226E130C006CF2D1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				19171FF7226E14C1006CF2D1 /* Geomanist-Regular.otf */,
+				19171FF5226E14B6006CF2D1 /* Geomanist-Regular-Italic.otf */,
+				19171FF3226E1385006CF2D1 /* italic.ttf */,
+				19171FEF226E1356006CF2D1 /* regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		1978D4D9226A438F00ABA4EF = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +77,7 @@
 		1978D4E4226A438F00ABA4EF /* TheGoodBois */ = {
 			isa = PBXGroup;
 			children = (
+				19171FEE226E130C006CF2D1 /* Fonts */,
 				1978D4E5226A438F00ABA4EF /* AppDelegate.swift */,
 				1978D4E7226A438F00ABA4EF /* ViewController.swift */,
 				1978D4E9226A438F00ABA4EF /* Main.storyboard */,
@@ -128,9 +148,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19171FF6226E14B6006CF2D1 /* Geomanist-Regular-Italic.otf in Resources */,
 				1978D4F3226A439000ABA4EF /* LaunchScreen.storyboard in Resources */,
+				19171FF0226E1356006CF2D1 /* regular.ttf in Resources */,
+				19171FF4226E1385006CF2D1 /* italic.ttf in Resources */,
 				1978D4F0226A439000ABA4EF /* Assets.xcassets in Resources */,
 				1978D4EB226A438F00ABA4EF /* Main.storyboard in Resources */,
+				19171FF8226E14C1006CF2D1 /* Geomanist-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

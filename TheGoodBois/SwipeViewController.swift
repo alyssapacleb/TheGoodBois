@@ -16,11 +16,15 @@ class SwipeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        var swipeRight = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
+        
+        //cell!.imageView?.image = UIImage(named: animal.image)
+
+        swipeImageView?.image = UIImage(named:imageNames[currentImage])
+        var swipeRight = UISwipeGestureRecognizer(target: self, action: Selector("respondToSwipeGesture"))
         swipeRight.direction = UISwipeGestureRecognizer.Direction.right
         self.view.addGestureRecognizer(swipeRight)
         
-        var swipeLeft = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
+        var swipeLeft = UISwipeGestureRecognizer(target: self, action: Selector("respondToSwipeGesture"))
         swipeLeft.direction = UISwipeGestureRecognizer.Direction.left
         self.view.addGestureRecognizer(swipeLeft)
     }
