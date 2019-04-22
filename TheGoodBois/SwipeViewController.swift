@@ -17,11 +17,11 @@ class SwipeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         var swipeRight = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
-        swipeRight.direction = UISwipeGestureRecognizerDirection.Right
+        swipeRight.direction = UISwipeGestureRecognizer.Direction.right
         self.view.addGestureRecognizer(swipeRight)
         
         var swipeLeft = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
-        swipeLeft.direction = UISwipeGestureRecognizerDirection.Left
+        swipeLeft.direction = UISwipeGestureRecognizer.Direction.left
         self.view.addGestureRecognizer(swipeLeft)
     }
 
@@ -31,7 +31,7 @@ class SwipeViewController: UIViewController {
             
             
             switch swipeGesture.direction {
-            case UISwipeGestureRecognizerDirection.Left:
+            case UISwipeGestureRecognizer.Direction.left:
                 if currentImage == imageNames.count - 1 {
                     currentImage = 0
                     
@@ -40,7 +40,7 @@ class SwipeViewController: UIViewController {
                 }
                 swipeImageView.image = UIImage(named: imageNames[currentImage])
                 
-            case UISwipeGestureRecognizerDirection.Right:
+            case UISwipeGestureRecognizer.Direction.right:
                 if currentImage == 0 {
                     currentImage = imageNames.count - 1
                 }else{
