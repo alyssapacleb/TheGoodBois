@@ -19,15 +19,15 @@ class SwipeViewController: UIViewController {
         
         
         // create tap gesture recognizer
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SwipeViewController.imageTapped(gesture:)))
+        /*let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SwipeViewController.imageTapped(gesture:)))*/
         
         // add it to the image view;
-        swipeImageView.addGestureRecognizer(tapGesture)
+        //swipeImageView.addGestureRecognizer(tapGesture)
         // make sure imageView can be interacted with by user
-        swipeImageView.isUserInteractionEnabled = true
+        //swipeImageView.isUserInteractionEnabled = true
         
         
-        swipeImageView?.image = UIImage(named:imageNames[currentImage])
+        //swipeImageView?.image = UIImage(named:imageNames[currentImage])
         var swipeRight = UISwipeGestureRecognizer(target: self, action: Selector("respondToSwipeGesture"))
         swipeRight.direction = UISwipeGestureRecognizer.Direction.right
         self.view.addGestureRecognizer(swipeRight)
@@ -42,7 +42,7 @@ class SwipeViewController: UIViewController {
     }
 
     
-    @objc func imageTapped(gesture: UIGestureRecognizer) {
+    /*@objc func imageTapped(gesture: UIGestureRecognizer) {
         // if the tapped view is a UIImageView then set it to imageview
         if (gesture.view as? UIImageView) != nil {
             print("Image Tapped")
@@ -53,7 +53,7 @@ class SwipeViewController: UIViewController {
             self.navigationController.pushViewController(bioViewController, animated: true)
             */
         }
-    }
+    }*/
     
     
     func respondToSwipeGesture(gesture: UIGestureRecognizer) {
