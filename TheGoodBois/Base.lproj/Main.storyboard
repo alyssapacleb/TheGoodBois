@@ -23,18 +23,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="good bois" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnf-Il-QAb">
-                                <rect key="frame" x="79.5" y="268" width="216" height="97"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="97" id="MfL-hh-eDW"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="216" id="z1c-EL-RRD"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="good bois" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnf-Il-QAb">
+                                <rect key="frame" x="26" y="263" width="206" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Geomanist" family="Geomanist" pointSize="45"/>
                                 <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="circ1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="t5F-ln-ff5">
+                                <rect key="frame" x="239" y="236" width="120" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Find your best friend" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6w-aQ-VVC">
-                                <rect key="frame" x="110" y="373" width="154" height="17"/>
+                                <rect key="frame" x="77" y="325" width="154" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Geomanist" family="Geomanist" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -42,10 +43,6 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.7803921568627451" green="0.74901960784313726" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="tnf-Il-QAb" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-49" id="IEz-AF-5PH"/>
-                            <constraint firstItem="tnf-Il-QAb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XUn-Jh-duA"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="qbE-dQ-yLl"/>
@@ -55,7 +52,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="988" y="32"/>
+            <point key="canvasLocation" x="988" y="31.934032983508249"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="3r8-bK-YZe">
@@ -447,6 +444,7 @@ Cary (Carrot Top aka Care Bear) is a young guy. He's probably maybe only a year 
         </scene>
     </scenes>
     <resources>
+        <image name="circ1.jpg" width="121.5" height="114"/>
         <image name="dog1" width="391" height="480"/>
     </resources>
 </document>

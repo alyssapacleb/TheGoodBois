@@ -11,6 +11,8 @@
 		19171FF4226E1385006CF2D1 /* italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19171FF3226E1385006CF2D1 /* italic.ttf */; };
 		19171FF6226E14B6006CF2D1 /* Geomanist-Regular-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 19171FF5226E14B6006CF2D1 /* Geomanist-Regular-Italic.otf */; };
 		19171FF8226E14C1006CF2D1 /* Geomanist-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 19171FF7226E14C1006CF2D1 /* Geomanist-Regular.otf */; };
+		19171FFA226EB8FE006CF2D1 /* circ1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 19171FF9226EB8FE006CF2D1 /* circ1.jpg */; };
+		19171FFC226EB905006CF2D1 /* circ2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 19171FFB226EB905006CF2D1 /* circ2.jpg */; };
 		1978D4E6226A438F00ABA4EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1978D4E5226A438F00ABA4EF /* AppDelegate.swift */; };
 		1978D4E8226A438F00ABA4EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1978D4E7226A438F00ABA4EF /* ViewController.swift */; };
 		1978D4EB226A438F00ABA4EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1978D4E9226A438F00ABA4EF /* Main.storyboard */; };
@@ -25,6 +27,8 @@
 		19171FF3226E1385006CF2D1 /* italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = italic.ttf; path = "../../../School/S19/CS329E_Web/Geomanist-Regular&Italic/Webfont/Geomanist-Regular-Italic-Webfont/italic.ttf"; sourceTree = "<group>"; };
 		19171FF5226E14B6006CF2D1 /* Geomanist-Regular-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geomanist-Regular-Italic.otf"; path = "../../../School/S19/CS329E_Web/Geomanist-Regular&Italic/Desktop/Geomanist-Regular-Italic.otf"; sourceTree = "<group>"; };
 		19171FF7226E14C1006CF2D1 /* Geomanist-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geomanist-Regular.otf"; path = "../../../School/S19/CS329E_Web/Geomanist-Regular&Italic/Desktop/Geomanist-Regular.otf"; sourceTree = "<group>"; };
+		19171FF9226EB8FE006CF2D1 /* circ1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = circ1.jpg; path = ../../School/S19/CS329E_Mobile/circ1.jpg; sourceTree = "<group>"; };
+		19171FFB226EB905006CF2D1 /* circ2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = circ2.jpg; path = ../../School/S19/CS329E_Mobile/circ2.jpg; sourceTree = "<group>"; };
 		1978D4E2226A438F00ABA4EF /* TheGoodBois.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheGoodBois.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1978D4E5226A438F00ABA4EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1978D4E7226A438F00ABA4EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 				19171FEE226E130C006CF2D1 /* Fonts */,
 				1978D4E5226A438F00ABA4EF /* AppDelegate.swift */,
 				1978D4E7226A438F00ABA4EF /* ViewController.swift */,
+				19171FF9226EB8FE006CF2D1 /* circ1.jpg */,
+				19171FFB226EB905006CF2D1 /* circ2.jpg */,
 				1978D4E9226A438F00ABA4EF /* Main.storyboard */,
 				9681BB99226D5E4F0083717E /* SwipeViewController.swift */,
 				1978D4EF226A439000ABA4EF /* Assets.xcassets */,
@@ -148,8 +154,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19171FFC226EB905006CF2D1 /* circ2.jpg in Resources */,
 				19171FF6226E14B6006CF2D1 /* Geomanist-Regular-Italic.otf in Resources */,
 				1978D4F3226A439000ABA4EF /* LaunchScreen.storyboard in Resources */,
+				19171FFA226EB8FE006CF2D1 /* circ1.jpg in Resources */,
 				19171FF0226E1356006CF2D1 /* regular.ttf in Resources */,
 				19171FF4226E1385006CF2D1 /* italic.ttf in Resources */,
 				1978D4F0226A439000ABA4EF /* Assets.xcassets in Resources */,
