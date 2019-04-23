@@ -17,8 +17,16 @@ class SwipeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //cell!.imageView?.image = UIImage(named: animal.image)
-
+        
+        // create tap gesture recognizer
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SwipeViewController.imageTapped(gesture:)))
+        
+        // add it to the image view;
+        swipeImageView.addGestureRecognizer(tapGesture)
+        // make sure imageView can be interacted with by user
+        swipeImageView.isUserInteractionEnabled = true
+        
+        
         swipeImageView?.image = UIImage(named:imageNames[currentImage])
         var swipeRight = UISwipeGestureRecognizer(target: self, action: Selector("respondToSwipeGesture"))
         swipeRight.direction = UISwipeGestureRecognizer.Direction.right
@@ -27,8 +35,27 @@ class SwipeViewController: UIViewController {
         var swipeLeft = UISwipeGestureRecognizer(target: self, action: Selector("respondToSwipeGesture"))
         swipeLeft.direction = UISwipeGestureRecognizer.Direction.left
         self.view.addGestureRecognizer(swipeLeft)
+    
+    
+    
+    
     }
 
+    
+    @objc func imageTapped(gesture: UIGestureRecognizer) {
+        // if the tapped view is a UIImageView then set it to imageview
+        if (gesture.view as? UIImageView) != nil {
+            print("Image Tapped")
+            
+            //This really don't work
+            /*let storyBoard: UIStoryboard = UIStoryboard(name: "petBio", bundle: nil)
+            let bioViewController = storyBoard.instantiateViewController(withIdentifier: "petBio")
+            self.navigationController.pushViewController(bioViewController, animated: true)
+            */
+        }
+    }
+    
+    
     func respondToSwipeGesture(gesture: UIGestureRecognizer) {
         
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
