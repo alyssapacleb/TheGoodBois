@@ -24,19 +24,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="YAT-Z8-7K4">
-                                <rect key="frame" x="19" y="269.5" width="337" height="128.5"/>
+                                <rect key="frame" x="18" y="269.5" width="339.5" height="128.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0Xt-g0-S1Z">
-                                        <rect key="frame" x="0.0" y="24" width="202" height="80.5"/>
+                                        <rect key="frame" x="0.0" y="29.5" width="204.5" height="70"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="good bois" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnf-Il-QAb">
-                                                <rect key="frame" x="0.0" y="0.0" width="202" height="52.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="204.5" height="45"/>
                                                 <fontDescription key="fontDescription" name="Geomanist" family="Geomanist" pointSize="45"/>
                                                 <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find your best friend" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6w-aQ-VVC">
-                                                <rect key="frame" x="45" y="60.5" width="157" height="20"/>
+                                                <rect key="frame" x="51" y="53" width="153.5" height="17"/>
                                                 <fontDescription key="fontDescription" name="Geomanist" family="Geomanist" pointSize="17"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -44,7 +44,7 @@
                                         </subviews>
                                     </stackView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circ1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="t5F-ln-ff5">
-                                        <rect key="frame" x="217" y="0.0" width="120" height="128.5"/>
+                                        <rect key="frame" x="219.5" y="0.0" width="120" height="128.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="120" id="ag5-6m-WwQ"/>
                                             <constraint firstAttribute="height" constant="128" id="ckg-6B-iUJ"/>
@@ -208,37 +208,37 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEJ-ej-VGc">
-                                <rect key="frame" x="16" y="96" width="84" height="47"/>
+                                <rect key="frame" x="16" y="96" width="81" height="40"/>
                                 <fontDescription key="fontDescription" name="Geomanist" family="Geomanist" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Young, Cocker Spaniel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ThJ-YV-49R">
-                                <rect key="frame" x="16" y="321" width="343" height="29.5"/>
+                                <rect key="frame" x="16" y="321" width="343" height="25"/>
                                 <fontDescription key="fontDescription" name="Geomanist" family="Geomanist" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Austin, Texas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXg-UB-HfY">
-                                <rect key="frame" x="16" y="355.5" width="343" height="21"/>
+                                <rect key="frame" x="16" y="351" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Male" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewT-gm-U7y">
-                                <rect key="frame" x="16" y="381.5" width="343" height="21"/>
+                                <rect key="frame" x="16" y="377" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coat Length: Long" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xb-s7-RRr">
-                                <rect key="frame" x="16" y="407.5" width="343" height="21"/>
+                                <rect key="frame" x="16" y="403" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vfr-L6-iKh">
-                                <rect key="frame" x="16" y="444.5" width="343" height="193"/>
+                                <rect key="frame" x="16" y="440" width="343" height="193"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="193" id="KTL-Dm-iDe"/>
@@ -295,43 +295,43 @@ Cary (Carrot Top aka Care Bear) is a young guy. He's probably maybe only a year 
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Breed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UbP-R2-uZg">
-                                <rect key="frame" x="16" y="124" width="46" height="20"/>
+                                <rect key="frame" x="16" y="124" width="44" height="17"/>
                                 <fontDescription key="fontDescription" name="Geomanist" family="Geomanist" pointSize="17"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFd-a9-jct">
-                                <rect key="frame" x="16" y="171" width="30" height="20"/>
+                                <rect key="frame" x="16" y="168" width="31" height="17"/>
                                 <fontDescription key="fontDescription" name="Geomanist" family="Geomanist" pointSize="17"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aYi-w7-Vmm">
-                                <rect key="frame" x="62" y="166" width="297" height="30"/>
+                                <rect key="frame" x="63" y="161.5" width="296" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nrt-Qa-qev">
-                                <rect key="frame" x="16" y="218" width="32.5" height="20"/>
+                                <rect key="frame" x="16" y="212" width="29.5" height="17"/>
                                 <fontDescription key="fontDescription" name="Geomanist" family="Geomanist" pointSize="17"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HH5-gN-QGj">
-                                <rect key="frame" x="16" y="265" width="57" height="20"/>
+                                <rect key="frame" x="16" y="256" width="57" height="17"/>
                                 <fontDescription key="fontDescription" name="Geomanist" family="Geomanist" pointSize="17"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good with" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gfs-PR-0iN">
-                                <rect key="frame" x="16" y="312" width="79" height="20"/>
+                                <rect key="frame" x="16" y="300" width="80" height="17"/>
                                 <fontDescription key="fontDescription" name="Geomanist" family="Geomanist" pointSize="17"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="feN-No-PFI">
-                                <rect key="frame" x="289" y="362" width="70" height="32"/>
+                                <rect key="frame" x="289" y="348.5" width="70" height="29"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="fq7-5a-6fk"/>
@@ -345,25 +345,25 @@ Cary (Carrot Top aka Care Bear) is a young guy. He's probably maybe only a year 
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3hA-U1-D05">
-                                <rect key="frame" x="111" y="307" width="248" height="30"/>
+                                <rect key="frame" x="112" y="293.5" width="247" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r2w-L9-Pdn">
-                                <rect key="frame" x="64.5" y="213" width="294.5" height="30"/>
+                                <rect key="frame" x="61.5" y="205.5" width="297.5" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YaJ-gc-Rqw">
-                                <rect key="frame" x="89" y="260" width="270" height="30"/>
+                                <rect key="frame" x="89" y="249.5" width="270" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VeM-l5-nva">
-                                <rect key="frame" x="78" y="119.5" width="281" height="30"/>
+                                <rect key="frame" x="76" y="118" width="283" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -414,29 +414,21 @@ Cary (Carrot Top aka Care Bear) is a young guy. He's probably maybe only a year 
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rak-PB-gMc">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4a-sD-gya">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="50Q-pY-gNY">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="dog1"/>
-                                <connections>
-                                    <segue destination="djj-qX-kHc" kind="show" id="rxA-VR-4wk"/>
-                                </connections>
-                            </button>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.78039215689999997" green="0.74901960779999999" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="rak-PB-gMc" firstAttribute="top" secondItem="SdR-dv-aRa" secondAttribute="top" constant="16" id="g6b-aM-A9G"/>
-                            <constraint firstItem="SdR-dv-aRa" firstAttribute="bottom" secondItem="rak-PB-gMc" secondAttribute="bottom" constant="16" id="rKa-l0-4sP"/>
-                            <constraint firstItem="SdR-dv-aRa" firstAttribute="trailing" secondItem="rak-PB-gMc" secondAttribute="trailing" constant="16" id="wzA-IQ-jcX"/>
-                            <constraint firstItem="rak-PB-gMc" firstAttribute="leading" secondItem="SdR-dv-aRa" secondAttribute="leading" constant="16" id="xfq-Xu-wAh"/>
+                            <constraint firstItem="50Q-pY-gNY" firstAttribute="leading" secondItem="SdR-dv-aRa" secondAttribute="leading" id="0Ir-dQ-Vkd"/>
+                            <constraint firstItem="50Q-pY-gNY" firstAttribute="top" secondItem="SdR-dv-aRa" secondAttribute="top" id="LsT-lL-pWZ"/>
+                            <constraint firstItem="SdR-dv-aRa" firstAttribute="trailing" secondItem="50Q-pY-gNY" secondAttribute="trailing" id="cEE-RW-Fe7"/>
+                            <constraint firstItem="SdR-dv-aRa" firstAttribute="bottom" secondItem="50Q-pY-gNY" secondAttribute="bottom" id="wFQ-mn-MtY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SdR-dv-aRa"/>
                     </view>
                     <connections>
-                        <outlet property="swipeImageView" destination="rak-PB-gMc" id="Kxy-g0-5Dj"/>
+                        <outlet property="swipeImageView" destination="50Q-pY-gNY" id="NGd-N4-Znh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fUq-Gf-cm9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -501,7 +493,7 @@ Cary (Carrot Top aka Care Bear) is a young guy. He's probably maybe only a year 
         </scene>
     </scenes>
     <resources>
-        <image name="circ1.jpg" width="121.5" height="114"/>
+        <image name="circ1.jpg" width="162" height="152"/>
         <image name="dog1" width="391" height="480"/>
     </resources>
 </document>

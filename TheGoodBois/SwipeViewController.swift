@@ -19,7 +19,7 @@ class SwipeViewController: UIViewController {
         
         
         // create tap gesture recognizer
-        /*let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SwipeViewController.imageTapped(gesture:)))*/
+        //let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SwipeViewController.imageTapped(gesture:)))
         
         // add it to the image view;
         //swipeImageView.addGestureRecognizer(tapGesture)
@@ -28,16 +28,13 @@ class SwipeViewController: UIViewController {
         
         
         //swipeImageView?.image = UIImage(named:imageNames[currentImage])
-        var swipeRight = UISwipeGestureRecognizer(target: self, action: Selector("respondToSwipeGesture"))
-        swipeRight.direction = UISwipeGestureRecognizer.Direction.right
+        var swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
+        swipeRight.direction = UISwipeGestureRecognizerDirection.right
         self.view.addGestureRecognizer(swipeRight)
         
-        var swipeLeft = UISwipeGestureRecognizer(target: self, action: Selector("respondToSwipeGesture"))
-        swipeLeft.direction = UISwipeGestureRecognizer.Direction.left
+        var swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
+        swipeLeft.direction = UISwipeGestureRecognizerDirection.left
         self.view.addGestureRecognizer(swipeLeft)
-    
-    
-    
     
     }
 
@@ -48,21 +45,20 @@ class SwipeViewController: UIViewController {
             print("Image Tapped")
             
             //This really don't work
-            /*let storyBoard: UIStoryboard = UIStoryboard(name: "petBio", bundle: nil)
+            let storyBoard: UIStoryboard = UIStoryboard(name: "petBio", bundle: nil)
             let bioViewController = storyBoard.instantiateViewController(withIdentifier: "petBio")
             self.navigationController.pushViewController(bioViewController, animated: true)
-            */
+            
         }
     }*/
     
-    
-    func respondToSwipeGesture(gesture: UIGestureRecognizer) {
+    @objc func respondToSwipeGesture(gesture: UIGestureRecognizer) {
         
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
             
             
             switch swipeGesture.direction {
-            case UISwipeGestureRecognizer.Direction.left:
+            case UISwipeGestureRecognizerDirection.left:
                 if currentImage == imageNames.count - 1 {
                     currentImage = 0
                     
@@ -71,7 +67,7 @@ class SwipeViewController: UIViewController {
                 }
                 swipeImageView.image = UIImage(named: imageNames[currentImage])
                 
-            case UISwipeGestureRecognizer.Direction.right:
+            case UISwipeGestureRecognizerDirection.right:
                 if currentImage == 0 {
                     currentImage = imageNames.count - 1
                 }else{

@@ -7,12 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		19171FF0226E1356006CF2D1 /* regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19171FEF226E1356006CF2D1 /* regular.ttf */; };
-		19171FF4226E1385006CF2D1 /* italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19171FF3226E1385006CF2D1 /* italic.ttf */; };
-		19171FF6226E14B6006CF2D1 /* Geomanist-Regular-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 19171FF5226E14B6006CF2D1 /* Geomanist-Regular-Italic.otf */; };
-		19171FF8226E14C1006CF2D1 /* Geomanist-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 19171FF7226E14C1006CF2D1 /* Geomanist-Regular.otf */; };
-		19171FFA226EB8FE006CF2D1 /* circ1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 19171FF9226EB8FE006CF2D1 /* circ1.jpg */; };
-		19171FFC226EB905006CF2D1 /* circ2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 19171FFB226EB905006CF2D1 /* circ2.jpg */; };
 		1978D4E6226A438F00ABA4EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1978D4E5226A438F00ABA4EF /* AppDelegate.swift */; };
 		1978D4E8226A438F00ABA4EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1978D4E7226A438F00ABA4EF /* ViewController.swift */; };
 		1978D4EB226A438F00ABA4EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1978D4E9226A438F00ABA4EF /* Main.storyboard */; };
@@ -20,15 +14,15 @@
 		1978D4F0226A439000ABA4EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1978D4EF226A439000ABA4EF /* Assets.xcassets */; };
 		1978D4F3226A439000ABA4EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1978D4F1226A439000ABA4EF /* LaunchScreen.storyboard */; };
 		9681BB9A226D5E4F0083717E /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9681BB99226D5E4F0083717E /* SwipeViewController.swift */; };
+		96E8F80A2270222D0082BED3 /* Geomanist-Regular-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 96E8F8062270222D0082BED3 /* Geomanist-Regular-Italic.otf */; };
+		96E8F80B2270222D0082BED3 /* Geomanist-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 96E8F8072270222D0082BED3 /* Geomanist-Regular.otf */; };
+		96E8F80C2270222D0082BED3 /* italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96E8F8082270222D0082BED3 /* italic.ttf */; };
+		96E8F80D2270222D0082BED3 /* regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96E8F8092270222D0082BED3 /* regular.ttf */; };
+		96E8F80F227022460082BED3 /* circ1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96E8F80E227022460082BED3 /* circ1.jpg */; };
+		96E8F811227022560082BED3 /* circ2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96E8F810227022560082BED3 /* circ2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		19171FEF226E1356006CF2D1 /* regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = regular.ttf; path = "../../../School/S19/CS329E_Web/Geomanist-Regular&Italic/Webfont/Geomanist-Regular-Webfont/regular.ttf"; sourceTree = "<group>"; };
-		19171FF3226E1385006CF2D1 /* italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = italic.ttf; path = "../../../School/S19/CS329E_Web/Geomanist-Regular&Italic/Webfont/Geomanist-Regular-Italic-Webfont/italic.ttf"; sourceTree = "<group>"; };
-		19171FF5226E14B6006CF2D1 /* Geomanist-Regular-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geomanist-Regular-Italic.otf"; path = "../../../School/S19/CS329E_Web/Geomanist-Regular&Italic/Desktop/Geomanist-Regular-Italic.otf"; sourceTree = "<group>"; };
-		19171FF7226E14C1006CF2D1 /* Geomanist-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geomanist-Regular.otf"; path = "../../../School/S19/CS329E_Web/Geomanist-Regular&Italic/Desktop/Geomanist-Regular.otf"; sourceTree = "<group>"; };
-		19171FF9226EB8FE006CF2D1 /* circ1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = circ1.jpg; path = ../../School/S19/CS329E_Mobile/circ1.jpg; sourceTree = "<group>"; };
-		19171FFB226EB905006CF2D1 /* circ2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = circ2.jpg; path = ../../School/S19/CS329E_Mobile/circ2.jpg; sourceTree = "<group>"; };
 		1978D4E2226A438F00ABA4EF /* TheGoodBois.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheGoodBois.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1978D4E5226A438F00ABA4EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1978D4E7226A438F00ABA4EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +32,12 @@
 		1978D4F2226A439000ABA4EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1978D4F4226A439000ABA4EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9681BB99226D5E4F0083717E /* SwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
+		96E8F8062270222D0082BED3 /* Geomanist-Regular-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Geomanist-Regular-Italic.otf"; sourceTree = "<group>"; };
+		96E8F8072270222D0082BED3 /* Geomanist-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Geomanist-Regular.otf"; sourceTree = "<group>"; };
+		96E8F8082270222D0082BED3 /* italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = italic.ttf; sourceTree = "<group>"; };
+		96E8F8092270222D0082BED3 /* regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = regular.ttf; sourceTree = "<group>"; };
+		96E8F80E227022460082BED3 /* circ1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = circ1.jpg; sourceTree = "<group>"; };
+		96E8F810227022560082BED3 /* circ2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = circ2.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,10 +54,10 @@
 		19171FEE226E130C006CF2D1 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				19171FF7226E14C1006CF2D1 /* Geomanist-Regular.otf */,
-				19171FF5226E14B6006CF2D1 /* Geomanist-Regular-Italic.otf */,
-				19171FF3226E1385006CF2D1 /* italic.ttf */,
-				19171FEF226E1356006CF2D1 /* regular.ttf */,
+				96E8F8062270222D0082BED3 /* Geomanist-Regular-Italic.otf */,
+				96E8F8072270222D0082BED3 /* Geomanist-Regular.otf */,
+				96E8F8082270222D0082BED3 /* italic.ttf */,
+				96E8F8092270222D0082BED3 /* regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -84,8 +84,8 @@
 				19171FEE226E130C006CF2D1 /* Fonts */,
 				1978D4E5226A438F00ABA4EF /* AppDelegate.swift */,
 				1978D4E7226A438F00ABA4EF /* ViewController.swift */,
-				19171FF9226EB8FE006CF2D1 /* circ1.jpg */,
-				19171FFB226EB905006CF2D1 /* circ2.jpg */,
+				96E8F80E227022460082BED3 /* circ1.jpg */,
+				96E8F810227022560082BED3 /* circ2.jpg */,
 				1978D4E9226A438F00ABA4EF /* Main.storyboard */,
 				9681BB99226D5E4F0083717E /* SwipeViewController.swift */,
 				1978D4EF226A439000ABA4EF /* Assets.xcassets */,
@@ -154,15 +154,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19171FFC226EB905006CF2D1 /* circ2.jpg in Resources */,
-				19171FF6226E14B6006CF2D1 /* Geomanist-Regular-Italic.otf in Resources */,
+				96E8F80D2270222D0082BED3 /* regular.ttf in Resources */,
+				96E8F80F227022460082BED3 /* circ1.jpg in Resources */,
 				1978D4F3226A439000ABA4EF /* LaunchScreen.storyboard in Resources */,
-				19171FFA226EB8FE006CF2D1 /* circ1.jpg in Resources */,
-				19171FF0226E1356006CF2D1 /* regular.ttf in Resources */,
-				19171FF4226E1385006CF2D1 /* italic.ttf in Resources */,
+				96E8F80A2270222D0082BED3 /* Geomanist-Regular-Italic.otf in Resources */,
+				96E8F811227022560082BED3 /* circ2.jpg in Resources */,
 				1978D4F0226A439000ABA4EF /* Assets.xcassets in Resources */,
+				96E8F80C2270222D0082BED3 /* italic.ttf in Resources */,
 				1978D4EB226A438F00ABA4EF /* Main.storyboard in Resources */,
-				19171FF8226E14C1006CF2D1 /* Geomanist-Regular.otf in Resources */,
+				96E8F80B2270222D0082BED3 /* Geomanist-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,13 +324,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TheGoodBois/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = cs329e.TheGoodBois;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -341,13 +343,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TheGoodBois/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cs329e.TheGoodBois;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
