@@ -89,17 +89,23 @@
                                     <segue destination="hSc-HU-Mxi" kind="show" id="lNH-FW-S9j"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="about" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhe-6N-MNu">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="about" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhe-6N-MNu">
                                 <rect key="frame" x="128" y="74" width="119" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="nAj-cd-HyD"/>
+                                    <constraint firstAttribute="width" constant="119" id="uA5-Yc-w3Z"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Geomanist" family="Geomanist" pointSize="46"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGi-bI-6Z5">
+                            <textView clipsSubviews="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGi-bI-6Z5">
                                 <rect key="frame" x="16" y="128" width="343" height="107"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="HkN-0U-eAr"/>
+                                    <constraint firstAttribute="height" constant="107" id="rub-na-ppW"/>
+                                </constraints>
                                 <string key="text">Every animal deserves a home and family that cares for it. Find your best friend today by using Good Bois! Click the buttons below to either view previously saved pets or search and save new pets. </string>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Geomanist" family="Geomanist" pointSize="18"/>
@@ -137,6 +143,12 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fhe-6N-MNu" firstAttribute="centerX" secondItem="OgD-2t-UyZ" secondAttribute="centerX" id="8Ad-04-vPi"/>
+                            <constraint firstItem="MGi-bI-6Z5" firstAttribute="top" secondItem="fhe-6N-MNu" secondAttribute="bottom" constant="8" id="hAb-Kg-TCE"/>
+                            <constraint firstItem="MGi-bI-6Z5" firstAttribute="centerX" secondItem="OgD-2t-UyZ" secondAttribute="centerX" id="ijt-a9-Xd2"/>
+                            <constraint firstItem="fhe-6N-MNu" firstAttribute="top" secondItem="OgD-2t-UyZ" secondAttribute="top" constant="10" id="mBq-yL-xEx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="OgD-2t-UyZ"/>
                     </view>
                     <navigationItem key="navigationItem" id="Bza-2E-4pH"/>
@@ -415,7 +427,7 @@ Cary (Carrot Top aka Care Bear) is a young guy. He's probably maybe only a year 
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="50Q-pY-gNY">
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="50Q-pY-gNY">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
                         </subviews>
