@@ -13,6 +13,9 @@
 		1978D4EE226A438F00ABA4EF /* TheGoodBois.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1978D4EC226A438F00ABA4EF /* TheGoodBois.xcdatamodeld */; };
 		1978D4F0226A439000ABA4EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1978D4EF226A439000ABA4EF /* Assets.xcassets */; };
 		1978D4F3226A439000ABA4EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1978D4F1226A439000ABA4EF /* LaunchScreen.storyboard */; };
+		199236C92270CC680000358B /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199236C82270CC680000358B /* PreferencesViewController.swift */; };
+		199236CB2270CC7D0000358B /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199236CA2270CC7D0000358B /* BioViewController.swift */; };
+		199236CD2270CC980000358B /* savedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199236CC2270CC980000358B /* savedTableViewController.swift */; };
 		9681BB9A226D5E4F0083717E /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9681BB99226D5E4F0083717E /* SwipeViewController.swift */; };
 		96E8F80A2270222D0082BED3 /* Geomanist-Regular-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 96E8F8062270222D0082BED3 /* Geomanist-Regular-Italic.otf */; };
 		96E8F80B2270222D0082BED3 /* Geomanist-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 96E8F8072270222D0082BED3 /* Geomanist-Regular.otf */; };
@@ -31,6 +34,9 @@
 		1978D4EF226A439000ABA4EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1978D4F2226A439000ABA4EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1978D4F4226A439000ABA4EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		199236C82270CC680000358B /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
+		199236CA2270CC7D0000358B /* BioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
+		199236CC2270CC980000358B /* savedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = savedTableViewController.swift; sourceTree = "<group>"; };
 		9681BB99226D5E4F0083717E /* SwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
 		96E8F8062270222D0082BED3 /* Geomanist-Regular-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Geomanist-Regular-Italic.otf"; sourceTree = "<group>"; };
 		96E8F8072270222D0082BED3 /* Geomanist-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Geomanist-Regular.otf"; sourceTree = "<group>"; };
@@ -84,6 +90,9 @@
 				19171FEE226E130C006CF2D1 /* Fonts */,
 				1978D4E5226A438F00ABA4EF /* AppDelegate.swift */,
 				1978D4E7226A438F00ABA4EF /* ViewController.swift */,
+				199236C82270CC680000358B /* PreferencesViewController.swift */,
+				199236CA2270CC7D0000358B /* BioViewController.swift */,
+				199236CC2270CC980000358B /* savedTableViewController.swift */,
 				96E8F80E227022460082BED3 /* circ1.jpg */,
 				96E8F810227022560082BED3 /* circ2.jpg */,
 				1978D4E9226A438F00ABA4EF /* Main.storyboard */,
@@ -173,10 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				199236C92270CC680000358B /* PreferencesViewController.swift in Sources */,
 				1978D4EE226A438F00ABA4EF /* TheGoodBois.xcdatamodeld in Sources */,
 				1978D4E8226A438F00ABA4EF /* ViewController.swift in Sources */,
 				1978D4E6226A438F00ABA4EF /* AppDelegate.swift in Sources */,
 				9681BB9A226D5E4F0083717E /* SwipeViewController.swift in Sources */,
+				199236CD2270CC980000358B /* savedTableViewController.swift in Sources */,
+				199236CB2270CC7D0000358B /* BioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
