@@ -1,5 +1,5 @@
 //
-//  SavedPetsViewControllerTableViewController.swift
+//  SavedPetsViewController.swift
 //  TheGoodBois
 //
 //  Created by Don Hogan on 4/24/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SavedPetsViewControllerTableViewController: UITableViewController {
+class SavedPetsViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
