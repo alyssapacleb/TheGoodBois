@@ -1,14 +1,14 @@
 //
-//  savedTableViewController.swift
+//  SavedPetsViewControllerTableViewController.swift
 //  TheGoodBois
 //
-//  Created by Alyssa June Pacleb on 4/24/19.
+//  Created by Don Hogan on 4/24/19.
 //  Copyright © 2019 The Good Bois. All rights reserved.
 //
 
 import UIKit
 
-class savedTableViewController: UITableViewController {
+class SavedPetsViewControllerTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,7 +52,7 @@ class savedTableViewController: UITableViewController {
 
     /*
     // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
             tableView.deleteRows(at: [indexPath], with: .fade)
