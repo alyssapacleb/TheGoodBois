@@ -71,7 +71,6 @@
 		1978D4D9226A438F00ABA4EF = {
 			isa = PBXGroup;
 			children = (
-				F14696F22270CD8400035EDB /* SavedPetsViewControllerTableViewController.swift */,
 				1978D4E4226A438F00ABA4EF /* TheGoodBois */,
 				1978D4E3226A438F00ABA4EF /* Products */,
 			);
@@ -90,6 +89,7 @@
 			children = (
 				19171FEE226E130C006CF2D1 /* Fonts */,
 				1978D4E5226A438F00ABA4EF /* AppDelegate.swift */,
+				F14696F22270CD8400035EDB /* SavedPetsViewControllerTableViewController.swift */,
 				1978D4E7226A438F00ABA4EF /* ViewController.swift */,
 				199236C82270CC680000358B /* PreferencesViewController.swift */,
 				199236CA2270CC7D0000358B /* BioViewController.swift */,
