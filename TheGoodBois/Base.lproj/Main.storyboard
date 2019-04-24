@@ -15,10 +15,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Splash Page-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TheGoodBois" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Splash Page" id="BYZ-38-t0r" customClass="ViewController" customModule="TheGoodBois" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -69,10 +69,10 @@
             </objects>
             <point key="canvasLocation" x="988" y="31.934032983508249"/>
         </scene>
-        <!--View Controller-->
+        <!--About Page-->
         <scene sceneID="3r8-bK-YZe">
             <objects>
-                <viewController id="9p0-Ap-LVF" sceneMemberID="viewController">
+                <viewController title="About Page" id="9p0-Ap-LVF" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="heK-aR-oW3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
