@@ -160,7 +160,7 @@
         <!--Saved Pets-->
         <scene sceneID="2M6-pt-oJB">
             <objects>
-                <tableViewController title="Saved Pets" id="zrP-uY-sBG" customClass="SavedPetsViewControllerTableViewController" customModule="TheGoodBois" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Saved Pets" id="zrP-uY-sBG" customClass="SavedPetsViewController" customModule="TheGoodBois" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="M1t-iO-qqo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
