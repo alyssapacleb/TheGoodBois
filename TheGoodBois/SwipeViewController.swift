@@ -27,7 +27,7 @@ class SwipeViewController: UIViewController {
         //swipeImageView.isUserInteractionEnabled = true
         
         
-        //swipeImageView?.image = UIImage(named:imageNames[currentImage])
+        swipeImageView?.image = UIImage(named:imageNames[currentImage])
         var swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
         swipeRight.direction = UISwipeGestureRecognizerDirection.right
         self.view.addGestureRecognizer(swipeRight)

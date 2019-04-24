@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lEG-Sc-Zub">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lEG-Sc-Zub">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,10 +24,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="YAT-Z8-7K4">
-                                <rect key="frame" x="18" y="269.5" width="339.5" height="128.5"/>
+                                <rect key="frame" x="18" y="269.5" width="339.5" height="128"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0Xt-g0-S1Z">
-                                        <rect key="frame" x="0.0" y="29.5" width="204.5" height="70"/>
+                                        <rect key="frame" x="0.0" y="29" width="204.5" height="70"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="good bois" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnf-Il-QAb">
                                                 <rect key="frame" x="0.0" y="0.0" width="204.5" height="45"/>
@@ -44,7 +44,7 @@
                                         </subviews>
                                     </stackView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circ1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="t5F-ln-ff5">
-                                        <rect key="frame" x="219.5" y="0.0" width="120" height="128.5"/>
+                                        <rect key="frame" x="219.5" y="0.0" width="120" height="128"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="120" id="ag5-6m-WwQ"/>
                                             <constraint firstAttribute="height" constant="128" id="ckg-6B-iUJ"/>
@@ -62,7 +62,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="qbE-dQ-yLl"/>
                     <connections>
-                        <segue destination="9p0-Ap-LVF" kind="show" identifier="mainToMain" id="Nw4-DE-WLY"/>
+                        <segue destination="VUy-3P-Gz9" kind="show" identifier="mainToMain" id="Nw4-DE-WLY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -139,10 +139,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="OgD-2t-UyZ"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Bza-2E-4pH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yer-Cn-cds" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1808.8" y="31.934032983508249"/>
+            <point key="canvasLocation" x="2748" y="31.934032983508249"/>
         </scene>
         <!--Saved Pets-->
         <scene sceneID="2M6-pt-oJB">
@@ -250,7 +251,7 @@ Cary (Carrot Top aka Care Bear) is a young guy. He's probably maybe only a year 
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog1" translatesAutoresizingMaskIntoConstraints="NO" id="UGe-I4-9Il">
-                                <rect key="frame" x="98" y="160" width="178" height="153"/>
+                                <rect key="frame" x="98.5" y="160" width="178" height="153"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="178" id="Ien-ac-Bah"/>
                                     <constraint firstAttribute="height" constant="153" id="xvC-vc-KFY"/>
@@ -363,7 +364,7 @@ Cary (Carrot Top aka Care Bear) is a young guy. He's probably maybe only a year 
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VeM-l5-nva">
-                                <rect key="frame" x="76" y="118" width="283" height="30"/>
+                                <rect key="frame" x="76" y="117.5" width="283" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -404,7 +405,7 @@ Cary (Carrot Top aka Care Bear) is a young guy. He's probably maybe only a year 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I1y-Oc-X1Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2688.8000000000002" y="31.934032983508249"/>
+            <point key="canvasLocation" x="3628" y="31.934032983508249"/>
         </scene>
         <!--Swipe View Controller-->
         <scene sceneID="GJC-y6-l2P">
@@ -433,7 +434,7 @@ Cary (Carrot Top aka Care Bear) is a young guy. He's probably maybe only a year 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fUq-Gf-cm9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3525.5999999999999" y="31.934032983508249"/>
+            <point key="canvasLocation" x="4464.8000000000002" y="31.934032983508249"/>
         </scene>
         <!--Swipe View Controller-->
         <scene sceneID="WJm-Yx-cLg">
@@ -471,7 +472,7 @@ Cary (Carrot Top aka Care Bear) is a young guy. He's probably maybe only a year 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="57t-v8-ktL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4388" y="31.934032983508249"/>
+            <point key="canvasLocation" x="5327.1999999999998" y="31.934032983508249"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bbc-rr-aXt">
@@ -491,9 +492,27 @@ Cary (Carrot Top aka Care Bear) is a young guy. He's probably maybe only a year 
             </objects>
             <point key="canvasLocation" x="124" y="32"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4qL-04-bda">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VUy-3P-Gz9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xTK-eG-OX4">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9p0-Ap-LVF" kind="relationship" relationship="rootViewController" id="JBX-Uf-qba"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dCF-7Q-MY4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1808.8" y="31.934032983508249"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="circ1.jpg" width="162" height="152"/>
+        <image name="circ1.jpg" width="121.5" height="114"/>
         <image name="dog1" width="391" height="480"/>
     </resources>
 </document>
