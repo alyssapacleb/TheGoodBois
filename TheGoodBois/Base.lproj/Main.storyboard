@@ -77,11 +77,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIi-ev-roT">
-                                <rect key="frame" x="102" y="368" width="170" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIi-ev-roT">
+                                <rect key="frame" x="102.5" y="361" width="170" height="60"/>
                                 <color key="backgroundColor" red="0.78039215689999997" green="0.74901960779999999" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Geomanist" family="Geomanist" pointSize="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Jka-Tc-1Eh"/>
+                                    <constraint firstAttribute="width" constant="170" id="UlA-BK-EAU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Geomanist" family="Geomanist" pointSize="18"/>
                                 <state key="normal" title="Search for new pets">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -99,9 +102,10 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGi-bI-6Z5">
+                            <textView clipsSubviews="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGi-bI-6Z5" userLabel="About Text View">
                                 <rect key="frame" x="16" y="128" width="343" height="107"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" label="ABOUT"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="HkN-0U-eAr"/>
                                     <constraint firstAttribute="height" constant="107" id="rub-na-ppW"/>
@@ -112,28 +116,37 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="View all of the pets you have swiped right on. Click on the pet to learn more about your good bois!" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQK-l5-dhz">
-                                <rect key="frame" x="17" y="455" width="343" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="xs9-gc-mzo" userLabel="Search Text View">
+                                <rect key="frame" x="47.5" y="259" width="280" height="94"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="94" id="76v-iX-K6h"/>
+                                    <constraint firstAttribute="width" constant="280" id="KcN-gY-kDQ"/>
+                                </constraints>
+                                <string key="text">Enter in your preferences to find a good boi perfect for you. Swipe right to save the animal's information. Swipe left if this animal is not your purrfect match. </string>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GkV-GQ-ACg">
-                                <rect key="frame" x="16" y="257" width="343" height="103"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Enter in your preferences to find a good boi perfect for you. Swipe right (left to right) to save the animal's information. Swipe left (right to left) if this animal is not your purrfect match. </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Geomanist" family="Geomanist" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="View all of the pets you have swiped right on. Click on the pet to learn more about your good bois!" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Qrc-FL-SIu" userLabel="Saved Text View">
+                                <rect key="frame" x="47.5" y="445" width="280" height="62"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="VUY-Ox-nOC"/>
+                                    <constraint firstAttribute="height" constant="62" id="qSO-Ss-Ehz"/>
+                                </constraints>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSG-fo-YFr">
-                                <rect key="frame" x="103" y="547" width="170" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Geomanist" family="Geomanist" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSG-fo-YFr">
+                                <rect key="frame" x="102.5" y="515" width="170" height="60"/>
                                 <color key="backgroundColor" red="0.78039215689999997" green="0.74901960779999999" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Geomanist" family="Geomanist" pointSize="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="eex-xR-4gd"/>
+                                    <constraint firstAttribute="width" constant="170" id="jme-hT-O2v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Geomanist" family="Geomanist" pointSize="18"/>
                                 <state key="normal" title="View saved pets">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -145,8 +158,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="fhe-6N-MNu" firstAttribute="centerX" secondItem="OgD-2t-UyZ" secondAttribute="centerX" id="8Ad-04-vPi"/>
+                            <constraint firstItem="xs9-gc-mzo" firstAttribute="centerX" secondItem="OgD-2t-UyZ" secondAttribute="centerX" id="AGb-lQ-pak"/>
+                            <constraint firstItem="Qrc-FL-SIu" firstAttribute="top" secondItem="uIi-ev-roT" secondAttribute="bottom" constant="24" id="Fv0-4T-o9l"/>
+                            <constraint firstItem="xs9-gc-mzo" firstAttribute="top" secondItem="MGi-bI-6Z5" secondAttribute="bottom" constant="24" id="I8k-4K-gjS"/>
+                            <constraint firstItem="Qrc-FL-SIu" firstAttribute="centerX" secondItem="OgD-2t-UyZ" secondAttribute="centerX" id="KAu-LT-1Ev"/>
+                            <constraint firstItem="uIi-ev-roT" firstAttribute="top" secondItem="xs9-gc-mzo" secondAttribute="bottom" constant="8" id="bXa-lc-vzX"/>
+                            <constraint firstItem="uIi-ev-roT" firstAttribute="centerX" secondItem="OgD-2t-UyZ" secondAttribute="centerX" id="dTd-eA-r2z"/>
+                            <constraint firstItem="bSG-fo-YFr" firstAttribute="centerX" secondItem="OgD-2t-UyZ" secondAttribute="centerX" id="eql-tb-ivq"/>
                             <constraint firstItem="MGi-bI-6Z5" firstAttribute="top" secondItem="fhe-6N-MNu" secondAttribute="bottom" constant="8" id="hAb-Kg-TCE"/>
                             <constraint firstItem="MGi-bI-6Z5" firstAttribute="centerX" secondItem="OgD-2t-UyZ" secondAttribute="centerX" id="ijt-a9-Xd2"/>
+                            <constraint firstItem="bSG-fo-YFr" firstAttribute="top" secondItem="Qrc-FL-SIu" secondAttribute="bottom" constant="8" id="kor-nB-9Mt"/>
                             <constraint firstItem="fhe-6N-MNu" firstAttribute="top" secondItem="OgD-2t-UyZ" secondAttribute="top" constant="10" id="mBq-yL-xEx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OgD-2t-UyZ"/>
