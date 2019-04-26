@@ -22,6 +22,7 @@
 		96E8F80D2270222D0082BED3 /* regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96E8F8092270222D0082BED3 /* regular.ttf */; };
 		96E8F80F227022460082BED3 /* circ1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96E8F80E227022460082BED3 /* circ1.jpg */; };
 		96E8F811227022560082BED3 /* circ2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96E8F810227022560082BED3 /* circ2.jpg */; };
+		96F23D6C2272A1AB00D89136 /* SavedPetsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F23D6B2272A1AB00D89136 /* SavedPetsTableViewCell.swift */; };
 		F14696F52270CE1000035EDB /* SavedPetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14696F42270CE1000035EDB /* SavedPetsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		96E8F8092270222D0082BED3 /* regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = regular.ttf; sourceTree = "<group>"; };
 		96E8F80E227022460082BED3 /* circ1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = circ1.jpg; sourceTree = "<group>"; };
 		96E8F810227022560082BED3 /* circ2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = circ2.jpg; sourceTree = "<group>"; };
+		96F23D6B2272A1AB00D89136 /* SavedPetsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPetsTableViewCell.swift; sourceTree = "<group>"; };
 		F14696F42270CE1000035EDB /* SavedPetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPetsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +93,7 @@
 				1978D4E5226A438F00ABA4EF /* AppDelegate.swift */,
 				1978D4E7226A438F00ABA4EF /* ViewController.swift */,
 				F14696F42270CE1000035EDB /* SavedPetsViewController.swift */,
+				96F23D6B2272A1AB00D89136 /* SavedPetsTableViewCell.swift */,
 				199236C82270CC680000358B /* PreferencesViewController.swift */,
 				199236CA2270CC7D0000358B /* BioViewController.swift */,
 				96E8F80E227022460082BED3 /* circ1.jpg */,
@@ -183,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				199236C92270CC680000358B /* PreferencesViewController.swift in Sources */,
+				96F23D6C2272A1AB00D89136 /* SavedPetsTableViewCell.swift in Sources */,
 				1978D4EE226A438F00ABA4EF /* TheGoodBois.xcdatamodeld in Sources */,
 				1978D4E8226A438F00ABA4EF /* ViewController.swift in Sources */,
 				1978D4E6226A438F00ABA4EF /* AppDelegate.swift in Sources */,
