@@ -10,8 +10,13 @@ import UIKit
 
 class PreferencesViewController: UIViewController {
 
+    
+    @IBOutlet weak var drawView: drawView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        drawView.drawShape(selectedShape: .circle)
 
         // Do any additional setup after loading the view.
     }
