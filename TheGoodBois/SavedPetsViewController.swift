@@ -9,7 +9,6 @@
 import UIKit
 import CoreData
 
-var savedPets: [NSManagedObject] = []
 var selectedSavedPet: NSManagedObject?
 
 class SavedPetsViewController: UITableViewController {
@@ -69,6 +68,7 @@ class SavedPetsViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedSavedPet = savedPets[indexPath.row]
+        print(selectedSavedPet!)
         self.performSegue(withIdentifier: "BioViewSegue", sender: self)
     }
 

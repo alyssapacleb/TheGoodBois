@@ -187,7 +187,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="QjJ-iO-EDa" customClass="SavedPetsTableViewCell" customModule="TheGoodBois" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SavedPetsCell" rowHeight="100" id="QjJ-iO-EDa" customClass="SavedPetsTableViewCell" customModule="TheGoodBois" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QjJ-iO-EDa" id="MvC-ot-FNH">
@@ -210,7 +210,6 @@
                                 <connections>
                                     <outlet property="SavedPetsTableImage" destination="hKa-Wn-anR" id="pk0-Ds-Li4"/>
                                     <outlet property="SavedPetsTableLabel1" destination="JBU-Ub-99m" id="mI2-oi-Dh3"/>
-                                    <segue destination="GJQ-qi-DLz" kind="show" identifier="BioViewSegue" id="viA-2T-tq5"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -220,6 +219,9 @@
                             <outlet property="delegate" destination="zrP-uY-sBG" id="OPz-wa-aIh"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="GJQ-qi-DLz" kind="show" identifier="BioViewSegue" id="hng-kO-jZp"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aJ0-Xa-dGk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -270,7 +272,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vfr-L6-iKh">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vfr-L6-iKh">
                                 <rect key="frame" x="16" y="440" width="343" height="193"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
