@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/donhogan/Documents/TheGoodBois/TheGoodBois/PreferencesViewController.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/donhogan/Documents/TheGoodBois/TheGoodBois/SearchDataSession.swift">
+   </FileRef>
+   <FileRef
       location = "self:">
    </FileRef>
 </Workspace>
