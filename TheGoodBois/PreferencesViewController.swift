@@ -19,7 +19,7 @@ class PreferencesViewController: UIViewController, CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.interactivePopGestureRecognizer?.isEnabled = false
-        drawView.drawShape(selectedShape: .circle)
+        //drawView.drawShape(selectedShape: .circle)
         
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
