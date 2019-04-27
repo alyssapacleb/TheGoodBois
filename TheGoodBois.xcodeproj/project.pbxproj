@@ -7,45 +7,47 @@
     objects = {
 
 /* Begin PBXBuildFile section */
-        1978D4E6226A438F00ABA4EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1978D4E5226A438F00ABA4EF /* AppDelegate.swift */; };
-        1978D4E8226A438F00ABA4EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1978D4E7226A438F00ABA4EF /* ViewController.swift */; };
-        1978D4EB226A438F00ABA4EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1978D4E9226A438F00ABA4EF /* Main.storyboard */; };
-        1978D4EE226A438F00ABA4EF /* TheGoodBois.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1978D4EC226A438F00ABA4EF /* TheGoodBois.xcdatamodeld */; };
-        1978D4F0226A439000ABA4EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1978D4EF226A439000ABA4EF /* Assets.xcassets */; };
-        1978D4F3226A439000ABA4EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1978D4F1226A439000ABA4EF /* LaunchScreen.storyboard */; };
-        199236CB2270CC7D0000358B /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199236CA2270CC7D0000358B /* BioViewController.swift */; };
-        9681BB9A226D5E4F0083717E /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9681BB99226D5E4F0083717E /* SwipeViewController.swift */; };
-        96E8F80A2270222D0082BED3 /* Geomanist-Regular-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 96E8F8062270222D0082BED3 /* Geomanist-Regular-Italic.otf */; };
-        96E8F80B2270222D0082BED3 /* Geomanist-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 96E8F8072270222D0082BED3 /* Geomanist-Regular.otf */; };
-        96E8F80C2270222D0082BED3 /* italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96E8F8082270222D0082BED3 /* italic.ttf */; };
-        96E8F80D2270222D0082BED3 /* regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96E8F8092270222D0082BED3 /* regular.ttf */; };
-        96E8F80F227022460082BED3 /* circ1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96E8F80E227022460082BED3 /* circ1.jpg */; };
-        96E8F811227022560082BED3 /* circ2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96E8F810227022560082BED3 /* circ2.jpg */; };
-		96F23D6C2272A1AB00D89136 /* SavedPetsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F23D6B2272A1AB00D89136 /* SavedPetsTableViewCell.swift */; };
+		1978D4E6226A438F00ABA4EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1978D4E5226A438F00ABA4EF /* AppDelegate.swift */; };
+		1978D4E8226A438F00ABA4EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1978D4E7226A438F00ABA4EF /* ViewController.swift */; };
+		1978D4EB226A438F00ABA4EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1978D4E9226A438F00ABA4EF /* Main.storyboard */; };
+		1978D4EE226A438F00ABA4EF /* TheGoodBois.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1978D4EC226A438F00ABA4EF /* TheGoodBois.xcdatamodeld */; };
+		1978D4F0226A439000ABA4EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1978D4EF226A439000ABA4EF /* Assets.xcassets */; };
+		1978D4F3226A439000ABA4EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1978D4F1226A439000ABA4EF /* LaunchScreen.storyboard */; };
+		199236C92270CC680000358B /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199236C82270CC680000358B /* PreferencesViewController.swift */; };
+		199236CB2270CC7D0000358B /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199236CA2270CC7D0000358B /* BioViewController.swift */; };
+		962E9B5E2273DE3A00EE9AB6 /* drawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962E9B5D2273DE3A00EE9AB6 /* drawView.swift */; };
+		9681BB9A226D5E4F0083717E /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9681BB99226D5E4F0083717E /* SwipeViewController.swift */; };
+		96E8F80A2270222D0082BED3 /* Geomanist-Regular-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 96E8F8062270222D0082BED3 /* Geomanist-Regular-Italic.otf */; };
+		96E8F80B2270222D0082BED3 /* Geomanist-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 96E8F8072270222D0082BED3 /* Geomanist-Regular.otf */; };
+		96E8F80C2270222D0082BED3 /* italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96E8F8082270222D0082BED3 /* italic.ttf */; };
+		96E8F80D2270222D0082BED3 /* regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96E8F8092270222D0082BED3 /* regular.ttf */; };
+		96E8F80F227022460082BED3 /* circ1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96E8F80E227022460082BED3 /* circ1.jpg */; };
+		96E8F811227022560082BED3 /* circ2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96E8F810227022560082BED3 /* circ2.jpg */; };
+        96F23D6C2272A1AB00D89136 /* SavedPetsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F23D6B2272A1AB00D89136 /* SavedPetsTableViewCell.swift */; };
         F14696F52270CE1000035EDB /* SavedPetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14696F42270CE1000035EDB /* SavedPetsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-        1978D4E2226A438F00ABA4EF /* TheGoodBois.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheGoodBois.app; sourceTree = BUILT_PRODUCTS_DIR; };
-        1978D4E5226A438F00ABA4EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-        1978D4E7226A438F00ABA4EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-        1978D4EA226A438F00ABA4EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-        1978D4ED226A438F00ABA4EF /* TheGoodBois.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TheGoodBois.xcdatamodel; sourceTree = "<group>"; };
-        1978D4EF226A439000ABA4EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-        1978D4F2226A439000ABA4EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-        1978D4F4226A439000ABA4EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-        199236CA2270CC7D0000358B /* BioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
-        9681BB99226D5E4F0083717E /* SwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
-        96E8F8062270222D0082BED3 /* Geomanist-Regular-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Geomanist-Regular-Italic.otf"; sourceTree = "<group>"; };
-        96E8F8072270222D0082BED3 /* Geomanist-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Geomanist-Regular.otf"; sourceTree = "<group>"; };
-        96E8F8082270222D0082BED3 /* italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = italic.ttf; sourceTree = "<group>"; };
-        96E8F8092270222D0082BED3 /* regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = regular.ttf; sourceTree = "<group>"; };
-        96E8F80E227022460082BED3 /* circ1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = circ1.jpg; sourceTree = "<group>"; };
-        96E8F810227022560082BED3 /* circ2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = circ2.jpg; sourceTree = "<group>"; };
-		F12ED3CC2270E36D00E7D7A9 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		F12ED3CE22723D7300E7D7A9 /* TypeButtonsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeButtonsCell.swift; sourceTree = "<group>"; };
-		F12ED3D022736D9200E7D7A9 /* SearchFieldsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFieldsViewController.swift; sourceTree = "<group>"; };
-        F14696F42270CE1000035EDB /* SavedPetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPetsViewController.swift; sourceTree = "<group>"; };
+		1978D4E2226A438F00ABA4EF /* TheGoodBois.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheGoodBois.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1978D4E5226A438F00ABA4EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1978D4E7226A438F00ABA4EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1978D4EA226A438F00ABA4EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1978D4ED226A438F00ABA4EF /* TheGoodBois.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TheGoodBois.xcdatamodel; sourceTree = "<group>"; };
+		1978D4EF226A439000ABA4EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1978D4F2226A439000ABA4EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1978D4F4226A439000ABA4EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		199236C82270CC680000358B /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
+		199236CA2270CC7D0000358B /* BioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
+		962E9B5D2273DE3A00EE9AB6 /* drawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = drawView.swift; sourceTree = "<group>"; };
+		9681BB99226D5E4F0083717E /* SwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
+		96E8F8062270222D0082BED3 /* Geomanist-Regular-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Geomanist-Regular-Italic.otf"; sourceTree = "<group>"; };
+		96E8F8072270222D0082BED3 /* Geomanist-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Geomanist-Regular.otf"; sourceTree = "<group>"; };
+		96E8F8082270222D0082BED3 /* italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = italic.ttf; sourceTree = "<group>"; };
+		96E8F8092270222D0082BED3 /* regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = regular.ttf; sourceTree = "<group>"; };
+		96E8F80E227022460082BED3 /* circ1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = circ1.jpg; sourceTree = "<group>"; };
+		96E8F810227022560082BED3 /* circ2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = circ2.jpg; sourceTree = "<group>"; };
+		96F23D6B2272A1AB00D89136 /* SavedPetsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPetsTableViewCell.swift; sourceTree = "<group>"; };
+		F14696F42270CE1000035EDB /* SavedPetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPetsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,58 +61,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-        19171FEE226E130C006CF2D1 /* Fonts */ = {
-            isa = PBXGroup;
-            children = (
-                96E8F8062270222D0082BED3 /* Geomanist-Regular-Italic.otf */,
-                96E8F8072270222D0082BED3 /* Geomanist-Regular.otf */,
-                96E8F8082270222D0082BED3 /* italic.ttf */,
-                96E8F8092270222D0082BED3 /* regular.ttf */,
-            );
-            path = Fonts;
-            sourceTree = "<group>";
-        };
-        1978D4D9226A438F00ABA4EF = {
-            isa = PBXGroup;
-            children = (
-                1978D4E4226A438F00ABA4EF /* TheGoodBois */,
-                1978D4E3226A438F00ABA4EF /* Products */,
-            );
-            sourceTree = "<group>";
-        };
-        1978D4E3226A438F00ABA4EF /* Products */ = {
-            isa = PBXGroup;
-            children = (
-                1978D4E2226A438F00ABA4EF /* TheGoodBois.app */,
-            );
-            name = Products;
-            sourceTree = "<group>";
-        };
-        1978D4E4226A438F00ABA4EF /* TheGoodBois */ = {
-            isa = PBXGroup;
-            children = (
-                19171FEE226E130C006CF2D1 /* Fonts */,
-                1978D4E5226A438F00ABA4EF /* AppDelegate.swift */,
-                1978D4E7226A438F00ABA4EF /* ViewController.swift */,
-                F12ED3CC2270E36D00E7D7A9 /* SearchViewController.swift */,
-                F14696F42270CE1000035EDB /* SavedPetsViewController.swift */,
-                96F23D6B2272A1AB00D89136 /* SavedPetsTableViewCell.swift */,
-                199236C82270CC680000358B /* PreferencesViewController.swift */,
-                199236CA2270CC7D0000358B /* BioViewController.swift */,
-                96E8F80E227022460082BED3 /* circ1.jpg */,
-                96E8F810227022560082BED3 /* circ2.jpg */,
-                1978D4E9226A438F00ABA4EF /* Main.storyboard */,
-                F12ED3D022736D9200E7D7A9 /* SearchFieldsViewController.swift */,
-                F12ED3CE22723D7300E7D7A9 /* TypeButtonsCell.swift */,
-                9681BB99226D5E4F0083717E /* SwipeViewController.swift */,
-                1978D4EF226A439000ABA4EF /* Assets.xcassets */,
-                1978D4F1226A439000ABA4EF /* LaunchScreen.storyboard */,
-                1978D4F4226A439000ABA4EF /* Info.plist */,
-                1978D4EC226A438F00ABA4EF /* TheGoodBois.xcdatamodeld */,
-            );
-            path = TheGoodBois;
-            sourceTree = "<group>";
-        };
+		19171FEE226E130C006CF2D1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				96E8F8062270222D0082BED3 /* Geomanist-Regular-Italic.otf */,
+				96E8F8072270222D0082BED3 /* Geomanist-Regular.otf */,
+				96E8F8082270222D0082BED3 /* italic.ttf */,
+				96E8F8092270222D0082BED3 /* regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		1978D4D9226A438F00ABA4EF = {
+			isa = PBXGroup;
+			children = (
+				1978D4E4226A438F00ABA4EF /* TheGoodBois */,
+				1978D4E3226A438F00ABA4EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1978D4E3226A438F00ABA4EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1978D4E2226A438F00ABA4EF /* TheGoodBois.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1978D4E4226A438F00ABA4EF /* TheGoodBois */ = {
+			isa = PBXGroup;
+			children = (
+				19171FEE226E130C006CF2D1 /* Fonts */,
+				1978D4E5226A438F00ABA4EF /* AppDelegate.swift */,
+				962E9B5D2273DE3A00EE9AB6 /* drawView.swift */,
+				1978D4E7226A438F00ABA4EF /* ViewController.swift */,
+				F14696F42270CE1000035EDB /* SavedPetsViewController.swift */,
+				96F23D6B2272A1AB00D89136 /* SavedPetsTableViewCell.swift */,
+				199236C82270CC680000358B /* PreferencesViewController.swift */,
+				199236CA2270CC7D0000358B /* BioViewController.swift */,
+				96E8F80E227022460082BED3 /* circ1.jpg */,
+				96E8F810227022560082BED3 /* circ2.jpg */,
+				1978D4E9226A438F00ABA4EF /* Main.storyboard */,
+				9681BB99226D5E4F0083717E /* SwipeViewController.swift */,
+				1978D4EF226A439000ABA4EF /* Assets.xcassets */,
+				1978D4F1226A439000ABA4EF /* LaunchScreen.storyboard */,
+				1978D4F4226A439000ABA4EF /* Info.plist */,
+				1978D4EC226A438F00ABA4EF /* TheGoodBois.xcdatamodeld */,
+			);
+			path = TheGoodBois;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -184,24 +184,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-        1978D4DE226A438F00ABA4EF /* Sources */ = {
-            isa = PBXSourcesBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-                199236C92270CC680000358B /* PreferencesViewController.swift in Sources */,
-                96F23D6C2272A1AB00D89136 /* SavedPetsTableViewCell.swift in Sources */,
-                1978D4EE226A438F00ABA4EF /* TheGoodBois.xcdatamodeld in Sources */,
-                F12ED3CF22723D7300E7D7A9 /* TypeButtonsCell.swift in Sources */,
-                F12ED3CD2270E36D00E7D7A9 /* SearchViewController.swift in Sources */,
-                1978D4E8226A438F00ABA4EF /* ViewController.swift in Sources */,
-                F12ED3D122736D9200E7D7A9 /* SearchFieldsViewController.swift in Sources */,
-                1978D4E6226A438F00ABA4EF /* AppDelegate.swift in Sources */,
-                9681BB9A226D5E4F0083717E /* SwipeViewController.swift in Sources */,
-                199236CB2270CC7D0000358B /* BioViewController.swift in Sources */,
-                F14696F52270CE1000035EDB /* SavedPetsViewController.swift in Sources */,
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
+		1978D4DE226A438F00ABA4EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				199236C92270CC680000358B /* PreferencesViewController.swift in Sources */,
+				96F23D6C2272A1AB00D89136 /* SavedPetsTableViewCell.swift in Sources */,
+				1978D4EE226A438F00ABA4EF /* TheGoodBois.xcdatamodeld in Sources */,
+				1978D4E8226A438F00ABA4EF /* ViewController.swift in Sources */,
+				1978D4E6226A438F00ABA4EF /* AppDelegate.swift in Sources */,
+				9681BB9A226D5E4F0083717E /* SwipeViewController.swift in Sources */,
+				962E9B5E2273DE3A00EE9AB6 /* drawView.swift in Sources */,
+				199236CB2270CC7D0000358B /* BioViewController.swift in Sources */,
+				F14696F52270CE1000035EDB /* SavedPetsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
