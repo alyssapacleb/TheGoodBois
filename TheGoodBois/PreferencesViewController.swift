@@ -33,11 +33,12 @@ class PreferencesViewController: UIViewController, CLLocationManagerDelegate {
     @IBAction func UseUserLocation(_ sender: UIButton) {
         
         print("Inside function")
-        if CLLocationManager.locationServicesEnabled() {
+        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
             locationManager.startUpdatingLocation()
             print("services enabled")
         } else {
-            locationManager.requestWhenInUseAuthorization()
+            //locationManager.requestWhenInUseAuthorization()
+            print("services disabled")
         }
     }
     
@@ -46,7 +47,10 @@ class PreferencesViewController: UIViewController, CLLocationManagerDelegate {
         print("updating")
         locationLabel.text = (NSNumber(value: (userLocation?.coordinate.latitude)! as Double)).stringValue+", "+(NSNumber(value: (userLocation?.coordinate.longitude)! as Double)).stringValue
         locationManager.stopUpdatingLocation()
-        //store the user location here to firebase or somewhere
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("Error \(error)")
     }
 
     /*
