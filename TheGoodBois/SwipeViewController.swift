@@ -16,7 +16,7 @@ class SwipeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationController?.interactivePopGestureRecognizer?.isEnabled = false
         
         // create tap gesture recognizer
         //let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SwipeViewController.imageTapped(gesture:)))
