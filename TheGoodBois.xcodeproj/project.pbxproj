@@ -1,10 +1,10 @@
 // !$*UTF8*$!
 {
-    archiveVersion = 1;
-    classes = {
-    };
-    objectVersion = 50;
-    objects = {
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
 
 /* Begin PBXBuildFile section */
 		1978D4E6226A438F00ABA4EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1978D4E5226A438F00ABA4EF /* AppDelegate.swift */; };
@@ -16,6 +16,7 @@
 		199236C92270CC680000358B /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199236C82270CC680000358B /* PreferencesViewController.swift */; };
 		199236CB2270CC7D0000358B /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199236CA2270CC7D0000358B /* BioViewController.swift */; };
 		962E9B5E2273DE3A00EE9AB6 /* drawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962E9B5D2273DE3A00EE9AB6 /* drawView.swift */; };
+		966CFB76227CADED00771757 /* Animals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966CFB75227CADED00771757 /* Animals.swift */; };
 		9681BB9A226D5E4F0083717E /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9681BB99226D5E4F0083717E /* SwipeViewController.swift */; };
 		96E8F80A2270222D0082BED3 /* Geomanist-Regular-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 96E8F8062270222D0082BED3 /* Geomanist-Regular-Italic.otf */; };
 		96E8F80B2270222D0082BED3 /* Geomanist-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 96E8F8072270222D0082BED3 /* Geomanist-Regular.otf */; };
@@ -23,8 +24,8 @@
 		96E8F80D2270222D0082BED3 /* regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96E8F8092270222D0082BED3 /* regular.ttf */; };
 		96E8F80F227022460082BED3 /* circ1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96E8F80E227022460082BED3 /* circ1.jpg */; };
 		96E8F811227022560082BED3 /* circ2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96E8F810227022560082BED3 /* circ2.jpg */; };
-        96F23D6C2272A1AB00D89136 /* SavedPetsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F23D6B2272A1AB00D89136 /* SavedPetsTableViewCell.swift */; };
-        F14696F52270CE1000035EDB /* SavedPetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14696F42270CE1000035EDB /* SavedPetsViewController.swift */; };
+		96F23D6C2272A1AB00D89136 /* SavedPetsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F23D6B2272A1AB00D89136 /* SavedPetsTableViewCell.swift */; };
+		F14696F52270CE1000035EDB /* SavedPetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14696F42270CE1000035EDB /* SavedPetsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		199236C82270CC680000358B /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
 		199236CA2270CC7D0000358B /* BioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
 		962E9B5D2273DE3A00EE9AB6 /* drawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = drawView.swift; sourceTree = "<group>"; };
+		966CFB75227CADED00771757 /* Animals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animals.swift; sourceTree = "<group>"; };
 		9681BB99226D5E4F0083717E /* SwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
 		96E8F8062270222D0082BED3 /* Geomanist-Regular-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Geomanist-Regular-Italic.otf"; sourceTree = "<group>"; };
 		96E8F8072270222D0082BED3 /* Geomanist-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Geomanist-Regular.otf"; sourceTree = "<group>"; };
@@ -51,13 +53,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-        1978D4DF226A438F00ABA4EF /* Frameworks */ = {
-            isa = PBXFrameworksBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
+		1978D4DF226A438F00ABA4EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -95,6 +97,7 @@
 				1978D4E5226A438F00ABA4EF /* AppDelegate.swift */,
 				962E9B5D2273DE3A00EE9AB6 /* drawView.swift */,
 				1978D4E7226A438F00ABA4EF /* ViewController.swift */,
+				9681BB99226D5E4F0083717E /* SwipeViewController.swift */,
 				F14696F42270CE1000035EDB /* SavedPetsViewController.swift */,
 				96F23D6B2272A1AB00D89136 /* SavedPetsTableViewCell.swift */,
 				199236C82270CC680000358B /* PreferencesViewController.swift */,
@@ -102,7 +105,7 @@
 				96E8F80E227022460082BED3 /* circ1.jpg */,
 				96E8F810227022560082BED3 /* circ2.jpg */,
 				1978D4E9226A438F00ABA4EF /* Main.storyboard */,
-				9681BB99226D5E4F0083717E /* SwipeViewController.swift */,
+				966CFB75227CADED00771757 /* Animals.swift */,
 				1978D4EF226A439000ABA4EF /* Assets.xcassets */,
 				1978D4F1226A439000ABA4EF /* LaunchScreen.storyboard */,
 				1978D4F4226A439000ABA4EF /* Info.plist */,
@@ -114,73 +117,73 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-        1978D4E1226A438F00ABA4EF /* TheGoodBois */ = {
-            isa = PBXNativeTarget;
-            buildConfigurationList = 1978D4F7226A439000ABA4EF /* Build configuration list for PBXNativeTarget "TheGoodBois" */;
-            buildPhases = (
-                1978D4DE226A438F00ABA4EF /* Sources */,
-                1978D4DF226A438F00ABA4EF /* Frameworks */,
-                1978D4E0226A438F00ABA4EF /* Resources */,
-            );
-            buildRules = (
-            );
-            dependencies = (
-            );
-            name = TheGoodBois;
-            productName = TheGoodBois;
-            productReference = 1978D4E2226A438F00ABA4EF /* TheGoodBois.app */;
-            productType = "com.apple.product-type.application";
-        };
+		1978D4E1226A438F00ABA4EF /* TheGoodBois */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1978D4F7226A439000ABA4EF /* Build configuration list for PBXNativeTarget "TheGoodBois" */;
+			buildPhases = (
+				1978D4DE226A438F00ABA4EF /* Sources */,
+				1978D4DF226A438F00ABA4EF /* Frameworks */,
+				1978D4E0226A438F00ABA4EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheGoodBois;
+			productName = TheGoodBois;
+			productReference = 1978D4E2226A438F00ABA4EF /* TheGoodBois.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-        1978D4DA226A438F00ABA4EF /* Project object */ = {
-            isa = PBXProject;
-            attributes = {
-                LastSwiftUpdateCheck = 1020;
-                LastUpgradeCheck = 1020;
-                ORGANIZATIONNAME = "The Good Bois";
-                TargetAttributes = {
-                    1978D4E1226A438F00ABA4EF = {
-                        CreatedOnToolsVersion = 10.2;
-                    };
-                };
-            };
-            buildConfigurationList = 1978D4DD226A438F00ABA4EF /* Build configuration list for PBXProject "TheGoodBois" */;
-            compatibilityVersion = "Xcode 9.3";
-            developmentRegion = en;
-            hasScannedForEncodings = 0;
-            knownRegions = (
-                en,
-                Base,
-            );
-            mainGroup = 1978D4D9226A438F00ABA4EF;
-            productRefGroup = 1978D4E3226A438F00ABA4EF /* Products */;
-            projectDirPath = "";
-            projectRoot = "";
-            targets = (
-                1978D4E1226A438F00ABA4EF /* TheGoodBois */,
-            );
-        };
+		1978D4DA226A438F00ABA4EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "The Good Bois";
+				TargetAttributes = {
+					1978D4E1226A438F00ABA4EF = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = 1978D4DD226A438F00ABA4EF /* Build configuration list for PBXProject "TheGoodBois" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1978D4D9226A438F00ABA4EF;
+			productRefGroup = 1978D4E3226A438F00ABA4EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1978D4E1226A438F00ABA4EF /* TheGoodBois */,
+			);
+		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-        1978D4E0226A438F00ABA4EF /* Resources */ = {
-            isa = PBXResourcesBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-                96E8F80D2270222D0082BED3 /* regular.ttf in Resources */,
-                96E8F80F227022460082BED3 /* circ1.jpg in Resources */,
-                1978D4F3226A439000ABA4EF /* LaunchScreen.storyboard in Resources */,
-                96E8F80A2270222D0082BED3 /* Geomanist-Regular-Italic.otf in Resources */,
-                96E8F811227022560082BED3 /* circ2.jpg in Resources */,
-                1978D4F0226A439000ABA4EF /* Assets.xcassets in Resources */,
-                96E8F80C2270222D0082BED3 /* italic.ttf in Resources */,
-                1978D4EB226A438F00ABA4EF /* Main.storyboard in Resources */,
-                96E8F80B2270222D0082BED3 /* Geomanist-Regular.otf in Resources */,
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
+		1978D4E0226A438F00ABA4EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96E8F80D2270222D0082BED3 /* regular.ttf in Resources */,
+				96E8F80F227022460082BED3 /* circ1.jpg in Resources */,
+				1978D4F3226A439000ABA4EF /* LaunchScreen.storyboard in Resources */,
+				96E8F80A2270222D0082BED3 /* Geomanist-Regular-Italic.otf in Resources */,
+				96E8F811227022560082BED3 /* circ2.jpg in Resources */,
+				1978D4F0226A439000ABA4EF /* Assets.xcassets in Resources */,
+				96E8F80C2270222D0082BED3 /* italic.ttf in Resources */,
+				1978D4EB226A438F00ABA4EF /* Main.storyboard in Resources */,
+				96E8F80B2270222D0082BED3 /* Geomanist-Regular.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -193,6 +196,7 @@
 				1978D4EE226A438F00ABA4EF /* TheGoodBois.xcdatamodeld in Sources */,
 				1978D4E8226A438F00ABA4EF /* ViewController.swift in Sources */,
 				1978D4E6226A438F00ABA4EF /* AppDelegate.swift in Sources */,
+				966CFB76227CADED00771757 /* Animals.swift in Sources */,
 				9681BB9A226D5E4F0083717E /* SwipeViewController.swift in Sources */,
 				962E9B5E2273DE3A00EE9AB6 /* drawView.swift in Sources */,
 				199236CB2270CC7D0000358B /* BioViewController.swift in Sources */,
@@ -203,213 +207,213 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-        1978D4E9226A438F00ABA4EF /* Main.storyboard */ = {
-            isa = PBXVariantGroup;
-            children = (
-                1978D4EA226A438F00ABA4EF /* Base */,
-            );
-            name = Main.storyboard;
-            sourceTree = "<group>";
-        };
-        1978D4F1226A439000ABA4EF /* LaunchScreen.storyboard */ = {
-            isa = PBXVariantGroup;
-            children = (
-                1978D4F2226A439000ABA4EF /* Base */,
-            );
-            name = LaunchScreen.storyboard;
-            sourceTree = "<group>";
-        };
+		1978D4E9226A438F00ABA4EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1978D4EA226A438F00ABA4EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1978D4F1226A439000ABA4EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1978D4F2226A439000ABA4EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-        1978D4F5226A439000ABA4EF /* Debug */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-                ALWAYS_SEARCH_USER_PATHS = NO;
-                CLANG_ANALYZER_NONNULL = YES;
-                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-                CLANG_CXX_LIBRARY = "libc++";
-                CLANG_ENABLE_MODULES = YES;
-                CLANG_ENABLE_OBJC_ARC = YES;
-                CLANG_ENABLE_OBJC_WEAK = YES;
-                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-                CLANG_WARN_BOOL_CONVERSION = YES;
-                CLANG_WARN_COMMA = YES;
-                CLANG_WARN_CONSTANT_CONVERSION = YES;
-                CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-                CLANG_WARN_EMPTY_BODY = YES;
-                CLANG_WARN_ENUM_CONVERSION = YES;
-                CLANG_WARN_INFINITE_RECURSION = YES;
-                CLANG_WARN_INT_CONVERSION = YES;
-                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-                CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-                CLANG_WARN_STRICT_PROTOTYPES = YES;
-                CLANG_WARN_SUSPICIOUS_MOVE = YES;
-                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-                CLANG_WARN_UNREACHABLE_CODE = YES;
-                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-                CODE_SIGN_IDENTITY = "iPhone Developer";
-                COPY_PHASE_STRIP = NO;
-                DEBUG_INFORMATION_FORMAT = dwarf;
-                ENABLE_STRICT_OBJC_MSGSEND = YES;
-                ENABLE_TESTABILITY = YES;
-                GCC_C_LANGUAGE_STANDARD = gnu11;
-                GCC_DYNAMIC_NO_PIC = NO;
-                GCC_NO_COMMON_BLOCKS = YES;
-                GCC_OPTIMIZATION_LEVEL = 0;
-                GCC_PREPROCESSOR_DEFINITIONS = (
-                    "DEBUG=1",
-                    "$(inherited)",
-                );
-                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-                GCC_WARN_UNDECLARED_SELECTOR = YES;
-                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-                GCC_WARN_UNUSED_FUNCTION = YES;
-                GCC_WARN_UNUSED_VARIABLE = YES;
-                IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-                MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-                MTL_FAST_MATH = YES;
-                ONLY_ACTIVE_ARCH = YES;
-                SDKROOT = iphoneos;
-                SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-                SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-            };
-            name = Debug;
-        };
-        1978D4F6226A439000ABA4EF /* Release */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-                ALWAYS_SEARCH_USER_PATHS = NO;
-                CLANG_ANALYZER_NONNULL = YES;
-                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-                CLANG_CXX_LIBRARY = "libc++";
-                CLANG_ENABLE_MODULES = YES;
-                CLANG_ENABLE_OBJC_ARC = YES;
-                CLANG_ENABLE_OBJC_WEAK = YES;
-                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-                CLANG_WARN_BOOL_CONVERSION = YES;
-                CLANG_WARN_COMMA = YES;
-                CLANG_WARN_CONSTANT_CONVERSION = YES;
-                CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-                CLANG_WARN_EMPTY_BODY = YES;
-                CLANG_WARN_ENUM_CONVERSION = YES;
-                CLANG_WARN_INFINITE_RECURSION = YES;
-                CLANG_WARN_INT_CONVERSION = YES;
-                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-                CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-                CLANG_WARN_STRICT_PROTOTYPES = YES;
-                CLANG_WARN_SUSPICIOUS_MOVE = YES;
-                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-                CLANG_WARN_UNREACHABLE_CODE = YES;
-                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-                CODE_SIGN_IDENTITY = "iPhone Developer";
-                COPY_PHASE_STRIP = NO;
-                DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-                ENABLE_NS_ASSERTIONS = NO;
-                ENABLE_STRICT_OBJC_MSGSEND = YES;
-                GCC_C_LANGUAGE_STANDARD = gnu11;
-                GCC_NO_COMMON_BLOCKS = YES;
-                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-                GCC_WARN_UNDECLARED_SELECTOR = YES;
-                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-                GCC_WARN_UNUSED_FUNCTION = YES;
-                GCC_WARN_UNUSED_VARIABLE = YES;
-                IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-                MTL_ENABLE_DEBUG_INFO = NO;
-                MTL_FAST_MATH = YES;
-                SDKROOT = iphoneos;
-                SWIFT_COMPILATION_MODE = wholemodule;
-                SWIFT_OPTIMIZATION_LEVEL = "-O";
-                VALIDATE_PRODUCT = YES;
-            };
-            name = Release;
-        };
-        1978D4F8226A439000ABA4EF /* Debug */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-                CODE_SIGN_STYLE = Automatic;
-                INFOPLIST_FILE = TheGoodBois/Info.plist;
-                IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-                LD_RUNPATH_SEARCH_PATHS = (
-                    "$(inherited)",
-                    "@executable_path/Frameworks",
-                );
-                MTL_ENABLE_DEBUG_INFO = YES;
-                PRODUCT_BUNDLE_IDENTIFIER = cs329e.TheGoodBois;
-                PRODUCT_NAME = "$(TARGET_NAME)";
-                SWIFT_VERSION = 4.0;
-                TARGETED_DEVICE_FAMILY = "1,2";
-            };
-            name = Debug;
-        };
-        1978D4F9226A439000ABA4EF /* Release */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-                CODE_SIGN_STYLE = Automatic;
-                INFOPLIST_FILE = TheGoodBois/Info.plist;
-                IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-                LD_RUNPATH_SEARCH_PATHS = (
-                    "$(inherited)",
-                    "@executable_path/Frameworks",
-                );
-                PRODUCT_BUNDLE_IDENTIFIER = cs329e.TheGoodBois;
-                PRODUCT_NAME = "$(TARGET_NAME)";
-                SWIFT_VERSION = 4.0;
-                TARGETED_DEVICE_FAMILY = "1,2";
-            };
-            name = Release;
-        };
+		1978D4F5226A439000ABA4EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1978D4F6226A439000ABA4EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1978D4F8226A439000ABA4EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TheGoodBois/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = cs329e.TheGoodBois;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1978D4F9226A439000ABA4EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TheGoodBois/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cs329e.TheGoodBois;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-        1978D4DD226A438F00ABA4EF /* Build configuration list for PBXProject "TheGoodBois" */ = {
-            isa = XCConfigurationList;
-            buildConfigurations = (
-                1978D4F5226A439000ABA4EF /* Debug */,
-                1978D4F6226A439000ABA4EF /* Release */,
-            );
-            defaultConfigurationIsVisible = 0;
-            defaultConfigurationName = Release;
-        };
-        1978D4F7226A439000ABA4EF /* Build configuration list for PBXNativeTarget "TheGoodBois" */ = {
-            isa = XCConfigurationList;
-            buildConfigurations = (
-                1978D4F8226A439000ABA4EF /* Debug */,
-                1978D4F9226A439000ABA4EF /* Release */,
-            );
-            defaultConfigurationIsVisible = 0;
-            defaultConfigurationName = Release;
-        };
+		1978D4DD226A438F00ABA4EF /* Build configuration list for PBXProject "TheGoodBois" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1978D4F5226A439000ABA4EF /* Debug */,
+				1978D4F6226A439000ABA4EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1978D4F7226A439000ABA4EF /* Build configuration list for PBXNativeTarget "TheGoodBois" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1978D4F8226A439000ABA4EF /* Debug */,
+				1978D4F9226A439000ABA4EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-        1978D4EC226A438F00ABA4EF /* TheGoodBois.xcdatamodeld */ = {
-            isa = XCVersionGroup;
-            children = (
-                1978D4ED226A438F00ABA4EF /* TheGoodBois.xcdatamodel */,
-            );
-            currentVersion = 1978D4ED226A438F00ABA4EF /* TheGoodBois.xcdatamodel */;
-            path = TheGoodBois.xcdatamodeld;
-            sourceTree = "<group>";
-            versionGroupType = wrapper.xcdatamodel;
-        };
+		1978D4EC226A438F00ABA4EF /* TheGoodBois.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1978D4ED226A438F00ABA4EF /* TheGoodBois.xcdatamodel */,
+			);
+			currentVersion = 1978D4ED226A438F00ABA4EF /* TheGoodBois.xcdatamodel */;
+			path = TheGoodBois.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 /* End XCVersionGroup section */
-    };
-    rootObject = 1978D4DA226A438F00ABA4EF /* Project object */;
+	};
+	rootObject = 1978D4DA226A438F00ABA4EF /* Project object */;
 }
