@@ -5,37 +5,79 @@
 //  Created by Don Hogan on 4/26/19.
 //  Copyright © 2019 The Good Bois. All rights reserved.
 //
-/*
-import UIKit
+
+import Foundation
+import Alamofire
 
 protocol SearchDataProtocol {
-    func animalsResponseDataHandler(currentData:NSDictionary)
-    func typesResponseDataHandler(currentdata:NSDictionary)
+    func animalsResponseDataHandler(currentData:NSDictionary) -> [Animal]
+    func typesResponseDataHandler(currentData:NSArray) -> Fields
     func responseError(message:String)
 }
 
 class SearchDataSession {
-    
-    //private let apiKey =
-    private let urlSession = URLSession.shared
-    //private let urlPathBase = "https://www.petfinder.com"
-    
+
+    // Base path shared by all .GET requests we will need
+    private let urlPathBase = "https://www.petfinder.com/v2/"
+ 
     private var dataTask:URLSessionDataTask? = nil
-    
     var delegate:SearchDataProtocol? = nil
     
     init() {}
     
-    func getData(searchDataLoc:String, searchType:String) {
+    func getData(searchType:String) {
+        // searchType = "animals" || "types"; used to determine query response format
+        let urlPath = self.urlPathBase + searchType
         
+        // Get OAuth token for header from API Manager if available; else, perform (re-)authorization
+        if(!PetfinderAPIManager.sharedInstance.hasOAuthToken()){
+            PetfinderAPIManager.sharedInstance.performOAuthLogin()
+        }
+        let token = PetfinderAPIManager.sharedInstance.authToken
+        
+        // Perform GET request using Alamofire and check response data integrity before passing to data handler
+        
+        /*
+        var request = URLRequest(url: URL(string: urlPath)!)
+        request.addValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+        
+        
+        let dataTask = URLSession.shared.dataTask(with: request) { (data, response, error) -> Void in
+            if error != nil {
+                print(error!)
+            } else {
+                do {
+                    if response != nil {
+                        print("Received response: \(response!)")
+                    }
+                    
+                    // TODO: Implement data processing
+                }
+            }
+        }
+        dataTask.resume()*/
+        
+        
+    }
+    /*
+    func getData(searchDataLoc:String, searchType:String) {
+ 
         // searchDataLoc = url to be used in query
         // searchType = "animals" or "types"; used to determine query response format
-        //let urlPath = "\(self.urlPathBase)?key=\(self.apiKey)&format=json&q=\(searchDataLoc)"
-        //print(urlPath)
+        let urlPath = self.urlPathBase + searchType
+ 
+        // Get OAauth token from API Manager if available or perform (re-)authorization if not
+        if(!PetfinderAPIManager.sharedInstance.hasOAuthToken()){
+            PetfinderAPIManager.sharedInstance.startOAuthLogin()
+        }
+        let token = PetfinderAPIManager.sharedInstance.authToken
         
+        // Create HTTP request in anticipation of posting of GET
         let url = URL(string: urlPath)
-        
-        let dataTask = self.urlSession.dataTask(with: url!) { (data, response, error) -> Void in
+        var request = URLRequest(url: url!)
+        request.addValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+       
+        let dataTask = URLSession.shared.dataTask(with: url!) { (data, response, error) -> Void in
             if error != nil {
                 print(error!)
             } else {
@@ -66,7 +108,7 @@ class SearchDataSession {
             }
         }
         dataTask.resume()
-    }
+    }*/
 }
 
 /*
@@ -232,5 +274,4 @@ class SearchDataSession {
  "_links": {}
  }
  }
-*/
 */
