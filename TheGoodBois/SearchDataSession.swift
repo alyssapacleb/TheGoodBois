@@ -59,56 +59,7 @@ class SearchDataSession {
         
         
     }
-    /*
-    func getData(searchDataLoc:String, searchType:String) {
- 
-        // searchDataLoc = url to be used in query
-        // searchType = "animals" or "types"; used to determine query response format
-        let urlPath = self.urlPathBase + searchType
- 
-        // Get OAauth token from API Manager if available or perform (re-)authorization if not
-        if(!PetfinderAPIManager.sharedInstance.hasOAuthToken()){
-            PetfinderAPIManager.sharedInstance.startOAuthLogin()
-        }
-        let token = PetfinderAPIManager.sharedInstance.authToken
-        
-        // Create HTTP request in anticipation of posting of GET
-        let url = URL(string: urlPath)
-        var request = URLRequest(url: url!)
-        request.addValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
-       
-        let dataTask = URLSession.shared.dataTask(with: url!) { (data, response, error) -> Void in
-            if error != nil {
-                print(error!)
-            } else {
-                do {
-                    if response != nil {
-                        print("Received response: \(response!)")
-                    }
-                    let jsonResult = try JSONSerialization.jsonObject(with:data!, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSDictionary
-                    if jsonResult != nil {
-                        let resultData = jsonResult![searchType] as? NSDictionary
-                        if resultData != nil {
-                            //print("Request received\nRequest type: \(requestData!["type"]!)\nQuery: \(requestData!["query"]!)")
-                            // Choose responseDataHandler function to use based on searchType
-                            if searchType == "animals" {
-                                self.delegate?.animalsResponseDataHandler(currentData: resultData!)
-                            }
-                            if searchType == "types" {
-                                self.delegate?.typesResponseDataHandler(currentdata: resultData!)
-                            }
-                            
-                        } else {
-                            self.delegate?.responseError(message: "ERROR: No search results")
-                        }
-                    }
-                } catch {
-                    
-                }
-            }
-        }
-        dataTask.resume()
-    }*/
+
 }
 
 /*

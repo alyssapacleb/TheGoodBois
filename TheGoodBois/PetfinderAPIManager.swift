@@ -41,6 +41,7 @@ class PetfinderAPIManager {
         if token != nil {
             print("Auth token successfully retrieved")
             self.authToken = token!
+            self.tokenExpired = false
         }
     }
     
