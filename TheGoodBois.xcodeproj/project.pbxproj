@@ -16,6 +16,11 @@
 		199236C92270CC680000358B /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199236C82270CC680000358B /* PreferencesViewController.swift */; };
 		199236CB2270CC7D0000358B /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199236CA2270CC7D0000358B /* BioViewController.swift */; };
 		9603E036227FB36700190DB0 /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9603E035227FB36700190DB0 /* Logo.swift */; };
+		9603E038227FC9F500190DB0 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9603E037227FC9F500190DB0 /* AboutViewController.swift */; };
+		9603E03E227FD78700190DB0 /* Tutorial1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9603E03D227FD78700190DB0 /* Tutorial1ViewController.swift */; };
+		9603E040227FDB4E00190DB0 /* Tutorial2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9603E03F227FDB4E00190DB0 /* Tutorial2ViewController.swift */; };
+		9603E042227FDB6600190DB0 /* Tutorial3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9603E041227FDB6600190DB0 /* Tutorial3ViewController.swift */; };
+		9603E044227FDB7500190DB0 /* Tutorial4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9603E043227FDB7500190DB0 /* Tutorial4ViewController.swift */; };
 		962E9B5E2273DE3A00EE9AB6 /* drawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962E9B5D2273DE3A00EE9AB6 /* drawView.swift */; };
 		966CFB76227CADED00771757 /* Animals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966CFB75227CADED00771757 /* Animals.swift */; };
 		9681BB9A226D5E4F0083717E /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9681BB99226D5E4F0083717E /* SwipeViewController.swift */; };
@@ -41,6 +46,11 @@
 		199236C82270CC680000358B /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
 		199236CA2270CC7D0000358B /* BioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
 		9603E035227FB36700190DB0 /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
+		9603E037227FC9F500190DB0 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		9603E03D227FD78700190DB0 /* Tutorial1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutorial1ViewController.swift; sourceTree = "<group>"; };
+		9603E03F227FDB4E00190DB0 /* Tutorial2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutorial2ViewController.swift; sourceTree = "<group>"; };
+		9603E041227FDB6600190DB0 /* Tutorial3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutorial3ViewController.swift; sourceTree = "<group>"; };
+		9603E043227FDB7500190DB0 /* Tutorial4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutorial4ViewController.swift; sourceTree = "<group>"; };
 		962E9B5D2273DE3A00EE9AB6 /* drawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = drawView.swift; sourceTree = "<group>"; };
 		966CFB75227CADED00771757 /* Animals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animals.swift; sourceTree = "<group>"; };
 		9681BB99226D5E4F0083717E /* SwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
@@ -97,13 +107,17 @@
 			children = (
 				19171FEE226E130C006CF2D1 /* Fonts */,
 				1978D4E5226A438F00ABA4EF /* AppDelegate.swift */,
-				962E9B5D2273DE3A00EE9AB6 /* drawView.swift */,
 				9603E035227FB36700190DB0 /* Logo.swift */,
 				1978D4E7226A438F00ABA4EF /* ViewController.swift */,
+				9603E037227FC9F500190DB0 /* AboutViewController.swift */,
+				9603E03D227FD78700190DB0 /* Tutorial1ViewController.swift */,
+				9603E03F227FDB4E00190DB0 /* Tutorial2ViewController.swift */,
+				9603E041227FDB6600190DB0 /* Tutorial3ViewController.swift */,
+				9603E043227FDB7500190DB0 /* Tutorial4ViewController.swift */,
+				199236C82270CC680000358B /* PreferencesViewController.swift */,
 				9681BB99226D5E4F0083717E /* SwipeViewController.swift */,
 				F14696F42270CE1000035EDB /* SavedPetsViewController.swift */,
 				96F23D6B2272A1AB00D89136 /* SavedPetsTableViewCell.swift */,
-				199236C82270CC680000358B /* PreferencesViewController.swift */,
 				199236CA2270CC7D0000358B /* BioViewController.swift */,
 				96E8F80E227022460082BED3 /* circ1.jpg */,
 				96E8F810227022560082BED3 /* circ2.jpg */,
@@ -113,6 +127,7 @@
 				1978D4F1226A439000ABA4EF /* LaunchScreen.storyboard */,
 				1978D4F4226A439000ABA4EF /* Info.plist */,
 				1978D4EC226A438F00ABA4EF /* TheGoodBois.xcdatamodeld */,
+				962E9B5D2273DE3A00EE9AB6 /* drawView.swift */,
 			);
 			path = TheGoodBois;
 			sourceTree = "<group>";
@@ -195,16 +210,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				199236C92270CC680000358B /* PreferencesViewController.swift in Sources */,
+				9603E03E227FD78700190DB0 /* Tutorial1ViewController.swift in Sources */,
 				96F23D6C2272A1AB00D89136 /* SavedPetsTableViewCell.swift in Sources */,
 				1978D4EE226A438F00ABA4EF /* TheGoodBois.xcdatamodeld in Sources */,
 				1978D4E8226A438F00ABA4EF /* ViewController.swift in Sources */,
 				9603E036227FB36700190DB0 /* Logo.swift in Sources */,
 				1978D4E6226A438F00ABA4EF /* AppDelegate.swift in Sources */,
+				9603E042227FDB6600190DB0 /* Tutorial3ViewController.swift in Sources */,
+				9603E038227FC9F500190DB0 /* AboutViewController.swift in Sources */,
 				966CFB76227CADED00771757 /* Animals.swift in Sources */,
 				9681BB9A226D5E4F0083717E /* SwipeViewController.swift in Sources */,
 				962E9B5E2273DE3A00EE9AB6 /* drawView.swift in Sources */,
 				199236CB2270CC7D0000358B /* BioViewController.swift in Sources */,
 				F14696F52270CE1000035EDB /* SavedPetsViewController.swift in Sources */,
+				9603E040227FDB4E00190DB0 /* Tutorial2ViewController.swift in Sources */,
+				9603E044227FDB7500190DB0 /* Tutorial4ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

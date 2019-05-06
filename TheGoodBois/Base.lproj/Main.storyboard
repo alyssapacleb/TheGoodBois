@@ -75,13 +75,13 @@
         <!--About Page-->
         <scene sceneID="3r8-bK-YZe">
             <objects>
-                <viewController title="About Page" id="9p0-Ap-LVF" sceneMemberID="viewController">
+                <viewController title="About Page" id="9p0-Ap-LVF" customClass="AboutViewController" customModule="TheGoodBois" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="heK-aR-oW3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIi-ev-roT">
-                                <rect key="frame" x="102.5" y="361" width="170" height="60"/>
+                                <rect key="frame" x="194" y="587" width="170" height="60"/>
                                 <color key="backgroundColor" red="0.78039215689999997" green="0.74901960779999999" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Jka-Tc-1Eh"/>
@@ -105,45 +105,14 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGi-bI-6Z5" userLabel="About Text View">
-                                <rect key="frame" x="16" y="128" width="343" height="107"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <accessibility key="accessibilityConfiguration" label="ABOUT"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yjp-oT-JXW">
+                                <rect key="frame" x="0.0" y="135" width="375" height="420"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="343" id="HkN-0U-eAr"/>
-                                    <constraint firstAttribute="height" constant="107" id="rub-na-ppW"/>
+                                    <constraint firstAttribute="height" constant="420" id="e5H-Li-rGG"/>
                                 </constraints>
-                                <string key="text">Every animal deserves a home and family that cares for it. Find your best friend today by using Good Bois! Click the buttons below to either view previously saved pets or search and save new pets. </string>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="Geomanist" family="Geomanist" pointSize="18"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="xs9-gc-mzo" userLabel="Search Text View">
-                                <rect key="frame" x="47.5" y="259" width="280" height="94"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="94" id="76v-iX-K6h"/>
-                                    <constraint firstAttribute="width" constant="280" id="KcN-gY-kDQ"/>
-                                </constraints>
-                                <string key="text">Enter in your preferences to find a good boi perfect for you. Swipe right to save the animal's information. Swipe left if this animal is not your purrfect match. </string>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="Geomanist" family="Geomanist" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="View all of the pets you have swiped right on. Click on the pet to learn more about your good bois!" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Qrc-FL-SIu" userLabel="Saved Text View">
-                                <rect key="frame" x="47.5" y="445" width="280" height="62"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="280" id="VUY-Ox-nOC"/>
-                                    <constraint firstAttribute="height" constant="62" id="qSO-Ss-Ehz"/>
-                                </constraints>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="Geomanist" family="Geomanist" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSG-fo-YFr">
-                                <rect key="frame" x="102.5" y="515" width="170" height="60"/>
+                                <rect key="frame" x="11" y="587" width="170" height="60"/>
                                 <color key="backgroundColor" red="0.78039215689999997" green="0.74901960779999999" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="eex-xR-4gd"/>
@@ -157,25 +126,33 @@
                                     <segue destination="zrP-uY-sBG" kind="show" id="dCQ-uI-TY6"/>
                                 </connections>
                             </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="cgQ-gR-e8f">
+                                <rect key="frame" x="168" y="515" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="fhe-6N-MNu" firstAttribute="centerX" secondItem="OgD-2t-UyZ" secondAttribute="centerX" id="8Ad-04-vPi"/>
-                            <constraint firstItem="xs9-gc-mzo" firstAttribute="centerX" secondItem="OgD-2t-UyZ" secondAttribute="centerX" id="AGb-lQ-pak"/>
-                            <constraint firstItem="Qrc-FL-SIu" firstAttribute="top" secondItem="uIi-ev-roT" secondAttribute="bottom" constant="24" id="Fv0-4T-o9l"/>
-                            <constraint firstItem="xs9-gc-mzo" firstAttribute="top" secondItem="MGi-bI-6Z5" secondAttribute="bottom" constant="24" id="I8k-4K-gjS"/>
-                            <constraint firstItem="Qrc-FL-SIu" firstAttribute="centerX" secondItem="OgD-2t-UyZ" secondAttribute="centerX" id="KAu-LT-1Ev"/>
-                            <constraint firstItem="uIi-ev-roT" firstAttribute="top" secondItem="xs9-gc-mzo" secondAttribute="bottom" constant="8" id="bXa-lc-vzX"/>
-                            <constraint firstItem="uIi-ev-roT" firstAttribute="centerX" secondItem="OgD-2t-UyZ" secondAttribute="centerX" id="dTd-eA-r2z"/>
-                            <constraint firstItem="bSG-fo-YFr" firstAttribute="centerX" secondItem="OgD-2t-UyZ" secondAttribute="centerX" id="eql-tb-ivq"/>
-                            <constraint firstItem="MGi-bI-6Z5" firstAttribute="top" secondItem="fhe-6N-MNu" secondAttribute="bottom" constant="8" id="hAb-Kg-TCE"/>
-                            <constraint firstItem="MGi-bI-6Z5" firstAttribute="centerX" secondItem="OgD-2t-UyZ" secondAttribute="centerX" id="ijt-a9-Xd2"/>
-                            <constraint firstItem="bSG-fo-YFr" firstAttribute="top" secondItem="Qrc-FL-SIu" secondAttribute="bottom" constant="8" id="kor-nB-9Mt"/>
-                            <constraint firstItem="fhe-6N-MNu" firstAttribute="top" secondItem="OgD-2t-UyZ" secondAttribute="top" constant="10" id="mBq-yL-xEx"/>
+                            <constraint firstItem="OgD-2t-UyZ" firstAttribute="trailing" secondItem="uIi-ev-roT" secondAttribute="trailing" constant="11" id="Kjw-v0-neJ"/>
+                            <constraint firstItem="yjp-oT-JXW" firstAttribute="top" secondItem="fhe-6N-MNu" secondAttribute="bottom" constant="15" id="NMK-UX-1YL"/>
+                            <constraint firstItem="cgQ-gR-e8f" firstAttribute="centerY" secondItem="heK-aR-oW3" secondAttribute="centerY" constant="200" id="S21-UT-7gu"/>
+                            <constraint firstItem="OgD-2t-UyZ" firstAttribute="bottom" secondItem="bSG-fo-YFr" secondAttribute="bottom" constant="20" id="c9t-2B-u7y"/>
+                            <constraint firstItem="yjp-oT-JXW" firstAttribute="leading" secondItem="OgD-2t-UyZ" secondAttribute="leading" id="i0t-RP-0RX"/>
+                            <constraint firstItem="uIi-ev-roT" firstAttribute="centerY" secondItem="bSG-fo-YFr" secondAttribute="centerY" id="ote-O7-21N"/>
+                            <constraint firstItem="OgD-2t-UyZ" firstAttribute="trailing" secondItem="yjp-oT-JXW" secondAttribute="trailing" id="pf2-OD-dry"/>
+                            <constraint firstItem="fhe-6N-MNu" firstAttribute="top" secondItem="OgD-2t-UyZ" secondAttribute="top" constant="10" id="qa4-UP-Kbl"/>
+                            <constraint firstItem="bSG-fo-YFr" firstAttribute="leading" secondItem="OgD-2t-UyZ" secondAttribute="leading" constant="11" id="w0U-2u-DMS"/>
+                            <constraint firstItem="fhe-6N-MNu" firstAttribute="centerX" secondItem="heK-aR-oW3" secondAttribute="centerX" id="xec-Ja-Z6B"/>
+                            <constraint firstItem="cgQ-gR-e8f" firstAttribute="centerX" secondItem="heK-aR-oW3" secondAttribute="centerX" id="zZ4-Kt-M5f"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OgD-2t-UyZ"/>
                     </view>
                     <navigationItem key="navigationItem" id="Bza-2E-4pH"/>
+                    <connections>
+                        <outlet property="pageControl" destination="cgQ-gR-e8f" id="uVe-7I-5U2"/>
+                        <outlet property="scrollView" destination="yjp-oT-JXW" id="Wai-Lv-D12"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yer-Cn-cds" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -528,6 +505,64 @@ Cary (Carrot Top aka Care Bear) is a young guy. He's probably maybe only a year 
             </objects>
             <point key="canvasLocation" x="4464.8000000000002" y="31.934032983508249"/>
         </scene>
+        <!--Tutorial1 View Controller-->
+        <scene sceneID="QUm-Uj-g9s">
+            <objects>
+                <viewController storyboardIdentifier="tutorial1" id="BB9-gY-iyZ" customClass="Tutorial1ViewController" customModule="TheGoodBois" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZnW-Dq-flF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="420"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog2" translatesAutoresizingMaskIntoConstraints="NO" id="Y1z-5z-ak1">
+                                <rect key="frame" x="0.0" y="120" width="375" height="300"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog1" translatesAutoresizingMaskIntoConstraints="NO" id="SR1-dZ-kJh">
+                                <rect key="frame" x="375" y="120" width="375" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="ldL-cp-6NV"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cursor" translatesAutoresizingMaskIntoConstraints="NO" id="vVb-do-14a">
+                                <rect key="frame" x="307.5" y="280" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="OTR-pI-yaK"/>
+                                    <constraint firstAttribute="width" constant="60" id="V7z-lE-JRf"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe right to save the animal's information." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYO-2y-q9z">
+                                <rect key="frame" x="16" y="30" width="343" height="50"/>
+                                <fontDescription key="fontDescription" name="Geomanist" family="Geomanist" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vVb-do-14a" firstAttribute="centerY" secondItem="ZnW-Dq-flF" secondAttribute="centerY" constant="100" id="2nv-Zi-iOv"/>
+                            <constraint firstItem="LRg-DH-Wcq" firstAttribute="bottom" secondItem="SR1-dZ-kJh" secondAttribute="bottom" id="47y-ET-P3z"/>
+                            <constraint firstItem="SR1-dZ-kJh" firstAttribute="top" secondItem="LRg-DH-Wcq" secondAttribute="top" constant="120" id="BGW-3J-6xQ"/>
+                            <constraint firstItem="LRg-DH-Wcq" firstAttribute="trailing" secondItem="Y1z-5z-ak1" secondAttribute="trailing" id="CvH-Ci-eUw"/>
+                            <constraint firstItem="OYO-2y-q9z" firstAttribute="top" secondItem="LRg-DH-Wcq" secondAttribute="top" constant="30" id="FIc-i7-vX1"/>
+                            <constraint firstItem="LRg-DH-Wcq" firstAttribute="bottom" secondItem="Y1z-5z-ak1" secondAttribute="bottom" id="NPD-Wm-kT8"/>
+                            <constraint firstItem="vVb-do-14a" firstAttribute="centerX" secondItem="ZnW-Dq-flF" secondAttribute="centerX" constant="150" id="SeJ-cz-r0U"/>
+                            <constraint firstItem="SR1-dZ-kJh" firstAttribute="centerX" secondItem="ZnW-Dq-flF" secondAttribute="centerX" constant="375" id="YRy-9V-bHH"/>
+                            <constraint firstItem="LRg-DH-Wcq" firstAttribute="trailing" secondItem="OYO-2y-q9z" secondAttribute="trailing" constant="16" id="drl-fQ-sl3"/>
+                            <constraint firstItem="OYO-2y-q9z" firstAttribute="leading" secondItem="LRg-DH-Wcq" secondAttribute="leading" constant="16" id="gTU-Oc-oC0"/>
+                            <constraint firstItem="Y1z-5z-ak1" firstAttribute="top" secondItem="LRg-DH-Wcq" secondAttribute="top" constant="120" id="sPg-gO-I2j"/>
+                            <constraint firstItem="Y1z-5z-ak1" firstAttribute="leading" secondItem="LRg-DH-Wcq" secondAttribute="leading" id="zyv-XR-tdf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LRg-DH-Wcq"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="420"/>
+                    <connections>
+                        <outlet property="cursorImage" destination="vVb-do-14a" id="EFG-EX-VOu"/>
+                        <outlet property="dogImage" destination="SR1-dZ-kJh" id="NYE-UI-4bt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cro-s1-Oho" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3949.5999999999999" y="768.66566716641682"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="4qL-04-bda">
             <objects>
@@ -546,8 +581,125 @@ Cary (Carrot Top aka Care Bear) is a young guy. He's probably maybe only a year 
             </objects>
             <point key="canvasLocation" x="1808.8" y="31.934032983508249"/>
         </scene>
+        <!--Tutorial3 View Controller-->
+        <scene sceneID="6F5-Jz-YhO">
+            <objects>
+                <viewController storyboardIdentifier="tutorial3" id="f7I-Uo-ILD" customClass="Tutorial3ViewController" customModule="TheGoodBois" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zT1-tV-2GF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="420"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog1" translatesAutoresizingMaskIntoConstraints="NO" id="Qlb-Ru-hTy">
+                                <rect key="frame" x="0.0" y="120" width="375" height="300"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bio" translatesAutoresizingMaskIntoConstraints="NO" id="sVL-mX-K5Y">
+                                <rect key="frame" x="0.0" y="400" width="375" height="20"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cursor" translatesAutoresizingMaskIntoConstraints="NO" id="LGl-75-iok">
+                                <rect key="frame" x="157.5" y="280" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="WEx-z1-zJP"/>
+                                    <constraint firstAttribute="width" constant="60" id="lsO-pK-hsy"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click on the pet to learn more about your good bois!" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gzf-ar-XTA">
+                                <rect key="frame" x="16" y="30" width="343" height="50"/>
+                                <fontDescription key="fontDescription" name="Geomanist" family="Geomanist" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ym7-Mh-wwY" firstAttribute="trailing" secondItem="Qlb-Ru-hTy" secondAttribute="trailing" id="0eq-P5-pJ6"/>
+                            <constraint firstAttribute="bottom" secondItem="sVL-mX-K5Y" secondAttribute="bottom" id="0u6-Y5-dc0"/>
+                            <constraint firstItem="Qlb-Ru-hTy" firstAttribute="top" secondItem="ym7-Mh-wwY" secondAttribute="top" constant="120" id="15t-1F-B2i"/>
+                            <constraint firstItem="LGl-75-iok" firstAttribute="centerY" secondItem="zT1-tV-2GF" secondAttribute="centerY" constant="100" id="1Qs-7S-GyP"/>
+                            <constraint firstItem="Gzf-ar-XTA" firstAttribute="leading" secondItem="ym7-Mh-wwY" secondAttribute="leading" constant="16" id="B8k-vr-MAJ"/>
+                            <constraint firstItem="ym7-Mh-wwY" firstAttribute="bottom" secondItem="Qlb-Ru-hTy" secondAttribute="bottom" id="Bcf-dn-qCB"/>
+                            <constraint firstItem="Gzf-ar-XTA" firstAttribute="top" secondItem="ym7-Mh-wwY" secondAttribute="top" constant="30" id="CLF-5s-yuw"/>
+                            <constraint firstItem="Qlb-Ru-hTy" firstAttribute="leading" secondItem="ym7-Mh-wwY" secondAttribute="leading" id="Mcs-PD-wdK"/>
+                            <constraint firstItem="sVL-mX-K5Y" firstAttribute="leading" secondItem="ym7-Mh-wwY" secondAttribute="leading" id="Uuc-Z0-Azu"/>
+                            <constraint firstItem="LGl-75-iok" firstAttribute="centerX" secondItem="zT1-tV-2GF" secondAttribute="centerX" id="cRp-Ua-5G5"/>
+                            <constraint firstItem="sVL-mX-K5Y" firstAttribute="trailing" secondItem="ym7-Mh-wwY" secondAttribute="trailing" id="dtn-CT-gtK"/>
+                            <constraint firstItem="ym7-Mh-wwY" firstAttribute="trailing" secondItem="Gzf-ar-XTA" secondAttribute="trailing" constant="16" id="fb0-Pd-C2v"/>
+                            <constraint firstItem="sVL-mX-K5Y" firstAttribute="top" secondItem="ym7-Mh-wwY" secondAttribute="top" constant="400" id="jIC-zX-rYJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ym7-Mh-wwY"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="420"/>
+                    <connections>
+                        <outlet property="bioImage" destination="sVL-mX-K5Y" id="UVt-oS-3Y8"/>
+                        <outlet property="cursor" destination="LGl-75-iok" id="HyD-bh-hqH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zhf-g4-6Eq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6159" y="769"/>
+        </scene>
+        <!--Tutorial2 View Controller-->
+        <scene sceneID="8zG-np-cSn">
+            <objects>
+                <viewController storyboardIdentifier="tutorial2" id="bAw-jv-MUw" customClass="Tutorial2ViewController" customModule="TheGoodBois" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gf1-s0-tCD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="420"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog2" translatesAutoresizingMaskIntoConstraints="NO" id="gtc-Zb-mav">
+                                <rect key="frame" x="0.0" y="120" width="375" height="300"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog1" translatesAutoresizingMaskIntoConstraints="NO" id="efX-EK-cxp">
+                                <rect key="frame" x="-375" y="120" width="375" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="x76-Iq-XJG"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cursor" translatesAutoresizingMaskIntoConstraints="NO" id="FgH-15-LqG">
+                                <rect key="frame" x="7.5" y="280" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="92F-cZ-3Ws"/>
+                                    <constraint firstAttribute="width" constant="60" id="gJH-Wi-Zl9"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe left if this animal is not your purrfect match." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CtR-AT-dkb">
+                                <rect key="frame" x="16" y="30" width="343" height="50"/>
+                                <fontDescription key="fontDescription" name="Geomanist" family="Geomanist" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FgH-15-LqG" firstAttribute="centerX" secondItem="gf1-s0-tCD" secondAttribute="centerX" constant="-150" id="6dg-VG-qZT"/>
+                            <constraint firstItem="efX-EK-cxp" firstAttribute="centerX" secondItem="gf1-s0-tCD" secondAttribute="centerX" constant="-375" id="BXs-Oc-vx2"/>
+                            <constraint firstItem="cly-X1-yPh" firstAttribute="bottom" secondItem="efX-EK-cxp" secondAttribute="bottom" id="D19-8Q-iFj"/>
+                            <constraint firstItem="gtc-Zb-mav" firstAttribute="top" secondItem="cly-X1-yPh" secondAttribute="top" constant="120" id="MaW-sW-PeU"/>
+                            <constraint firstItem="FgH-15-LqG" firstAttribute="centerY" secondItem="gf1-s0-tCD" secondAttribute="centerY" constant="100" id="WJn-fN-nkO"/>
+                            <constraint firstItem="CtR-AT-dkb" firstAttribute="top" secondItem="cly-X1-yPh" secondAttribute="top" constant="30" id="Ygt-rx-EGw"/>
+                            <constraint firstItem="CtR-AT-dkb" firstAttribute="leading" secondItem="cly-X1-yPh" secondAttribute="leading" constant="16" id="abK-uS-mjo"/>
+                            <constraint firstItem="cly-X1-yPh" firstAttribute="trailing" secondItem="gtc-Zb-mav" secondAttribute="trailing" id="c46-mV-m4W"/>
+                            <constraint firstItem="cly-X1-yPh" firstAttribute="bottom" secondItem="gtc-Zb-mav" secondAttribute="bottom" id="ccE-IS-LFs"/>
+                            <constraint firstItem="efX-EK-cxp" firstAttribute="top" secondItem="cly-X1-yPh" secondAttribute="top" constant="120" id="dIG-VO-egz"/>
+                            <constraint firstItem="cly-X1-yPh" firstAttribute="trailing" secondItem="CtR-AT-dkb" secondAttribute="trailing" constant="16" id="dag-mU-PAm"/>
+                            <constraint firstItem="gtc-Zb-mav" firstAttribute="leading" secondItem="cly-X1-yPh" secondAttribute="leading" id="n6I-4H-Ifx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cly-X1-yPh"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="420"/>
+                    <connections>
+                        <outlet property="cursor" destination="FgH-15-LqG" id="KAi-W6-usq"/>
+                        <outlet property="dogImage" destination="efX-EK-cxp" id="oFQ-iu-tBW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ELA-YF-RwO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5078" y="769"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Bio" width="375" height="601"/>
+        <image name="cursor" width="395" height="512"/>
         <image name="dog1" width="391" height="480"/>
+        <image name="dog2" width="720" height="960"/>
     </resources>
 </document>
