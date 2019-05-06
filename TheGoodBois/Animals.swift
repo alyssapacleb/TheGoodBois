@@ -50,7 +50,7 @@ class Animal{
                     let image = UIImage(data: data)
                     else {return}
                 DispatchQueue.main.async() {
-                    self.image = image
+                    self.pet_image = image
                 }
             }
         }

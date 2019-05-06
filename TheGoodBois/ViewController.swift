@@ -26,10 +26,10 @@ var savedPets: [NSManagedObject] = []
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var drawView: drawView!
+    //@IBOutlet weak var drawView: drawView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        drawView.drawShape(selectedShape: .circle)
+        //drawView.drawShape(selectedShape: .circle)
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute: {
             self.performSegue(withIdentifier: "mainToMain", sender: self)
