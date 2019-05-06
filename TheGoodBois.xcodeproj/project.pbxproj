@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1978D4E6226A438F00ABA4EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1978D4E5226A438F00ABA4EF /* AppDelegate.swift */; };
+		1978D4E8226A438F00ABA4EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1978D4E7226A438F00ABA4EF /* ViewController.swift */; };
+		1978D4EB226A438F00ABA4EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1978D4E9226A438F00ABA4EF /* Main.storyboard */; };
+		1978D4EE226A438F00ABA4EF /* TheGoodBois.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1978D4EC226A438F00ABA4EF /* TheGoodBois.xcdatamodeld */; };
+		1978D4F0226A439000ABA4EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1978D4EF226A439000ABA4EF /* Assets.xcassets */; };
+		1978D4F3226A439000ABA4EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1978D4F1226A439000ABA4EF /* LaunchScreen.storyboard */; };
+		199236C92270CC680000358B /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199236C82270CC680000358B /* PreferencesViewController.swift */; };
+		19FF911522809E3B0007D62B /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FF911422809E3B0007D62B /* Logo.swift */; };
+		19FF91472280E5A90007D62B /* Tutorial1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FF91462280E5A90007D62B /* Tutorial1ViewController.swift */; };
+		19FF91492280E5B10007D62B /* Tutorial2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FF91482280E5B10007D62B /* Tutorial2ViewController.swift */; };
+		19FF914B2280E5B40007D62B /* Tutorial3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FF914A2280E5B40007D62B /* Tutorial3ViewController.swift */; };
+		19FF914D2280E5B80007D62B /* Tutorial4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FF914C2280E5B80007D62B /* Tutorial4ViewController.swift */; };
+		19FF914F2280E5BE0007D62B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FF914E2280E5BE0007D62B /* AboutViewController.swift */; };
+		19FF91512280E5C20007D62B /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FF91502280E5C20007D62B /* BioViewController.swift */; };
+		19FF91532280E5C50007D62B /* drawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FF91522280E5C50007D62B /* drawView.swift */; };
+		636A280939C5536B73729732 /* Pods_TheGoodBois.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2ED3278B5FC6C53B27F270F /* Pods_TheGoodBois.framework */; };
+		9681BB9A226D5E4F0083717E /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9681BB99226D5E4F0083717E /* SwipeViewController.swift */; };
+		96E8F80A2270222D0082BED3 /* Geomanist-Regular-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 96E8F8062270222D0082BED3 /* Geomanist-Regular-Italic.otf */; };
+		96E8F80B2270222D0082BED3 /* Geomanist-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 96E8F8072270222D0082BED3 /* Geomanist-Regular.otf */; };
+		96E8F80C2270222D0082BED3 /* italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96E8F8082270222D0082BED3 /* italic.ttf */; };
+		96E8F80D2270222D0082BED3 /* regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96E8F8092270222D0082BED3 /* regular.ttf */; };
+		96E8F80F227022460082BED3 /* circ1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96E8F80E227022460082BED3 /* circ1.jpg */; };
+		96E8F811227022560082BED3 /* circ2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96E8F810227022560082BED3 /* circ2.jpg */; };
+		96F23D6C2272A1AB00D89136 /* SavedPetsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F23D6B2272A1AB00D89136 /* SavedPetsTableViewCell.swift */; };
+		F133EA48227B869E000BE4D7 /* SearchFieldsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F133EA44227B869E000BE4D7 /* SearchFieldsViewController.swift */; };
+		F133EA49227B869E000BE4D7 /* TheGoodBois.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F133EA45227B869E000BE4D7 /* TheGoodBois.xcdatamodeld */; };
+		F133EA4A227B869E000BE4D7 /* SearchDataSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F133EA47227B869E000BE4D7 /* SearchDataSession.swift */; };
+		F133EA4C227B8B58000BE4D7 /* PetfinderAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F133EA4B227B8B58000BE4D7 /* PetfinderAPIManager.swift */; };
+		F14696F52270CE1000035EDB /* SavedPetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14696F42270CE1000035EDB /* SavedPetsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0AAD26F20906F0E423BF24F1 /* Pods-TheGoodBois.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheGoodBois.release.xcconfig"; path = "Target Support Files/Pods-TheGoodBois/Pods-TheGoodBois.release.xcconfig"; sourceTree = "<group>"; };
+		1978D4E2226A438F00ABA4EF /* TheGoodBois.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheGoodBois.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1978D4E5226A438F00ABA4EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1978D4E7226A438F00ABA4EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1978D4EA226A438F00ABA4EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1978D4ED226A438F00ABA4EF /* TheGoodBois.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TheGoodBois.xcdatamodel; sourceTree = "<group>"; };
+		1978D4EF226A439000ABA4EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1978D4F2226A439000ABA4EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1978D4F4226A439000ABA4EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		199236C82270CC680000358B /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
+		19FF911422809E3B0007D62B /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
+		19FF91462280E5A90007D62B /* Tutorial1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial1ViewController.swift; sourceTree = "<group>"; };
+		19FF91482280E5B10007D62B /* Tutorial2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial2ViewController.swift; sourceTree = "<group>"; };
+		19FF914A2280E5B40007D62B /* Tutorial3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial3ViewController.swift; sourceTree = "<group>"; };
+		19FF914C2280E5B80007D62B /* Tutorial4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial4ViewController.swift; sourceTree = "<group>"; };
+		19FF914E2280E5BE0007D62B /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		19FF91502280E5C20007D62B /* BioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
+		19FF91522280E5C50007D62B /* drawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = drawView.swift; sourceTree = "<group>"; };
+		9681BB99226D5E4F0083717E /* SwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
+		96E8F8062270222D0082BED3 /* Geomanist-Regular-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Geomanist-Regular-Italic.otf"; sourceTree = "<group>"; };
+		96E8F8072270222D0082BED3 /* Geomanist-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Geomanist-Regular.otf"; sourceTree = "<group>"; };
+		96E8F8082270222D0082BED3 /* italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = italic.ttf; sourceTree = "<group>"; };
+		96E8F8092270222D0082BED3 /* regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = regular.ttf; sourceTree = "<group>"; };
+		96E8F80E227022460082BED3 /* circ1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = circ1.jpg; sourceTree = "<group>"; };
+		96E8F810227022560082BED3 /* circ2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = circ2.jpg; sourceTree = "<group>"; };
+		96F23D6B2272A1AB00D89136 /* SavedPetsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPetsTableViewCell.swift; sourceTree = "<group>"; };
+		C2ED3278B5FC6C53B27F270F /* Pods_TheGoodBois.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheGoodBois.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEA4419F1E4B97D2528E2DB0 /* Pods-TheGoodBois.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheGoodBois.debug.xcconfig"; path = "Target Support Files/Pods-TheGoodBois/Pods-TheGoodBois.debug.xcconfig"; sourceTree = "<group>"; };
+		F133EA44227B869E000BE4D7 /* SearchFieldsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchFieldsViewController.swift; sourceTree = "<group>"; };
+		F133EA46227B869E000BE4D7 /* TheGoodBois.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TheGoodBois.xcdatamodel; sourceTree = "<group>"; };
+		F133EA47227B869E000BE4D7 /* SearchDataSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchDataSession.swift; sourceTree = "<group>"; };
+		F133EA4B227B8B58000BE4D7 /* PetfinderAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetfinderAPIManager.swift; sourceTree = "<group>"; };
+		F14696F42270CE1000035EDB /* SavedPetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPetsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1978D4DF226A438F00ABA4EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				636A280939C5536B73729732 /* Pods_TheGoodBois.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19171FEE226E130C006CF2D1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				96E8F8062270222D0082BED3 /* Geomanist-Regular-Italic.otf */,
+				96E8F8072270222D0082BED3 /* Geomanist-Regular.otf */,
+				96E8F8082270222D0082BED3 /* italic.ttf */,
+				96E8F8092270222D0082BED3 /* regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		1978D4D9226A438F00ABA4EF = {
+			isa = PBXGroup;
+			children = (
+				1978D4E4226A438F00ABA4EF /* TheGoodBois */,
+				1978D4E3226A438F00ABA4EF /* Products */,
+				9DD86F93696B290606ED89FD /* Pods */,
+				6100782DB372E2AD8C8020AE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1978D4E3226A438F00ABA4EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1978D4E2226A438F00ABA4EF /* TheGoodBois.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1978D4E4226A438F00ABA4EF /* TheGoodBois */ = {
+			isa = PBXGroup;
+			children = (
+				19171FEE226E130C006CF2D1 /* Fonts */,
+				1978D4E5226A438F00ABA4EF /* AppDelegate.swift */,
+				1978D4E7226A438F00ABA4EF /* ViewController.swift */,
+				19FF911422809E3B0007D62B /* Logo.swift */,
+				19FF91462280E5A90007D62B /* Tutorial1ViewController.swift */,
+				19FF91482280E5B10007D62B /* Tutorial2ViewController.swift */,
+				19FF914A2280E5B40007D62B /* Tutorial3ViewController.swift */,
+				19FF914C2280E5B80007D62B /* Tutorial4ViewController.swift */,
+				19FF914E2280E5BE0007D62B /* AboutViewController.swift */,
+				199236C82270CC680000358B /* PreferencesViewController.swift */,
+				19FF91522280E5C50007D62B /* drawView.swift */,
+				19FF91502280E5C20007D62B /* BioViewController.swift */,
+				9681BB99226D5E4F0083717E /* SwipeViewController.swift */,
+				F14696F42270CE1000035EDB /* SavedPetsViewController.swift */,
+				96E8F80E227022460082BED3 /* circ1.jpg */,
+				96F23D6B2272A1AB00D89136 /* SavedPetsTableViewCell.swift */,
+				F133EA47227B869E000BE4D7 /* SearchDataSession.swift */,
+				F133EA4B227B8B58000BE4D7 /* PetfinderAPIManager.swift */,
+				F133EA44227B869E000BE4D7 /* SearchFieldsViewController.swift */,
+				F133EA45227B869E000BE4D7 /* TheGoodBois.xcdatamodeld */,
+				96E8F810227022560082BED3 /* circ2.jpg */,
+				1978D4E9226A438F00ABA4EF /* Main.storyboard */,
+				1978D4EF226A439000ABA4EF /* Assets.xcassets */,
+				1978D4F1226A439000ABA4EF /* LaunchScreen.storyboard */,
+				1978D4F4226A439000ABA4EF /* Info.plist */,
+				1978D4EC226A438F00ABA4EF /* TheGoodBois.xcdatamodeld */,
+			);
+			path = TheGoodBois;
+			sourceTree = "<group>";
+		};
+		6100782DB372E2AD8C8020AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2ED3278B5FC6C53B27F270F /* Pods_TheGoodBois.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9DD86F93696B290606ED89FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EEA4419F1E4B97D2528E2DB0 /* Pods-TheGoodBois.debug.xcconfig */,
+				0AAD26F20906F0E423BF24F1 /* Pods-TheGoodBois.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1978D4E1226A438F00ABA4EF /* TheGoodBois */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1978D4F7226A439000ABA4EF /* Build configuration list for PBXNativeTarget "TheGoodBois" */;
+			buildPhases = (
+				6228AB381760590FF20E0BE2 /* [CP] Check Pods Manifest.lock */,
+				1978D4DE226A438F00ABA4EF /* Sources */,
+				1978D4DF226A438F00ABA4EF /* Frameworks */,
+				1978D4E0226A438F00ABA4EF /* Resources */,
+				3F336943773B6AB5A0F6FB76 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheGoodBois;
+			productName = TheGoodBois;
+			productReference = 1978D4E2226A438F00ABA4EF /* TheGoodBois.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1978D4DA226A438F00ABA4EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "The Good Bois";
+				TargetAttributes = {
+					1978D4E1226A438F00ABA4EF = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = 1978D4DD226A438F00ABA4EF /* Build configuration list for PBXProject "TheGoodBois" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1978D4D9226A438F00ABA4EF;
+			productRefGroup = 1978D4E3226A438F00ABA4EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1978D4E1226A438F00ABA4EF /* TheGoodBois */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1978D4E0226A438F00ABA4EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96E8F80D2270222D0082BED3 /* regular.ttf in Resources */,
+				96E8F80F227022460082BED3 /* circ1.jpg in Resources */,
+				1978D4F3226A439000ABA4EF /* LaunchScreen.storyboard in Resources */,
+				96E8F80A2270222D0082BED3 /* Geomanist-Regular-Italic.otf in Resources */,
+				96E8F811227022560082BED3 /* circ2.jpg in Resources */,
+				1978D4F0226A439000ABA4EF /* Assets.xcassets in Resources */,
+				96E8F80C2270222D0082BED3 /* italic.ttf in Resources */,
+				1978D4EB226A438F00ABA4EF /* Main.storyboard in Resources */,
+				96E8F80B2270222D0082BED3 /* Geomanist-Regular.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F336943773B6AB5A0F6FB76 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TheGoodBois/Pods-TheGoodBois-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TheGoodBois/Pods-TheGoodBois-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6228AB381760590FF20E0BE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TheGoodBois-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1978D4DE226A438F00ABA4EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19FF91472280E5A90007D62B /* Tutorial1ViewController.swift in Sources */,
+				F133EA4C227B8B58000BE4D7 /* PetfinderAPIManager.swift in Sources */,
+				19FF911522809E3B0007D62B /* Logo.swift in Sources */,
+				199236C92270CC680000358B /* PreferencesViewController.swift in Sources */,
+				19FF91532280E5C50007D62B /* drawView.swift in Sources */,
+				19FF914F2280E5BE0007D62B /* AboutViewController.swift in Sources */,
+				96F23D6C2272A1AB00D89136 /* SavedPetsTableViewCell.swift in Sources */,
+				19FF91512280E5C20007D62B /* BioViewController.swift in Sources */,
+				19FF914B2280E5B40007D62B /* Tutorial3ViewController.swift in Sources */,
+				1978D4EE226A438F00ABA4EF /* TheGoodBois.xcdatamodeld in Sources */,
+				F133EA49227B869E000BE4D7 /* TheGoodBois.xcdatamodeld in Sources */,
+				1978D4E8226A438F00ABA4EF /* ViewController.swift in Sources */,
+				F133EA48227B869E000BE4D7 /* SearchFieldsViewController.swift in Sources */,
+				F133EA4A227B869E000BE4D7 /* SearchDataSession.swift in Sources */,
+				19FF91492280E5B10007D62B /* Tutorial2ViewController.swift in Sources */,
+				1978D4E6226A438F00ABA4EF /* AppDelegate.swift in Sources */,
+				9681BB9A226D5E4F0083717E /* SwipeViewController.swift in Sources */,
+				19FF914D2280E5B80007D62B /* Tutorial4ViewController.swift in Sources */,
+				F14696F52270CE1000035EDB /* SavedPetsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1978D4E9226A438F00ABA4EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1978D4EA226A438F00ABA4EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1978D4F1226A439000ABA4EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1978D4F2226A439000ABA4EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1978D4F5226A439000ABA4EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1978D4F6226A439000ABA4EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1978D4F8226A439000ABA4EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEA4419F1E4B97D2528E2DB0 /* Pods-TheGoodBois.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TheGoodBois/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = cs329e.TheGoodBois;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1978D4F9226A439000ABA4EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AAD26F20906F0E423BF24F1 /* Pods-TheGoodBois.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TheGoodBois/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cs329e.TheGoodBois;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1978D4DD226A438F00ABA4EF /* Build configuration list for PBXProject "TheGoodBois" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1978D4F5226A439000ABA4EF /* Debug */,
+				1978D4F6226A439000ABA4EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1978D4F7226A439000ABA4EF /* Build configuration list for PBXNativeTarget "TheGoodBois" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1978D4F8226A439000ABA4EF /* Debug */,
+				1978D4F9226A439000ABA4EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1978D4EC226A438F00ABA4EF /* TheGoodBois.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1978D4ED226A438F00ABA4EF /* TheGoodBois.xcdatamodel */,
+			);
+			currentVersion = 1978D4ED226A438F00ABA4EF /* TheGoodBois.xcdatamodel */;
+			path = TheGoodBois.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		F133EA45227B869E000BE4D7 /* TheGoodBois.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F133EA46227B869E000BE4D7 /* TheGoodBois.xcdatamodel */,
+			);
+			currentVersion = F133EA46227B869E000BE4D7 /* TheGoodBois.xcdatamodel */;
+			path = TheGoodBois.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1978D4DA226A438F00ABA4EF /* Project object */;
+}
