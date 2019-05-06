@@ -65,7 +65,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="qbE-dQ-yLl"/>
                     <connections>
-                        <outlet property="drawView" destination="RTa-Bx-KDv" id="rrQ-LD-R5I"/>
                         <segue destination="VUy-3P-Gz9" kind="show" identifier="mainToMain" id="Nw4-DE-WLY"/>
                     </connections>
                 </viewController>
