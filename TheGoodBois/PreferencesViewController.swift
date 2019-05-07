@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreLocation
+import CoreGraphics
 
 class PreferencesViewController: UIViewController, CLLocationManagerDelegate, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
     
@@ -30,13 +31,14 @@ class PreferencesViewController: UIViewController, CLLocationManagerDelegate, UI
     private var dataSession = SearchDataSession()
     let locationManager = CLLocationManager()
     private var userLocation: CLLocation?
+    var currentTextField: UITextField?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.interactivePopGestureRecognizer?.isEnabled = false
         locationLabel.delegate = self
         
-        //PICKERS
+        // PICKERS
         let breedPickerView = UIPickerView()
         breedPickerView.delegate = self
         breedPickerView.tag = 1
@@ -62,6 +64,23 @@ class PreferencesViewController: UIViewController, CLLocationManagerDelegate, UI
         goodWithPickerView.tag = 5
         goodWithTextField.inputView = goodWithPickerView
         
+        // PICKER TOOLBAR
+        let toolBar = UIToolbar(frame: CGRect(x: 0, y: self.view.frame.size.height/6, width: self.view.frame.size.width, height: 40.0))
+        toolBar.layer.position = CGPoint(x: self.view.frame.size.width/2, y: self.view.frame.size.height-20.0)
+        toolBar.barStyle = UIBarStyle.default
+        toolBar.tintColor = UIColor.black
+        toolBar.backgroundColor = UIColor.black
+        
+        //let defaultButton = UIBarButtonItem(title: "Default", style: UIBarButtonItemStyle.Plain, target: self, action: #selector(ViewController.tappedToolBarBtn))
+        let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector(self.donePressed))
+        let flexSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: self, action: nil)
+        toolBar.setItems([/*defaultButton,*/flexSpace,flexSpace,flexSpace,flexSpace,doneButton], animated: true)
+        breedTextField.inputAccessoryView = toolBar
+        ageTextField.inputAccessoryView = toolBar
+        sizeTextField.inputAccessoryView = toolBar
+        genderTextField.inputAccessoryView = toolBar
+        goodWithTextField.inputAccessoryView = toolBar
+        
         // LOCATION
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
@@ -83,6 +102,27 @@ class PreferencesViewController: UIViewController, CLLocationManagerDelegate, UI
         return true
     }
     
+    // TOOLBAR FUNCTIONS
+    
+    @objc func donePressed(sender: UIBarButtonItem) {
+        
+        currentTextField?.resignFirstResponder()
+        
+        /*breedTextField.resignFirstResponder()
+        ageTextField.resignFirstResponder()
+        sizeTextField.resignFirstResponder()
+        genderTextField.resignFirstResponder()
+        goodWithTextField.resignFirstResponder()*/
+        
+    }
+    
+    /*func tappedToolBarBtn(sender: UIBarButtonItem) {
+        
+        pickerTextField.text = "one"
+        pickerTextField.resignFirstResponder()
+        
+    }*/
+    
     // PICKER PROTOCOL
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -92,14 +132,19 @@ class PreferencesViewController: UIViewController, CLLocationManagerDelegate, UI
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         
         if pickerView.tag == 1 {
+            currentTextField = breedTextField
             return breedOptions.count
         } else if pickerView.tag == 2 {
+            currentTextField = ageTextField
             return ageOptions.count
         } else if pickerView.tag == 3 {
+            currentTextField = sizeTextField
             return sizeOptions.count
         } else if pickerView.tag == 4 {
+            currentTextField = genderTextField
             return genderOptions.count
         } else if pickerView.tag == 5 {
+            currentTextField = goodWithTextField
             return goodWithOptions.count
         }
         
