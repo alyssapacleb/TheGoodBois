@@ -11,7 +11,7 @@ import Alamofire
 import SwiftyJSON
 
 class PetfinderAPIManager {
-
+    
     static let sharedInstance = PetfinderAPIManager()
     
     // API Key + Secret needed for oauth, path for oauth token request & timer to track when token will expire and re-auth is required
@@ -33,11 +33,21 @@ class PetfinderAPIManager {
         var token: String?
         let url = URL(string: self.authURLPath)
         let params : Parameters = ["grant_type":"client_credentials","client_id":self.apiKey,"client_secret":self.secret]
-        
+        print(params)
         Alamofire.request(url!, method: .post, parameters: params).responseJSON { response in
             let resultData = JSON(response.result.value!)
             token = resultData["access_token"].string
+            //print(token!)
+            
+            //print(resultData)
+            // this looks like this :
+            /*
+             {"token_type": "Bearer",
+             "expires_in": 3600,
+             "access_token": "..."}
+             */
         }
+        
         if token != nil {
             print("Auth token successfully retrieved")
             self.authToken = token!

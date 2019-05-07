@@ -16,10 +16,10 @@ protocol SearchDataProtocol {
 }
 
 class SearchDataSession {
-
+    
     // Base path shared by all .GET requests we will need
-    private let urlPathBase = "https://www.petfinder.com/v2/"
- 
+    private let urlPathBase = "https://api.petfinder.com/v2/animals?type=dog&page=2"
+    //type=dog&page=2
     private var dataTask:URLSessionDataTask? = nil
     var delegate:SearchDataProtocol? = nil
     
@@ -27,21 +27,21 @@ class SearchDataSession {
     
     func getData(searchType:String) {
         // searchType = "animals" || "types"; used to determine query response format
-        let urlPath = self.urlPathBase + searchType
-        
+        let urlPath = self.urlPathBase //+ searchType
+        //print(searchType)
+        //print(urlPath)
         // Get OAuth token for header from API Manager if available; else, perform (re-)authorization
         if(!PetfinderAPIManager.sharedInstance.hasOAuthToken()){
             PetfinderAPIManager.sharedInstance.performOAuthLogin()
         }
         let token = PetfinderAPIManager.sharedInstance.authToken
-        
+        //print("reached")
         // Perform GET request using Alamofire and check response data integrity before passing to data handler
         
-        /*
+        
         var request = URLRequest(url: URL(string: urlPath)!)
         request.addValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
-        
-        
+        print(request)
         let dataTask = URLSession.shared.dataTask(with: request) { (data, response, error) -> Void in
             if error != nil {
                 print(error!)
@@ -49,22 +49,31 @@ class SearchDataSession {
                 do {
                     if response != nil {
                         print("Received response: \(response!)")
+                        let responseString = NSString(data:data!, encoding: String.Encoding.utf8.rawValue)
+                        print("Response Data: \(responseString!)")
                     }
                     
                     // TODO: Implement data processing
                 }
             }
         }
-        dataTask.resume()*/
+        dataTask.resume()
         
         
     }
-
+    
 }
 
+
+
+
+
+
+
+
 /*
-// MARK - Example JSON responses from
-// Example get_animal_types query response used to populate search fields
+ // MARK - Example JSON responses from
+ // Example get_animal_types query response used to populate search fields
  {
  "types": [
  {
@@ -136,7 +145,7 @@ class SearchDataSession {
  }
  ]
  }
-
+ 
  // Example get_animals search query response, used for main search functionality
  {
  "animals": [
@@ -225,4 +234,4 @@ class SearchDataSession {
  "_links": {}
  }
  }
-*/
+ */

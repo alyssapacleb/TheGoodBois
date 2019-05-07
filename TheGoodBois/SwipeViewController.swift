@@ -9,7 +9,7 @@
 import UIKit
 
 class SwipeViewController: UIViewController {
-
+    
     @IBOutlet weak var card: UIView!
     @IBOutlet weak var heart: UIImageView!
     @IBOutlet weak var swipeImageView: UIImageView!
@@ -54,7 +54,7 @@ class SwipeViewController: UIViewController {
                     card.center = self.view.center
                     self.heart.alpha = 0
                     card.alpha = 1
-                    })
+                })
                 return
             } else if card.center.x > (view.frame.width - 75) {
                 // Move off to right
@@ -90,7 +90,7 @@ class SwipeViewController: UIViewController {
     
     
     func resetImage() {
-        if direction == "left" {
+        if direction == "left" || direction == "right" {
             if currentImage == imageNames.count - 1 {
                 currentImage = 0
                 
@@ -99,14 +99,15 @@ class SwipeViewController: UIViewController {
             }
             swipeImageView.image = UIImage(named: imageNames[currentImage])
         }
-        if direction == "right" {
-            if currentImage == 0 {
-                currentImage = imageNames.count - 1
-            }else{
-                currentImage -= 1
-            }
-            swipeImageView.image = UIImage(named: imageNames[currentImage])
-        }
+        /*
+         if direction == "right" {
+         if currentImage == 0 {
+         currentImage = imageNames.count - 1
+         }else{
+         currentImage -= 1
+         }
+         swipeImageView.image = UIImage(named: imageNames[currentImage])
+         }*/
     }
     
     
@@ -136,20 +137,20 @@ class SwipeViewController: UIViewController {
         
         
     }
-
+    
     
     /*@objc func imageTapped(gesture: UIGestureRecognizer) {
-        // if the tapped view is a UIImageView then set it to imageview
-        if (gesture.view as? UIImageView) != nil {
-            print("Image Tapped")
-            
-            //This really don't work
-            let storyBoard: UIStoryboard = UIStoryboard(name: "petBio", bundle: nil)
-            let bioViewController = storyBoard.instantiateViewController(withIdentifier: "petBio")
-            self.navigationController.pushViewController(bioViewController, animated: true)
-            
-        }
-    }*/
+     // if the tapped view is a UIImageView then set it to imageview
+     if (gesture.view as? UIImageView) != nil {
+     print("Image Tapped")
+     
+     //This really don't work
+     let storyBoard: UIStoryboard = UIStoryboard(name: "petBio", bundle: nil)
+     let bioViewController = storyBoard.instantiateViewController(withIdentifier: "petBio")
+     self.navigationController.pushViewController(bioViewController, animated: true)
+     
+     }
+     }*/
     
     @objc func respondToSwipeGesture(gesture: UIGestureRecognizer) {
         
@@ -184,15 +185,15 @@ class SwipeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
