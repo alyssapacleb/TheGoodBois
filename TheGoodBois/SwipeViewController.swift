@@ -126,14 +126,14 @@ class SwipeViewController: UIViewController {
         
         
         swipeImageView?.image = UIImage(named:imageNames[currentImage])
-        var swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
+        /*var swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
         swipeRight.direction = UISwipeGestureRecognizerDirection.right
         self.view.addGestureRecognizer(swipeRight)
         
         var swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
         swipeLeft.direction = UISwipeGestureRecognizerDirection.left
         self.view.addGestureRecognizer(swipeLeft)
-        
+        */
         
         
     }
@@ -151,7 +151,7 @@ class SwipeViewController: UIViewController {
      
      }
      }*/
-    
+    /*
     @objc func respondToSwipeGesture(gesture: UIGestureRecognizer) {
         
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
@@ -178,7 +178,7 @@ class SwipeViewController: UIViewController {
                 break
             }
         }
-    }
+    }*/
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

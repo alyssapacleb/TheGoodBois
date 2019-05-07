@@ -10,7 +10,6 @@
 		1978D4E6226A438F00ABA4EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1978D4E5226A438F00ABA4EF /* AppDelegate.swift */; };
 		1978D4E8226A438F00ABA4EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1978D4E7226A438F00ABA4EF /* ViewController.swift */; };
 		1978D4EB226A438F00ABA4EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1978D4E9226A438F00ABA4EF /* Main.storyboard */; };
-		1978D4EE226A438F00ABA4EF /* TheGoodBois.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1978D4EC226A438F00ABA4EF /* TheGoodBois.xcdatamodeld */; };
 		1978D4F0226A439000ABA4EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1978D4EF226A439000ABA4EF /* Assets.xcassets */; };
 		1978D4F3226A439000ABA4EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1978D4F1226A439000ABA4EF /* LaunchScreen.storyboard */; };
 		199236C92270CC680000358B /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199236C82270CC680000358B /* PreferencesViewController.swift */; };
@@ -44,7 +43,6 @@
 		1978D4E5226A438F00ABA4EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1978D4E7226A438F00ABA4EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1978D4EA226A438F00ABA4EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1978D4ED226A438F00ABA4EF /* TheGoodBois.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TheGoodBois.xcdatamodel; sourceTree = "<group>"; };
 		1978D4EF226A439000ABA4EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1978D4F2226A439000ABA4EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1978D4F4226A439000ABA4EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -143,7 +141,6 @@
 				1978D4EF226A439000ABA4EF /* Assets.xcassets */,
 				1978D4F1226A439000ABA4EF /* LaunchScreen.storyboard */,
 				1978D4F4226A439000ABA4EF /* Info.plist */,
-				1978D4EC226A438F00ABA4EF /* TheGoodBois.xcdatamodeld */,
 			);
 			path = TheGoodBois;
 			sourceTree = "<group>";
@@ -245,16 +242,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TheGoodBois/Pods-TheGoodBois-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
@@ -269,15 +262,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-TheGoodBois-checkManifestLockResult.txt",
 			);
@@ -302,7 +291,6 @@
 				96F23D6C2272A1AB00D89136 /* SavedPetsTableViewCell.swift in Sources */,
 				19FF91512280E5C20007D62B /* BioViewController.swift in Sources */,
 				19FF914B2280E5B40007D62B /* Tutorial3ViewController.swift in Sources */,
-				1978D4EE226A438F00ABA4EF /* TheGoodBois.xcdatamodeld in Sources */,
 				F133EA49227B869E000BE4D7 /* TheGoodBois.xcdatamodeld in Sources */,
 				1978D4E8226A438F00ABA4EF /* ViewController.swift in Sources */,
 				F133EA48227B869E000BE4D7 /* SearchFieldsViewController.swift in Sources */,
@@ -516,16 +504,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		1978D4EC226A438F00ABA4EF /* TheGoodBois.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				1978D4ED226A438F00ABA4EF /* TheGoodBois.xcdatamodel */,
-			);
-			currentVersion = 1978D4ED226A438F00ABA4EF /* TheGoodBois.xcdatamodel */;
-			path = TheGoodBois.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
 		F133EA45227B869E000BE4D7 /* TheGoodBois.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (

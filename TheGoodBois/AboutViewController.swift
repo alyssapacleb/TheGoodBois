@@ -47,6 +47,11 @@ class AboutViewController: UIViewController, UIScrollViewDelegate {
             scrollView.addSubview(slides[i].view)
         }
     }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let pageIndex = round(scrollView.contentOffset.x/view.frame.width)
+        pageControl.currentPage = Int(pageIndex)
+    }
 
     /*
     // MARK: - Navigation
