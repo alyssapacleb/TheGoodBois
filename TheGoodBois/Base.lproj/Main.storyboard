@@ -331,7 +331,7 @@ Cary (Carrot Top aka Care Bear) is a young guy. He's probably maybe only a year 
                                 <rect key="frame" x="96" y="331" width="117" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ab-Nk-lwS">
                                 <rect key="frame" x="229" y="331.5" width="130" height="29"/>
@@ -388,7 +388,12 @@ Cary (Carrot Top aka Care Bear) is a young guy. He's probably maybe only a year 
                         <viewLayoutGuide key="safeArea" id="gXs-m4-gxy"/>
                     </view>
                     <connections>
+                        <outlet property="ageTextField" destination="aYi-w7-Vmm" id="dkY-2d-4t1"/>
+                        <outlet property="breedTextField" destination="VeM-l5-nva" id="yne-Pk-MiB"/>
+                        <outlet property="genderTextField" destination="YaJ-gc-Rqw" id="1xv-i1-iWG"/>
+                        <outlet property="goodWithTextField" destination="3hA-U1-D05" id="kyT-cG-QSP"/>
                         <outlet property="locationLabel" destination="GLg-Yb-Tuw" id="64M-qm-p2g"/>
+                        <outlet property="sizeTextField" destination="r2w-L9-Pdn" id="hZP-qi-dBx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I1y-Oc-X1Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
