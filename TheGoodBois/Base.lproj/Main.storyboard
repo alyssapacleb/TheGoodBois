@@ -393,24 +393,41 @@ Cary (Carrot Top aka Care Bear) is a young guy. He's probably maybe only a year 
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="50Q-pY-gNY">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IDW-iP-wxu">
+                                <rect key="frame" x="46" y="123" width="282" height="421"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="50Q-pY-gNY">
+                                        <rect key="frame" x="23" y="23" width="236" height="284"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="w01-da-X5L">
+                                        <rect key="frame" x="65" y="89" width="152" height="153"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Hg4-mM-emi" appends="YES" id="101-HZ-2Ua"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.78039215689999997" green="0.74901960779999999" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="50Q-pY-gNY" firstAttribute="leading" secondItem="SdR-dv-aRa" secondAttribute="leading" id="0Ir-dQ-Vkd"/>
-                            <constraint firstItem="50Q-pY-gNY" firstAttribute="top" secondItem="SdR-dv-aRa" secondAttribute="top" id="LsT-lL-pWZ"/>
-                            <constraint firstItem="SdR-dv-aRa" firstAttribute="trailing" secondItem="50Q-pY-gNY" secondAttribute="trailing" id="cEE-RW-Fe7"/>
-                            <constraint firstItem="SdR-dv-aRa" firstAttribute="bottom" secondItem="50Q-pY-gNY" secondAttribute="bottom" id="wFQ-mn-MtY"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="SdR-dv-aRa"/>
                     </view>
                     <connections>
+                        <outlet property="card" destination="IDW-iP-wxu" id="q4Z-WH-kP5"/>
+                        <outlet property="heart" destination="w01-da-X5L" id="sFj-ad-610"/>
                         <outlet property="swipeImageView" destination="50Q-pY-gNY" id="NGd-N4-Znh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fUq-Gf-cm9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Hg4-mM-emi">
+                    <connections>
+                        <action selector="panCard:" destination="y3Z-6O-T3r" id="bgc-2Z-YYY"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="5404" y="31.934032983508249"/>
         </scene>
@@ -696,5 +713,6 @@ Cary (Carrot Top aka Care Bear) is a young guy. He's probably maybe only a year 
         <image name="cursor" width="395.5" height="512"/>
         <image name="dog1" width="391" height="480"/>
         <image name="dog2" width="720" height="960"/>
+        <image name="heart" width="256" height="256"/>
     </resources>
 </document>
