@@ -94,7 +94,7 @@ class PreferencesViewController: UIViewController, CLLocationManagerDelegate, UI
     @IBAction func performSearch(_ sender: Any) {
         print("Performing Search")
         //self.dataSession.getData(searchType: "types")
-        PetfinderAPIManager.sharedInstance.performOAuthLogin()
+        //PetfinderAPIManager.sharedInstance.performOAuthLogin()
         
         self.dataSession.getData(searchType: "types")
     }
