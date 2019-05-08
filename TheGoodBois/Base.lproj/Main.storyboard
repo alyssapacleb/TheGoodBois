@@ -416,10 +416,6 @@ Cary (Carrot Top aka Care Bear) is a young guy. He's probably maybe only a year 
                                         <rect key="frame" x="53" y="36" width="236" height="284"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" fixedFrame="YES" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="w01-da-X5L">
-                                        <rect key="frame" x="95" y="102" width="152" height="153"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
@@ -427,8 +423,19 @@ Cary (Carrot Top aka Care Bear) is a young guy. He's probably maybe only a year 
                                     <outletCollection property="gestureRecognizers" destination="Hg4-mM-emi" appends="YES" id="101-HZ-2Ua"/>
                                 </connections>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="w01-da-X5L">
+                                <rect key="frame" x="111" y="257" width="152" height="153"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="153" id="2SL-aC-xb6"/>
+                                    <constraint firstAttribute="width" constant="152" id="FCG-w6-XtG"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.78039215689999997" green="0.74901960779999999" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="w01-da-X5L" firstAttribute="centerY" secondItem="ErP-Rg-cI8" secondAttribute="centerY" id="I1L-Hf-A5L"/>
+                            <constraint firstItem="w01-da-X5L" firstAttribute="centerX" secondItem="ErP-Rg-cI8" secondAttribute="centerX" id="n6P-2I-qOY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="SdR-dv-aRa"/>
                     </view>
                     <connections>
