@@ -93,8 +93,10 @@ class PreferencesViewController: UIViewController, CLLocationManagerDelegate, UI
     // MARK: - Actions
     @IBAction func performSearch(_ sender: Any) {
         print("Performing Search")
-        self.dataSession.getData(searchType: "types")
+        //self.dataSession.getData(searchType: "types")
         PetfinderAPIManager.sharedInstance.performOAuthLogin()
+        
+        self.dataSession.getData(searchType: "types")
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

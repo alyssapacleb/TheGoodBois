@@ -30,13 +30,19 @@ class PetfinderAPIManager {
     }
     
     func performOAuthLogin() {
+        print("in performOAuthLogin()")
         var token: String?
         let url = URL(string: self.authURLPath)
         let params : Parameters = ["grant_type":"client_credentials","client_id":self.apiKey,"client_secret":self.secret]
-        print(params)
+        print("here1")
         Alamofire.request(url!, method: .post, parameters: params).responseJSON { response in
             let resultData = JSON(response.result.value!)
+            print("here2")
             token = resultData["access_token"].string
+            print("\n token in performOAuthLogin():\n \(token!)")
+            self.authToken = token!
+           
+            //self.authToken = token!
             //print(token!)
             
             //print(resultData)
@@ -53,6 +59,9 @@ class PetfinderAPIManager {
             self.authToken = token!
             self.tokenExpired = false
         }
+    }
+    func the_token() -> String {
+        return(self.authToken)
     }
     
 }
