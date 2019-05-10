@@ -71,7 +71,7 @@ class PetfinderAPIManager {
         }
         
     }
-    func the_token() -> String {
+    func getToken() -> String {
         return(self.authToken)
     }
     
