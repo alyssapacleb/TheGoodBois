@@ -96,9 +96,9 @@ class SwipeViewController: UIViewController {
     
     func resetImage() {
         if direction == "right" {
-            
+            let safeNumber = self.currentAnimal
             convertQueue.async{
-                guard let img = UIImageJPEGRepresentation(self.animalResults![self.currentAnimal].image!, 1.0) else {
+                guard let img = UIImageJPEGRepresentation(self.animalResults![safeNumber].image!, 1.0) else {
                     return
                 }
                 
@@ -108,13 +108,13 @@ class SwipeViewController: UIViewController {
                     let entity = NSEntityDescription.entity(forEntityName: "Pet", in: self.managedContext!)!
                     let pet = NSManagedObject(entity: entity, insertInto: self.managedContext)
                     // 3
-                    let age = self.animalResults![self.currentAnimal].age
-                    let bio = self.animalResults![self.currentAnimal].bio
-                    let breed = self.animalResults![self.currentAnimal].breed
-                    let coat = self.animalResults![self.currentAnimal].coat
-                    let loc = self.animalResults![self.currentAnimal].location
-                    let name = self.animalResults![self.currentAnimal].petName
-                    let sex = self.animalResults![self.currentAnimal].sex
+                    let age = self.animalResults![safeNumber].age
+                    let bio = self.animalResults![safeNumber].bio
+                    let breed = self.animalResults![safeNumber].breed
+                    let coat = self.animalResults![safeNumber].coat
+                    let loc = self.animalResults![safeNumber].location
+                    let name = self.animalResults![safeNumber].petName
+                    let sex = self.animalResults![safeNumber].sex
                     pet.setValue(age, forKey: "age")
                     pet.setValue(bio, forKey: "bio")
                     pet.setValue(breed, forKey: "breed")
@@ -127,6 +127,7 @@ class SwipeViewController: UIViewController {
                     do {
                         try self.managedContext?.save()
                         savedPets.append(pet)
+                        print("Safe number is: \(safeNumber)")
                     } catch let error as NSError {
                         print("Could not save. \(error), \(error.userInfo)")
                     }
@@ -141,6 +142,7 @@ class SwipeViewController: UIViewController {
                 
             }else{
                 currentAnimal += 1
+                print("Current animal is: \(currentAnimal)")
             }
             swipeImageView.image = animalResults![currentAnimal].image
         }
