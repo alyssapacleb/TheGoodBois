@@ -530,7 +530,7 @@ Cary (Carrot Top aka Care Bear) is a young guy. He's probably maybe only a year 
                                 <rect key="frame" x="0.0" y="120" width="375" height="300"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bio" translatesAutoresizingMaskIntoConstraints="NO" id="Amj-qc-idF">
-                                <rect key="frame" x="0.0" y="400" width="375" height="20"/>
+                                <rect key="frame" x="0.0" y="350" width="375" height="70"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cursor" translatesAutoresizingMaskIntoConstraints="NO" id="6fG-ZE-4KY">
                                 <rect key="frame" x="157.5" y="280" width="60" height="60"/>
@@ -549,7 +549,7 @@ Cary (Carrot Top aka Care Bear) is a young guy. He's probably maybe only a year 
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="8OU-lQ-RJR" firstAttribute="leading" secondItem="7N5-EF-iBS" secondAttribute="leading" constant="16" id="1Mp-Fr-Q1s"/>
-                            <constraint firstItem="Amj-qc-idF" firstAttribute="top" secondItem="7N5-EF-iBS" secondAttribute="top" constant="400" id="2UO-WJ-mdf"/>
+                            <constraint firstItem="Amj-qc-idF" firstAttribute="top" secondItem="7N5-EF-iBS" secondAttribute="top" constant="350" id="2UO-WJ-mdf"/>
                             <constraint firstItem="7N5-EF-iBS" firstAttribute="trailing" secondItem="Sn0-u8-tYt" secondAttribute="trailing" id="76k-Zf-QPG"/>
                             <constraint firstItem="8OU-lQ-RJR" firstAttribute="top" secondItem="7N5-EF-iBS" secondAttribute="top" constant="30" id="D41-7h-hit"/>
                             <constraint firstItem="6fG-ZE-4KY" firstAttribute="centerY" secondItem="oNn-hL-u45" secondAttribute="centerY" constant="100" id="DOm-yy-zHC"/>

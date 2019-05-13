@@ -28,7 +28,7 @@ class Tutorial3ViewController: UIViewController {
     func startAnimation(){
         UIView.animate(withDuration: 2.0, delay: 0.0, options:[.curveEaseOut,.repeat], animations: {
             //self.cursor.center.x = self.cursor.center.x-300
-            self.bioImage.center.y = self.bioImage.center.y-547
+            self.bioImage.center.x = self.bioImage.center.y-600
             
         }, completion: nil)
     }
