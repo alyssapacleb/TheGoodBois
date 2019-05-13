@@ -32,6 +32,7 @@ class PreferencesViewController: UIViewController, CLLocationManagerDelegate, UI
     let locationManager = CLLocationManager()
     private var userLocation: CLLocation?
     var currentTextField: UITextField?
+    var searchResults = [Animal]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -97,11 +98,32 @@ class PreferencesViewController: UIViewController, CLLocationManagerDelegate, UI
         //PetfinderAPIManager.sharedInstance.performOAuthLogin()
         
         self.dataSession.getData(searchType: "types")
+        // Dummy data
+        let animal1 = Animal(petID: "1", orgID: "1", breed: "Cocker Spaniel", color: "Brown", age: "Young", sex: "Male", size: "Small", coat: "Long", petName: "Cary", bio: "Look, I know my pictures make me look like I am a big doofus. Am I big? yes. Am I a doofus? Ok, also yes. But I'm a very very SWEET doofus.\n\nCary (Carrot Top aka Care Bear) is a young guy. He's probably maybe only a year and a half old with the energy and vigor of a much younger pup. He loves to play, he loves to bark, he loves to jump up on your face and smother you with drooly kisses. He is NOT a delicate flower, to put it mildly. He would make an AWFUL apartment dog--his bark can be heard several states over. He has the will to climb up on countertops but all the grace and skill of a drunken walrus. If you're looking for a calm companion, we can direct you to several other wonderful, deserving dogs. But if you're looking for a lotta fun and a lotta love and heart of gold, Cary's your guy. This loveable mug is fostering in the Austin area.", status: "Hi", location: "Austin, Texas", url: "www.google.com")
+        animal1.image = UIImage(named: "dog1")
+        let animal2 = Animal(petID: "2", orgID: "1", breed: "Cocker Spaniel", color: "Brown", age: "Young", sex: "Male", size: "Small", coat: "Long", petName: "Cary", bio: "Look, I know my pictures make me look like I am a big doofus. Am I big? yes. Am I a doofus? Ok, also yes. But I'm a very very SWEET doofus.\n\nCary (Carrot Top aka Care Bear) is a young guy. He's probably maybe only a year and a half old with the energy and vigor of a much younger pup. He loves to play, he loves to bark, he loves to jump up on your face and smother you with drooly kisses. He is NOT a delicate flower, to put it mildly. He would make an AWFUL apartment dog--his bark can be heard several states over. He has the will to climb up on countertops but all the grace and skill of a drunken walrus. If you're looking for a calm companion, we can direct you to several other wonderful, deserving dogs. But if you're looking for a lotta fun and a lotta love and heart of gold, Cary's your guy. This loveable mug is fostering in the Austin area.", status: "Hi", location: "Austin, Texas", url: "www.google.com")
+        animal2.image = UIImage(named: "dog2")
+        let animal3 = Animal(petID: "3", orgID: "1", breed: "Cocker Spaniel", color: "Brown", age: "Young", sex: "Male", size: "Small", coat: "Long", petName: "Cary", bio: "Look, I know my pictures make me look like I am a big doofus. Am I big? yes. Am I a doofus? Ok, also yes. But I'm a very very SWEET doofus.\n\nCary (Carrot Top aka Care Bear) is a young guy. He's probably maybe only a year and a half old with the energy and vigor of a much younger pup. He loves to play, he loves to bark, he loves to jump up on your face and smother you with drooly kisses. He is NOT a delicate flower, to put it mildly. He would make an AWFUL apartment dog--his bark can be heard several states over. He has the will to climb up on countertops but all the grace and skill of a drunken walrus. If you're looking for a calm companion, we can direct you to several other wonderful, deserving dogs. But if you're looking for a lotta fun and a lotta love and heart of gold, Cary's your guy. This loveable mug is fostering in the Austin area.", status: "Hi", location: "Austin, Texas", url: "www.google.com")
+        animal3.image = UIImage(named: "dog3")
+        searchResults.append(animal1)
+        searchResults.append(animal2)
+        searchResults.append(animal3)
+        print("Before perform segue")
+        performSegue(withIdentifier: "swipeViewSegue", sender: self)
+        
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         locationLabel.resignFirstResponder()
         return true
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("in prepare for segue")
+        if segue.identifier == "swipeViewSegue" {
+            let ExchangeViewData = segue.destination as! SwipeViewController
+            ExchangeViewData.animalResults = searchResults
+        }
     }
     
     // TOOLBAR FUNCTIONS

@@ -18,7 +18,7 @@ class BioViewController: UIViewController {
     @IBOutlet weak var sexLabel: UILabel!
     @IBOutlet weak var infoLabel2: UILabel!
     @IBOutlet weak var bioTextView: UITextView!
-    var currentPet: NSManagedObject?
+    var currentPet: Animal?
     
     // Info to be set when view loads
     var pet_name: String?
@@ -33,7 +33,7 @@ class BioViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Extract info from data model
+        /* Extract info from data model
         pet_name = (currentPet!.value(forKeyPath: "name") as! String)
         pet_image = UIImage(named: currentPet!.value(forKeyPath: "img") as! String)!
         pet_age = (currentPet!.value(forKeyPath: "age") as! String)
@@ -42,7 +42,17 @@ class BioViewController: UIViewController {
         pet_sex = (currentPet!.value(forKeyPath: "sex") as! String)
         pet_coat = (currentPet!.value(forKeyPath: "coat") as! String)
         pet_bio = (currentPet!.value(forKeyPath: "bio") as! String)
+        */
         
+        pet_name = currentPet!.petName
+        pet_image = currentPet!.image
+        pet_age = currentPet!.age
+        pet_breed = currentPet!.breed
+        pet_location = currentPet!.location
+        pet_sex = currentPet!.sex
+        pet_coat = currentPet!.coat
+        pet_bio = currentPet!.bio
+ 
         // Set views
         nameLabel.text = pet_name!
         imageView.image = pet_image!

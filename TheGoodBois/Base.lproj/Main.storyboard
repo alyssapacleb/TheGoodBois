@@ -294,7 +294,6 @@ Cary (Carrot Top aka Care Bear) is a young guy. He's probably maybe only a year 
                                 </state>
                                 <connections>
                                     <action selector="performSearch:" destination="hSc-HU-Mxi" eventType="touchUpInside" id="yDv-YW-KIy"/>
-                                    <segue destination="y3Z-6O-T3r" kind="show" id="poR-CU-Cbf"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3hA-U1-D05">
@@ -394,6 +393,7 @@ Cary (Carrot Top aka Care Bear) is a young guy. He's probably maybe only a year 
                         <outlet property="goodWithTextField" destination="3hA-U1-D05" id="kyT-cG-QSP"/>
                         <outlet property="locationLabel" destination="GLg-Yb-Tuw" id="64M-qm-p2g"/>
                         <outlet property="sizeTextField" destination="r2w-L9-Pdn" id="hZP-qi-dBx"/>
+                        <segue destination="y3Z-6O-T3r" kind="show" identifier="swipeViewSegue" id="8BX-VL-Ibl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I1y-Oc-X1Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
