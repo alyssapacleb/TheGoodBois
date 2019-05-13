@@ -24,9 +24,11 @@ class Animal {
     var coat:String
     var bio:String
     var status:String
+    var location:String
     var url:String
+    var image:UIImage?
     
-    init(petID:String?, orgID:String?, breed:String?, color:String?, age:String?, sex:String?, size:String?, coat:String?, petName:String?, bio:String?, status:String?, url:String?){
+    init(petID:String?, orgID:String?, breed:String?, color:String?, age:String?, sex:String?, size:String?, coat:String?, petName:String?, bio:String?, status:String?, location:String?, url:String?){
         
         self.petName = petName!
         self.petID = petID!
@@ -39,6 +41,7 @@ class Animal {
         self.coat = coat!
         self.bio = bio!
         self.status = status!
+        self.location = location!
         self.url = url!
        
     }
@@ -55,7 +58,32 @@ class Animal {
         self.coat = ""
         self.bio = ""
         self.status = ""
+        self.location = ""
         self.url = ""
+        self.image = UIImage()
+    }
+    
+    func getImage(link:String){
+        let urlSession = URLSession.shared
+        guard let url = URL(string: link) else { return }
+        
+        let dataTask = urlSession.dataTask(with: url) {
+            (data, response, error) -> Void in
+            if error != nil {
+                print(error!)
+            } else {
+                guard
+                    let response = response as? HTTPURLResponse, (200...299).contains(response.statusCode),
+                    let mime = response.mimeType, mime.hasPrefix("image"),
+                    let data = data,
+                    let image = UIImage(data: data)
+                    else {return}
+                DispatchQueue.main.async() {
+                    self.image = image
+                }
+            }
+        }
+        dataTask.resume()
     }
     
 }
@@ -166,8 +194,9 @@ extension SearchFieldsViewController: SearchDataProtocol {
                 let name = animal["name"] as? String
                 let bio = animal["description"] as? String
                 let status = animal["status"] as? String
+                let location = animal["location"] as? String
     
-                let newAnimal = Animal(petID:petID, orgID:orgID, breed:breed, color:color, age:age, sex:sex, size:size, coat:coat, petName:name, bio:bio, status:status, url:url)
+                let newAnimal = Animal(petID:petID, orgID:orgID, breed:breed, color:color, age:age, sex:sex, size:size, coat:coat, petName:name, bio:bio, status:status, location:location, url:url)
                 animalList.append(newAnimal)
     
             }

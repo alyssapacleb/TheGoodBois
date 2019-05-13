@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-var selectedSavedPet: NSManagedObject?
+var selectedSavedPet: Animal?
 
 class SavedPetsViewController: UITableViewController {
 
@@ -57,7 +57,7 @@ class SavedPetsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let pet = savedPets[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "SavedPetsCell", for: indexPath) as! SavedPetsTableViewCell
-        let cellImage = UIImage(named: pet.value(forKeyPath: "img") as! String)!
+        let cellImage = UIImage(data: pet.value(forKeyPath: "img") as! Data)!
         let label1 = pet.value(forKeyPath: "name") as! String
 
         // Configure the cell...
@@ -67,7 +67,17 @@ class SavedPetsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        selectedSavedPet = savedPets[indexPath.row]
+        let pet = savedPets[indexPath.row]
+        let pet_name = (pet.value(forKeyPath: "name") as! String)
+        let pet_image = UIImage(data: pet.value(forKeyPath: "img") as! Data)!
+        let pet_age = (pet.value(forKeyPath: "age") as! String)
+        let pet_breed = (pet.value(forKeyPath: "breed") as! String)
+        let pet_location = (pet.value(forKeyPath: "loc") as! String)
+        let pet_sex = (pet.value(forKeyPath: "sex") as! String)
+        let pet_coat = (pet.value(forKeyPath: "coat") as! String)
+        let pet_bio = (pet.value(forKeyPath: "bio") as! String)
+        selectedSavedPet = Animal(petID: "", orgID: "", breed: pet_breed, color: "", age: pet_age, sex: pet_sex, size: "", coat: pet_coat, petName: pet_name, bio: pet_bio, status: "", location: pet_location, url: "")
+        selectedSavedPet?.image = pet_image
         print(selectedSavedPet!)
         self.performSegue(withIdentifier: "BioViewSegue", sender: self)
     }
