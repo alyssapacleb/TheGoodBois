@@ -22,6 +22,17 @@ class SwipeViewController: UIViewController {
     let convertQueue = DispatchQueue(label: "convertQueue", attributes: .concurrent)
     let saveQueue = DispatchQueue(label: "saveQueue", attributes: .concurrent)
     
+    @IBAction func tapCard(_ sender: UITapGestureRecognizer) {
+        performSegue(withIdentifier: "swipeToBioSegue", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "swipeToBioSegue" {
+            let ExchangeViewData = segue.destination as! BioViewController
+            ExchangeViewData.currentPet = animalResults![currentAnimal]
+        }
+    }
+    
     @IBAction func panCard(_ sender: UIPanGestureRecognizer) {
         let card = sender.view!
         let point = sender.translation(in: view)

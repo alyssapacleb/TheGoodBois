@@ -421,6 +421,7 @@ Cary (Carrot Top aka Care Bear) is a young guy. He's probably maybe only a year 
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="Hg4-mM-emi" appends="YES" id="101-HZ-2Ua"/>
+                                    <outletCollection property="gestureRecognizers" destination="gzV-gs-HYf" appends="YES" id="ACL-cn-KXP"/>
                                 </connections>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="w01-da-X5L">
@@ -442,6 +443,7 @@ Cary (Carrot Top aka Care Bear) is a young guy. He's probably maybe only a year 
                         <outlet property="card" destination="IDW-iP-wxu" id="q4Z-WH-kP5"/>
                         <outlet property="heart" destination="w01-da-X5L" id="sFj-ad-610"/>
                         <outlet property="swipeImageView" destination="50Q-pY-gNY" id="NGd-N4-Znh"/>
+                        <segue destination="GJQ-qi-DLz" kind="show" identifier="swipeToBioSegue" id="wie-BB-dQ2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fUq-Gf-cm9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -450,6 +452,11 @@ Cary (Carrot Top aka Care Bear) is a young guy. He's probably maybe only a year 
                         <action selector="panCard:" destination="y3Z-6O-T3r" id="bgc-2Z-YYY"/>
                     </connections>
                 </panGestureRecognizer>
+                <tapGestureRecognizer id="gzV-gs-HYf">
+                    <connections>
+                        <action selector="tapCard:" destination="y3Z-6O-T3r" id="RbZ-04-q9d"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="5404" y="31.934032983508249"/>
         </scene>
@@ -737,4 +744,7 @@ Cary (Carrot Top aka Care Bear) is a young guy. He's probably maybe only a year 
         <image name="dog2" width="720" height="960"/>
         <image name="heart" width="256" height="256"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="wie-BB-dQ2"/>
+    </inferredMetricsTieBreakers>
 </document>
