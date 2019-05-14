@@ -6,13 +6,6 @@
 //  Copyright © 2019 The Good Bois. All rights reserved.
 //
 
-//---------------------------------------------------------------------------------------------------------------------------------------------
-// TODO:
-// 1. Fix BioViewController
-// 3. First swipeviewcontroller image is empty
-// 5. IF TIME: Add status code switch to error handling
-//---------------------------------------------------------------------------------------------------------------------------------------------
-
 import Foundation
 import Alamofire
 import SwiftyJSON
