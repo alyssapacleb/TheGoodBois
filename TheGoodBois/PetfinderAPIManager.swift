@@ -366,7 +366,7 @@ class PetfinderAPIManager {
     // MARK: - Error handling
     func responseError(type: String, block: String, message: String) {
         // If time allows, implement more advanced error handling
-        print("-----ERROR: {\(type)-----\nIn block: \(block)\nMessage: \(message)\n")
+        print("-----ERROR: {\(type)}-----\nIn block: \(block)\nMessage: \(message)\n")
         self.delegate!.requestError(errType: type)
     }
     

@@ -20,14 +20,9 @@ class PreferencesViewController: UIViewController, UITextFieldDelegate {
     // MARK: - Outlets
     @IBOutlet weak var locationLabel: UITextField!
     @IBOutlet weak var breedTextField: UITextField!
-    @IBOutlet weak var ageTextField: UITextField!
-    @IBOutlet weak var sizeTextField: UITextField!
-    @IBOutlet weak var genderTextField: UITextField!
-    @IBOutlet weak var goodWithTextField: UITextField!
     
     // Picker Options (have to be strings!!!)
     //var breedOptions = [String]()
-    let breedOptions = [""]
     let ageOptions = ["Baby", "Young","Adult","Senior"]
     let sizeOptions = ["Small", "Medium","Large","XLarge"]
     let genderOptions = ["Male","Female"]
@@ -45,6 +40,8 @@ class PreferencesViewController: UIViewController, UITextFieldDelegate {
     var currentTextField: UITextField?
     var searchResults = [Animal]()
     var indexesToRemove = [Int]()
+    private var parameters: Parameters = ["type":"dog", "status":"adoptable", "limit":"100", "gender":"",
+                                          "size":"", "age":"", "breed":"", "location":""]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,6 +54,8 @@ class PreferencesViewController: UIViewController, UITextFieldDelegate {
         if CLLocationManager.locationServicesEnabled() {
             locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
         }
+        
+        PetfinderAPIManager.sharedInstance.delegate = self
 
     }
     
@@ -65,17 +64,14 @@ class PreferencesViewController: UIViewController, UITextFieldDelegate {
         print("Performing search...")
         self.searchResults = [Animal]()
         self.indexesToRemove = [Int]()
-        //TODO: SETUP PARAMETERS
-        let params: Parameters = ["type":"dog",
-                                  "status":"adoptable"]
-        
+        self.setParams()
         // Perform initial get request to get animal results
-        PetfinderAPIManager.sharedInstance.getData(searchType: "animals", searchStr: nil, params: params, completion: {resultsList in
+        PetfinderAPIManager.sharedInstance.getData(searchType: "animals", searchStr: nil, params: self.parameters, completion: {resultsList in
             let animals = resultsList as! [Animal]
             self.searchResults += animals
             // Perform next search to get additional results
             print("Fetching more results...")
-            PetfinderAPIManager.sharedInstance.getData(searchType: "next", searchStr: nil, params: params, completion: {moreResults in
+            PetfinderAPIManager.sharedInstance.getData(searchType: "next", searchStr: nil, params: self.parameters, completion: {moreResults in
                 var moreAnimals = moreResults as! [Animal]
                 self.searchResults += moreAnimals
                 self.removeViewedPets()
@@ -83,7 +79,7 @@ class PreferencesViewController: UIViewController, UITextFieldDelegate {
                 while self.searchResults.count < 20 {
                     if !exitEarly {
                         print("Current # of results: \(self.searchResults.count)\nFetching more results...")
-                        PetfinderAPIManager.sharedInstance.getData(searchType: "next", searchStr: nil, params: params, completion: {moreResults in
+                        PetfinderAPIManager.sharedInstance.getData(searchType: "next", searchStr: nil, params: self.parameters, completion: {moreResults in
                             if moreResults.count != 0 {
                                 moreAnimals = moreResults as! [Animal]
                                 self.searchResults += moreAnimals
@@ -100,12 +96,7 @@ class PreferencesViewController: UIViewController, UITextFieldDelegate {
                     if let imgurl = self.searchResults[index].imgURL {
                         let url = URL(string: imgurl)
                         self.downloadPic(url: url!, completion: { image in
-                            if image != nil {
-                                self.searchResults[index].image = image
-                            } else {
-                                print("Animal w/ empty image found; removing from results")
-                                self.indexesToRemove.append(index)
-                            }
+                            self.searchResults[index].image = image
                         })
                     } else {
                         print("Animal w/ empty image url found; removing from results")
@@ -121,7 +112,29 @@ class PreferencesViewController: UIViewController, UITextFieldDelegate {
             })
     }
     
+    // Use globals set by switches in table view to set query parameters
+    func setParams() {
+        let genders = gender_male + "," + gender_female
+        let sizes = size_Small + "," + size_Medium + "," + size_Large + "," + size_Xlarge
+        let ages = age_Baby + "," + age_Young + "," + age_Adult + "," + age_Senior
+        
+        if let breedText = self.breedTextField!.text {
+            self.parameters["breed"] = breedText
+        } else {
+            self.parameters["breed"] = ""
+        }
+        if let locText = self.locationLabel!.text {
+            self.parameters["location"] = locText
+        } else {
+            self.parameters["location"] = ""
+        }
+        self.parameters["gender"] = genders
+        self.parameters["size"] = sizes
+        self.parameters["age"] = ages
+    }
+    
     // Function to iterate through search results and remove pets who have already been viewed
+    // Note: Core data saving of used IDs was not implemented due to time constraints so this function does not do anything at the moment
     func removeViewedPets() {
         for index in 0...(self.searchResults.count - 1) {
             if let newID = self.searchResults[index].petID {
