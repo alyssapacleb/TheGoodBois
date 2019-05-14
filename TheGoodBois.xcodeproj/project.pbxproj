@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1948E95F228AB5530057A703 /* prefTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1948E95E228AB5530057A703 /* prefTableViewController.swift */; };
 		1978D4E6226A438F00ABA4EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1978D4E5226A438F00ABA4EF /* AppDelegate.swift */; };
 		1978D4E8226A438F00ABA4EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1978D4E7226A438F00ABA4EF /* ViewController.swift */; };
 		1978D4EB226A438F00ABA4EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1978D4E9226A438F00ABA4EF /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		0AAD26F20906F0E423BF24F1 /* Pods-TheGoodBois.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheGoodBois.release.xcconfig"; path = "Target Support Files/Pods-TheGoodBois/Pods-TheGoodBois.release.xcconfig"; sourceTree = "<group>"; };
+		1948E95E228AB5530057A703 /* prefTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prefTableViewController.swift; sourceTree = "<group>"; };
 		1978D4E2226A438F00ABA4EF /* TheGoodBois.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheGoodBois.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1978D4E5226A438F00ABA4EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1978D4E7226A438F00ABA4EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				19FF914A2280E5B40007D62B /* Tutorial3ViewController.swift */,
 				19FF914C2280E5B80007D62B /* Tutorial4ViewController.swift */,
 				19FF914E2280E5BE0007D62B /* AboutViewController.swift */,
+				1948E95E228AB5530057A703 /* prefTableViewController.swift */,
 				19FF91522280E5C50007D62B /* drawView.swift */,
 				9681BB99226D5E4F0083717E /* SwipeViewController.swift */,
 				F14696F42270CE1000035EDB /* SavedPetsViewController.swift */,
@@ -295,6 +298,7 @@
 				19FF914B2280E5B40007D62B /* Tutorial3ViewController.swift in Sources */,
 				F133EA49227B869E000BE4D7 /* TheGoodBois.xcdatamodeld in Sources */,
 				1978D4E8226A438F00ABA4EF /* ViewController.swift in Sources */,
+				1948E95F228AB5530057A703 /* prefTableViewController.swift in Sources */,
 				19FF91492280E5B10007D62B /* Tutorial2ViewController.swift in Sources */,
 				1978D4E6226A438F00ABA4EF /* AppDelegate.swift in Sources */,
 				9681BB9A226D5E4F0083717E /* SwipeViewController.swift in Sources */,
