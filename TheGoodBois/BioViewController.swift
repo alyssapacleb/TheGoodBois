@@ -55,12 +55,12 @@ class BioViewController: UIViewController {
         }
         var infoLabel1Text = ""
         if pet_age != nil {
-            infoLabel1Text = pet_age! + ", "
+            infoLabel1Text = "Age: " + pet_age! + ", "
         } else {
             infoLabel1Text = "-,"
         }
         if pet_breed != nil {
-            infoLabel1Text += pet_breed!
+            infoLabel1Text += "Breed: " + pet_breed!
         } else {
             infoLabel1Text += "-"
         }
@@ -94,12 +94,12 @@ class BioViewController: UIViewController {
         
         var sexLabelText = ""
         if pet_sex != nil {
-            sexLabelText = pet_sex! + ", "
+            sexLabelText = "Sex: " + pet_sex! + ", "
         } else {
             sexLabelText = "-, "
         }
         if pet_size != nil {
-            sexLabelText += pet_size!
+            sexLabelText += "Size: " + pet_size!
         } else {
             sexLabelText += "-"
         }
@@ -110,6 +110,8 @@ class BioViewController: UIViewController {
         } else {
             imageView.image = UIImage()
         }
+        
+        locationLabel.text = ""
     }
 
 }

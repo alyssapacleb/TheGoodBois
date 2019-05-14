@@ -14,6 +14,7 @@ import SwiftyJSON
 
 // MARK: - Globals
 var usedIDs = [Int]()
+var searchResults = [Animal]()
 
 class PreferencesViewController: UIViewController, UITextFieldDelegate {
     
@@ -21,24 +22,10 @@ class PreferencesViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var locationLabel: UITextField!
     @IBOutlet weak var breedTextField: UITextField!
     
-    // Picker Options (have to be strings!!!)
-    //var breedOptions = [String]()
-    let ageOptions = ["Baby", "Young","Adult","Senior"]
-    let sizeOptions = ["Small", "Medium","Large","XLarge"]
-    let genderOptions = ["Male","Female"]
-    //var coatOptions = [String]()
-    let coatOptions = ["Hairless", "Short", "Medium",
-                       "Long", "Wire", "Curly"]
-    //var colorOptions = [String]()
-    let colorOptions = ["Apricot / Beige", "Bicolor", "Black", "Brindle", "Brown / Chocolate",
-                        "Golden", "Gray / Blue / Silver", "Harlequin", "Merle (Blue)", "Merle (Red)",
-                        "Red / Chestnut / Orange", "Sable", "Tricolor (Brown, Black, & White)", "White / Cream", "Yellow / Tan / Blond / Fawn"]
-    
     // MARK: - Properties
     let locationManager = CLLocationManager()
     private var userLocation: CLLocation?
     var currentTextField: UITextField?
-    var searchResults = [Animal]()
     var indexesToRemove = [Int]()
     private var parameters: Parameters = ["type":"dog", "status":"adoptable", "limit":"100", "gender":"",
                                           "size":"", "age":"", "breed":"", "location":""]
@@ -62,27 +49,27 @@ class PreferencesViewController: UIViewController, UITextFieldDelegate {
     // MARK: - Actions
     @IBAction func performSearch(_ sender: Any) {
         print("Performing search...")
-        self.searchResults = [Animal]()
+        searchResults = [Animal]()
         self.indexesToRemove = [Int]()
         self.setParams()
         // Perform initial get request to get animal results
         PetfinderAPIManager.sharedInstance.getData(searchType: "animals", searchStr: nil, params: self.parameters, completion: {resultsList in
             let animals = resultsList as! [Animal]
-            self.searchResults += animals
+            searchResults += animals
             // Perform next search to get additional results
             print("Fetching more results...")
             PetfinderAPIManager.sharedInstance.getData(searchType: "next", searchStr: nil, params: self.parameters, completion: {moreResults in
                 var moreAnimals = moreResults as! [Animal]
-                self.searchResults += moreAnimals
+                searchResults += moreAnimals
                 self.removeViewedPets()
                 var exitEarly = false
-                while self.searchResults.count < 20 {
+                while searchResults.count < 20 {
                     if !exitEarly {
-                        print("Current # of results: \(self.searchResults.count)\nFetching more results...")
+                        print("Current # of results: \(searchResults.count)\nFetching more results...")
                         PetfinderAPIManager.sharedInstance.getData(searchType: "next", searchStr: nil, params: self.parameters, completion: {moreResults in
                             if moreResults.count != 0 {
                                 moreAnimals = moreResults as! [Animal]
-                                self.searchResults += moreAnimals
+                                searchResults += moreAnimals
                                 self.removeViewedPets()
                             } else {
                                 PetfinderAPIManager.sharedInstance.responseError(type: "Missing results", block: "Next", message: "No results found")
@@ -91,24 +78,37 @@ class PreferencesViewController: UIViewController, UITextFieldDelegate {
                         })
                     }
                 }
-                print("Number of results before segue: \(self.searchResults.count)")
-                for index in 0...(self.searchResults.count - 1) {
-                    if let imgurl = self.searchResults[index].imgURL {
-                        let url = URL(string: imgurl)
-                        self.downloadPic(url: url!, completion: { image in
-                            self.searchResults[index].image = image
-                        })
-                    } else {
-                        print("Animal w/ empty image url found; removing from results")
-                        self.indexesToRemove.append(index)
+                print("Number of results before segue: \(searchResults.count)")
+                if(searchResults.count > 0) {
+                    var completeRequests: Int = 0
+                    var seguePerformed: Bool = false
+                    for index in 0...(searchResults.count - 1) {
+                        if let imgurl = searchResults[index].imgURL {
+                            let url = URL(string: imgurl)
+                            self.downloadPic(url: url!, completion: { image in
+                                completeRequests += 1
+                                searchResults[index].image = image
+                                if completeRequests > 20 && !seguePerformed {
+                                    print("Performing segue...")
+                                    self.performSegue(withIdentifier: "swipeViewSegue", sender: self)
+                                    seguePerformed = true
+                                }
+                            })
+                        } else {
+                            print("Animal w/ empty image url found; setting default image")
+                            searchResults[index].image = UIImage(named: "missingImage")
+                        }
                     }
+                } else {
+                    print("ZERO RESULTS FOUND; please try again")
                 }
-                })
-            for index in self.indexesToRemove {
-                self.searchResults.remove(at: index)
-            }
-            print("Performing segue...")
-            self.performSegue(withIdentifier: "swipeViewSegue", sender: self)
+                })/*
+            if(searchResults.count > 0) {
+                print("Performing segue...")
+                self.performSegue(withIdentifier: "swipeViewSegue", sender: self)
+            } else {
+                print("ZERO RESULTS FOUND; please try again")
+            }*/
             })
     }
     
@@ -124,22 +124,27 @@ class PreferencesViewController: UIViewController, UITextFieldDelegate {
             self.parameters["breed"] = ""
         }
         if let locText = self.locationLabel!.text {
-            self.parameters["location"] = locText
+            if locText.count > 0 {
+                self.parameters["location"] = locText
+            } else {
+                self.parameters.removeValue(forKey: "location")
+            }
         } else {
-            self.parameters["location"] = ""
+            self.parameters.removeValue(forKey: "location")
         }
         self.parameters["gender"] = genders
         self.parameters["size"] = sizes
         self.parameters["age"] = ages
+        print("New parameters:\n\(self.parameters)")
     }
     
     // Function to iterate through search results and remove pets who have already been viewed
     // Note: Core data saving of used IDs was not implemented due to time constraints so this function does not do anything at the moment
     func removeViewedPets() {
-        for index in 0...(self.searchResults.count - 1) {
-            if let newID = self.searchResults[index].petID {
+        for index in 0...(searchResults.count - 1) {
+            if let newID = searchResults[index].petID {
                 if usedIDs.contains(newID) {
-                    self.searchResults.remove(at: index)
+                    searchResults.remove(at: index)
                 }
             }
         }
@@ -169,7 +174,6 @@ class PreferencesViewController: UIViewController, UITextFieldDelegate {
     }
     
     // TOOLBAR FUNCTIONS
-    
     @objc func donePressed(sender: UIBarButtonItem) {
         
         currentTextField?.resignFirstResponder()

@@ -49,14 +49,19 @@ class prefTableViewController: UITableViewController {
         changeText()
     }
     @IBAction func toggle_6(_ sender: UISwitch) {
+        changeText()
     }
     @IBAction func toggle_7(_ sender: UISwitch) {
+        changeText()
     }
     @IBAction func toggle_8(_ sender: UISwitch) {
+        changeText()
     }
     @IBAction func toggle_9(_ sender: UISwitch) {
+        changeText()
     }
     @IBAction func toggle_10(_ sender: UISwitch) {
+        changeText()
     }
     
     

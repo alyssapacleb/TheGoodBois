@@ -669,10 +669,17 @@ Cary (Carrot Top aka Care Bear) is a young guy. He's probably maybe only a year 
                                 <rect key="frame" x="16" y="99" width="343" height="488"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WRY-td-Fmf">
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="missingImage" translatesAutoresizingMaskIntoConstraints="NO" id="WRY-td-Fmf">
                                         <rect key="frame" x="53" y="36" width="236" height="284"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTI-Da-DaJ">
+                                        <rect key="frame" x="8" y="328" width="327" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="font00000000228ad443" family="Geomanist" pointSize="28"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
@@ -700,6 +707,7 @@ Cary (Carrot Top aka Care Bear) is a young guy. He's probably maybe only a year 
                         <outlet property="card" destination="EDM-Tt-x0K" id="BU5-J1-jhp"/>
                         <outlet property="heart" destination="7z5-Qc-6bh" id="8o4-m2-iT1"/>
                         <outlet property="swipeImageView" destination="WRY-td-Fmf" id="Vd8-zi-NQE"/>
+                        <outlet property="swipeNameLabel" destination="LTI-Da-DaJ" id="Yea-ox-oMd"/>
                         <segue destination="yv6-om-SzD" kind="show" identifier="swipeToBioSegue" id="gvu-H6-Ahc"/>
                     </connections>
                 </viewController>
@@ -715,7 +723,7 @@ Cary (Carrot Top aka Care Bear) is a young guy. He's probably maybe only a year 
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="5574" y="-1503"/>
+            <point key="canvasLocation" x="5573.6000000000004" y="-1503.5982008995504"/>
         </scene>
         <!--Tutorial1 View Controller-->
         <scene sceneID="The-4G-1ki">
@@ -991,6 +999,7 @@ Cary (Carrot Top aka Care Bear) is a young guy. He's probably maybe only a year 
         <image name="dog1" width="391" height="480"/>
         <image name="dog2" width="720" height="960"/>
         <image name="heart" width="256" height="256"/>
+        <image name="missingImage" width="320" height="320"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="gvu-H6-Ahc"/>

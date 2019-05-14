@@ -14,6 +14,7 @@ class SwipeViewController: UIViewController {
     @IBOutlet weak var card: UIView!
     @IBOutlet weak var heart: UIImageView!
     @IBOutlet weak var swipeImageView: UIImageView!
+    @IBOutlet weak var swipeNameLabel: UILabel!
     var animalResults: [Animal]?
     var currentAnimal = 0
     var direction = ""
@@ -29,7 +30,7 @@ class SwipeViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "swipeToBioSegue" {
             let ExchangeViewData = segue.destination as! BioViewController
-            ExchangeViewData.currentPet = animalResults![currentAnimal]
+            ExchangeViewData.currentPet = searchResults[currentAnimal]
         }
     }
     
@@ -108,7 +109,7 @@ class SwipeViewController: UIViewController {
     func resetImage() {
         if direction == "right" {
             let safeNumber = self.currentAnimal
-            guard let image = self.animalResults![safeNumber].image else {
+            guard let image = searchResults[safeNumber].image else {
                 print("resetImage(): Nil image found")
                 return
             }
@@ -124,17 +125,17 @@ class SwipeViewController: UIViewController {
                     let pet = NSManagedObject(entity: entity, insertInto: self.managedContext)
                     
                     // Grab new values from Animal object
-                    let id = self.animalResults![safeNumber].petID
-                    let url = self.animalResults![safeNumber].url
-                    let breed = self.animalResults![safeNumber].breed
-                    let color = self.animalResults![safeNumber].color
-                    let age = self.animalResults![safeNumber].age
-                    let sex = self.animalResults![safeNumber].sex
-                    let size = self.animalResults![safeNumber].size
-                    let coat = self.animalResults![safeNumber].coat
-                    let name = self.animalResults![safeNumber].name
-                    let bio = self.animalResults![safeNumber].bio
-                    let imgURL = self.animalResults![safeNumber].imgURL
+                    let id = searchResults[safeNumber].petID
+                    let url = searchResults[safeNumber].url
+                    let breed = searchResults[safeNumber].breed
+                    let color = searchResults[safeNumber].color
+                    let age = searchResults[safeNumber].age
+                    let sex = searchResults[safeNumber].sex
+                    let size = searchResults[safeNumber].size
+                    let coat = searchResults[safeNumber].coat
+                    let name = searchResults[safeNumber].name
+                    let bio = searchResults[safeNumber].bio
+                    let imgURL = searchResults[safeNumber].imgURL
                     
                     // Set values for new pet core data object
                     pet.setValue(id, forKey: "id")
@@ -164,14 +165,15 @@ class SwipeViewController: UIViewController {
         }
         
         if direction == "left" || direction == "right" {
-            if currentAnimal == animalResults!.count - 1 {
+            if currentAnimal == searchResults.count - 1 {
                 currentAnimal = 0
                 
             } else{
                 currentAnimal += 1
                 print("Current animal is: \(currentAnimal)")
             }
-            swipeImageView.image = animalResults![currentAnimal].image
+            swipeImageView.image = searchResults[currentAnimal].image
+            swipeNameLabel.text = searchResults[currentAnimal].name
         }
         
     }
@@ -180,7 +182,8 @@ class SwipeViewController: UIViewController {
         super.viewDidLoad()
         card.center = self.view.center
         navigationController?.interactivePopGestureRecognizer?.isEnabled = false
-        swipeImageView?.image = animalResults![currentAnimal].image
+        swipeImageView?.image = searchResults[currentAnimal].image
+        swipeNameLabel?.text = searchResults[currentAnimal].name
         
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             print("Failed to retrieve add delegate")
@@ -188,67 +191,7 @@ class SwipeViewController: UIViewController {
         }
         self.managedContext = appDelegate.persistentContainer.viewContext
         
-        // create tap gesture recognizer
-        //let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SwipeViewController.imageTapped(gesture:)))
-        
-        // add it to the image view;
-        //swipeImageView.addGestureRecognizer(tapGesture)
-        // make sure imageView can be interacted with by user
-        //swipeImageView.isUserInteractionEnabled = true
-        
-        /*var swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
-        swipeRight.direction = UISwipeGestureRecognizerDirection.right
-        self.view.addGestureRecognizer(swipeRight)
-        
-        var swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
-        swipeLeft.direction = UISwipeGestureRecognizerDirection.left
-        self.view.addGestureRecognizer(swipeLeft)
-        */
-        
-        
     }
-    
-    
-    /*@objc func imageTapped(gesture: UIGestureRecognizer) {
-     // if the tapped view is a UIImageView then set it to imageview
-     if (gesture.view as? UIImageView) != nil {
-     print("Image Tapped")
-     
-     //This really don't work
-     let storyBoard: UIStoryboard = UIStoryboard(name: "petBio", bundle: nil)
-     let bioViewController = storyBoard.instantiateViewController(withIdentifier: "petBio")
-     self.navigationController.pushViewController(bioViewController, animated: true)
-     
-     }
-     }*/
-    /*
-    @objc func respondToSwipeGesture(gesture: UIGestureRecognizer) {
-        
-        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
-            
-            
-            switch swipeGesture.direction {
-            case UISwipeGestureRecognizerDirection.left:
-                if currentImage == imageNames.count - 1 {
-                    currentImage = 0
-                    
-                }else{
-                    currentImage += 1
-                }
-                swipeImageView.image = UIImage(named: imageNames[currentImage])
-                
-            case UISwipeGestureRecognizerDirection.right:
-                if currentImage == 0 {
-                    currentImage = imageNames.count - 1
-                }else{
-                    currentImage -= 1
-                }
-                swipeImageView.image = UIImage(named: imageNames[currentImage])
-            default:
-                break
-            }
-        }
-    }*/
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
