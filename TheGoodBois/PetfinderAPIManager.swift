@@ -19,7 +19,9 @@ import Alamofire
 import SwiftyJSON
 
 protocol PetfinderAPIProtocol {
-    func requestError()
+    func requestError(errType: String)
+    func setAnimals()
+    func setFields()
 }
 
 class PetfinderAPIManager {
@@ -58,7 +60,7 @@ class PetfinderAPIManager {
                     self.getTypesRequest(type: searchStr!, completion: { coatsData, colorsData in
                         self.getBreedsRequest(type: searchStr!, completion: { breedsData in
                             let newFields = Fields(breeds: breedsData, colors: colorsData, coats: coatsData)
-                            self.delegate!.setFields(fields: newFields)
+                            completion([newFields])
                         })
                     })
                 } else {
@@ -67,7 +69,7 @@ class PetfinderAPIManager {
             case("animals"):
                 if params != nil {
                     self.getAnimalsRequest(params: params!, completion: { animalsList in
-                        self.delegate!.setAnimals(animalList: animalsList)
+                        completion(animalsList)
                         })
                 } else {
                     self.responseError(type: "Parameters", block: "getData", message: "Animals search parameters must not be nil")
@@ -75,7 +77,7 @@ class PetfinderAPIManager {
             case("next"):
                 if params != nil {
                     self.getNextPageRequest(params: params!, completion: { animalsList in
-                        self.delegate!.setAnimals(animalList: animalsList)
+                        completion(animalsList)
                         })
                 } else {
                     self.responseError(type: "Parameters", block: "getdata", message: "Next page search parameters must not be nil")
@@ -130,6 +132,8 @@ class PetfinderAPIManager {
                         case(.failure):
                             self.responseError(type: "Serial", block: "OAuth Request", message: "Response JSON serialization failed")
                         }
+                    case 500:
+                        self.responseError(type: "Unknown", block: "OAuth Request", message: "Server responded with 500 code; please try again")
                     default:
                         self.responseError(type: "Status", block: "OAuth Request", message: "Server response status code: \(status)")
                     }
@@ -157,6 +161,8 @@ class PetfinderAPIManager {
                         case(.failure):
                             self.responseError(type: "Serial", block: "Types", message: "Response JSON serialization failed")
                         }
+                    case 500:
+                        self.responseError(type: "Unknown", block: "Types", message: "Server responded with 500 code; please try again")
                     default:
                         self.responseError(type: "Status", block: "Types", message: "Server response status code: \(status)")
                     }
@@ -186,6 +192,8 @@ class PetfinderAPIManager {
                         case(.failure):
                             self.responseError(type: "Serial", block: "Breeds", message: "Response JSON serialization failed")
                         }
+                    case 500:
+                        self.responseError(type: "Unknown", block: "Breeds", message: "Server responded with 500 code; please try again")
                     default:
                         self.responseError(type: "Status", block: "Breeds", message: "Server response status code: \(status)")
                     }
@@ -226,11 +234,11 @@ class PetfinderAPIManager {
                                 let photos = subJSON["photos"].array
                                 let photoOne = photos![0].dictionary
                                 let newImg = photoOne!["full"]!.string
-                                let newStatus = subJSON["status"].string
                                 
-                                let newAnimal = Animal(newID: newID, newOrg: newOrg, newURL: newURL, newSpecies: newSpecies, newBreed: newBreed, newColor: newColor, newAge: newAge, newSex: newSex, newSize: newSize, newCoat: newCoat, newEnv: newEnv, newName: newName, newBio: newBio, newImg: newImg, newStatus: newStatus)
+                                let newAnimal = Animal(newID: newID, newOrg: newOrg, newURL: newURL, newSpecies: newSpecies, newBreed: newBreed, newColor: newColor, newAge: newAge, newSex: newSex, newSize: newSize, newCoat: newCoat, newName: newName, newBio: newBio, newImg: newImg)
                                 animals.append(newAnimal)
                             }
+                            
                             let pageData = resultData["pagination"]
                             let linkData = pageData["_links"]
                             if let nextData = linkData["next"].dictionary {
@@ -240,9 +248,31 @@ class PetfinderAPIManager {
                                 self.responseError(type: "Next Page", block: "Animals", message: "No next page href available")
                             }
                             completion(animals)
+                            
                         case(.failure):
                             self.responseError(type: "Serial", block: "Animals", message: "Response JSON serialization failed")
                         }
+                    case 400:
+                        switch(response.result) {
+                        case(.success):
+                            let resultData = JSON(response.result.value!)
+                            let type = resultData["type"].string
+                            if type == "https://www.petfinder.com/developers/v2/docs/errors/ERR-00002/" {
+                                var invalidParams = [String: String]()
+                                let paramsData = resultData["invalid-params"]
+                                for(_, subJSON) in paramsData {
+                                    let param = subJSON["path"].string!
+                                    let msg = subJSON["message"].string!
+                                    invalidParams[param] = msg
+                                }
+                            } else {
+                                self.responseError(type: "400 Error", block: "Next page", message: "Server responded with unknown 400 error")
+                            }
+                        case(.failure):
+                            self.responseError(type: "Serial", block: "Next page", message: "Server responded with 400 error & JSON serialization failed")
+                        }
+                    case 500:
+                        self.responseError(type: "Unknown", block: "Animals", message: "Server responded with 500 code; please try again")
                     default:
                         self.responseError(type: "Status", block: "Animals", message: "Server response status code: \(status)")
                     }
@@ -283,7 +313,6 @@ class PetfinderAPIManager {
                                     let photos = subJSON["photos"].array
                                     let photoOne = photos![0].dictionary
                                     let newImg = photoOne!["full"]!.string
-                                    let newStatus = subJSON["status"].string
                                     
                                     let newAnimal = Animal(newID: newID, newOrg: newOrg, newURL: newURL, newSpecies: newSpecies, newBreed: newBreed, newColor: newColor, newAge: newAge, newSex: newSex, newSize: newSize, newCoat: newCoat, newEnv: newEnv, newName: newName, newBio: newBio, newImg: newImg, newStatus: newStatus)
                                     animals.append(newAnimal)
@@ -301,6 +330,27 @@ class PetfinderAPIManager {
                             case(.failure):
                                 self.responseError(type: "Serial", block: "Next page", message: "Response JSON serialization failed")
                             }
+                        case 400:
+                            switch(response.result) {
+                            case(.success):
+                                let resultData = JSON(response.result.value!)
+                                let type = resultData["type"].string
+                                if type == "https://www.petfinder.com/developers/v2/docs/errors/ERR-00002/" {
+                                    var invalidParams = [String: String]()
+                                    let paramsData = resultData["invalid-params"]
+                                    for(_, subJSON) in paramsData {
+                                        let param = subJSON["path"].string!
+                                        let msg = subJSON["message"].string!
+                                        invalidParams[param] = msg
+                                    }
+                                } else {
+                                    self.responseError(type: "400 Error", block: "Next page", message: "Server responded with unknown 400 error")
+                                }
+                            case(.failure):
+                                self.responseError(type: "Serial", block: "Next page", message: "Server responded with 400 error & JSON serialization failed")
+                            }
+                        case 500:
+                            self.responseError(type: "Unknown", block: "Next page", message: "Server responded with 500 code; please try again")
                         default:
                             self.responseError(type: "Status", block: "Next page", message: "Server response status code: \(status)")
                         }
@@ -314,8 +364,8 @@ class PetfinderAPIManager {
     // MARK: - Error handling
     func responseError(type: String, block: String, message: String) {
         // If time allows, implement more advanced error handling
-        print("-----ERROR: {\(type)-----\n\(block): \(message)")
-        self.delegate!.requestError()
+        print("-----ERROR: {\(type)-----\nIn block: \(block)\nMessage: \(message)\n")
+        self.delegate!.requestError(type)
     }
     
     // MARK: - Get/Set methods

@@ -30,11 +30,11 @@
 		96E8F80F227022460082BED3 /* circ1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96E8F80E227022460082BED3 /* circ1.jpg */; };
 		96E8F811227022560082BED3 /* circ2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96E8F810227022560082BED3 /* circ2.jpg */; };
 		96F23D6C2272A1AB00D89136 /* SavedPetsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F23D6B2272A1AB00D89136 /* SavedPetsTableViewCell.swift */; };
-		F133EA48227B869E000BE4D7 /* SearchFieldsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F133EA44227B869E000BE4D7 /* SearchFieldsViewController.swift */; };
 		F133EA49227B869E000BE4D7 /* TheGoodBois.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F133EA45227B869E000BE4D7 /* TheGoodBois.xcdatamodeld */; };
-		F133EA4A227B869E000BE4D7 /* SearchDataSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F133EA47227B869E000BE4D7 /* SearchDataSession.swift */; };
 		F133EA4C227B8B58000BE4D7 /* PetfinderAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F133EA4B227B8B58000BE4D7 /* PetfinderAPIManager.swift */; };
 		F14696F52270CE1000035EDB /* SavedPetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14696F42270CE1000035EDB /* SavedPetsViewController.swift */; };
+		F1D730FB228A50C800E960D0 /* Fields.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D730F9228A50C800E960D0 /* Fields.swift */; };
+		F1D730FC228A50C800E960D0 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D730FA228A50C800E960D0 /* Animal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,11 +65,11 @@
 		96F23D6B2272A1AB00D89136 /* SavedPetsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPetsTableViewCell.swift; sourceTree = "<group>"; };
 		C2ED3278B5FC6C53B27F270F /* Pods_TheGoodBois.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheGoodBois.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEA4419F1E4B97D2528E2DB0 /* Pods-TheGoodBois.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheGoodBois.debug.xcconfig"; path = "Target Support Files/Pods-TheGoodBois/Pods-TheGoodBois.debug.xcconfig"; sourceTree = "<group>"; };
-		F133EA44227B869E000BE4D7 /* SearchFieldsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchFieldsViewController.swift; sourceTree = "<group>"; };
 		F133EA46227B869E000BE4D7 /* TheGoodBois.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TheGoodBois.xcdatamodel; sourceTree = "<group>"; };
-		F133EA47227B869E000BE4D7 /* SearchDataSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchDataSession.swift; sourceTree = "<group>"; };
 		F133EA4B227B8B58000BE4D7 /* PetfinderAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetfinderAPIManager.swift; sourceTree = "<group>"; };
 		F14696F42270CE1000035EDB /* SavedPetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPetsViewController.swift; sourceTree = "<group>"; };
+		F1D730F9228A50C800E960D0 /* Fields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fields.swift; sourceTree = "<group>"; };
+		F1D730FA228A50C800E960D0 /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,8 +131,8 @@
 				96F23D6B2272A1AB00D89136 /* SavedPetsTableViewCell.swift */,
 				199236C82270CC680000358B /* PreferencesViewController.swift */,
 				F133EA4B227B8B58000BE4D7 /* PetfinderAPIManager.swift */,
-				F133EA47227B869E000BE4D7 /* SearchDataSession.swift */,
-				F133EA44227B869E000BE4D7 /* SearchFieldsViewController.swift */,
+				F1D730FA228A50C800E960D0 /* Animal.swift */,
+				F1D730F9228A50C800E960D0 /* Fields.swift */,
 				19FF91502280E5C20007D62B /* BioViewController.swift */,
 				F133EA45227B869E000BE4D7 /* TheGoodBois.xcdatamodeld */,
 				96E8F80E227022460082BED3 /* circ1.jpg */,
@@ -285,16 +285,16 @@
 				19FF91472280E5A90007D62B /* Tutorial1ViewController.swift in Sources */,
 				F133EA4C227B8B58000BE4D7 /* PetfinderAPIManager.swift in Sources */,
 				19FF911522809E3B0007D62B /* Logo.swift in Sources */,
+				F1D730FB228A50C800E960D0 /* Fields.swift in Sources */,
 				199236C92270CC680000358B /* PreferencesViewController.swift in Sources */,
 				19FF91532280E5C50007D62B /* drawView.swift in Sources */,
 				19FF914F2280E5BE0007D62B /* AboutViewController.swift in Sources */,
 				96F23D6C2272A1AB00D89136 /* SavedPetsTableViewCell.swift in Sources */,
 				19FF91512280E5C20007D62B /* BioViewController.swift in Sources */,
+				F1D730FC228A50C800E960D0 /* Animal.swift in Sources */,
 				19FF914B2280E5B40007D62B /* Tutorial3ViewController.swift in Sources */,
 				F133EA49227B869E000BE4D7 /* TheGoodBois.xcdatamodeld in Sources */,
 				1978D4E8226A438F00ABA4EF /* ViewController.swift in Sources */,
-				F133EA48227B869E000BE4D7 /* SearchFieldsViewController.swift in Sources */,
-				F133EA4A227B869E000BE4D7 /* SearchDataSession.swift in Sources */,
 				19FF91492280E5B10007D62B /* Tutorial2ViewController.swift in Sources */,
 				1978D4E6226A438F00ABA4EF /* AppDelegate.swift in Sources */,
 				9681BB9A226D5E4F0083717E /* SwipeViewController.swift in Sources */,
