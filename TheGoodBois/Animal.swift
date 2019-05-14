@@ -11,44 +11,40 @@ import SwiftyJSON
 // Use Animal class to store returned animals' data
 class Animal {
     
-    var petID:String
-    var orgID:String
-    var url:String
-    var species:String
-    var breed:String
-    var color:String
-    var age:String
-    var sex:String
-    var size:String
-    var coat:String
-    var name:String
-    var bio:String
-    var imgURL:String
+    var petID:Int?
+    var url:String?
+    var breed:String?
+    var color:String?
+    var age:String?
+    var sex:String?
+    var size:String?
+    var coat:String?
+    var name:String?
+    var bio:String?
+    var imgURL:String?
+    var image:UIImage?
     
-    init(newID:String?, newOrg:String?, newURL:String?, newSpecies:String?, newBreed:String?, newColor:String?, newAge:String?, newSex:String?, newSize:String?, newCoat:String?, newName:String?, newBio:String?, newImg:String?) {
+    init(newID:Int?, newURL:String?, newBreed:String?, newColor:String?, newAge:String?, newSex:String?, newSize:String?, newCoat:String?, newName:String?, newBio:String?, newImgURL: String?, newImg:UIImage?) {
         
-        self.petID = newID!
-        self.orgID = newOrg!
-        self.url = newURL!
-        self.species = newSpecies!
-        self.breed = newBreed!
-        self.color = newColor!
-        self.age = newAge!
-        self.sex = newSex!
-        self.size = newSize!
-        self.coat = newCoat!
-        self.name = newName!
-        self.bio = newBio!
-        self.imgURL = newImg!
+        self.petID = newID
+        self.url = newURL
+        self.breed = newBreed
+        self.color = newColor
+        self.age = newAge
+        self.sex = newSex
+        self.size = newSize
+        self.coat = newCoat
+        self.name = newName
+        self.bio = newBio
+        self.imgURL = newImgURL
+        self.image = newImg
         
     }
     
     init() {
         
-        self.petID = ""
-        self.orgID = ""
+        self.petID = 0
         self.url = ""
-        self.species = ""
         self.breed = ""
         self.color = ""
         self.age = ""

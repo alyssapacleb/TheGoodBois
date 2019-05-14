@@ -43,7 +43,6 @@ class SavedPetsViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -68,27 +67,23 @@ class SavedPetsViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let pet = savedPets[indexPath.row]
-        let pet_name = (pet.value(forKeyPath: "name") as! String)
+        let pet_name = (pet.value(forKeyPath: "name") as? String)
         let pet_image = UIImage(data: pet.value(forKeyPath: "img") as! Data)!
-        let pet_age = (pet.value(forKeyPath: "age") as! String)
-        let pet_breed = (pet.value(forKeyPath: "breed") as! String)
-        let pet_location = (pet.value(forKeyPath: "loc") as! String)
-        let pet_sex = (pet.value(forKeyPath: "sex") as! String)
-        let pet_coat = (pet.value(forKeyPath: "coat") as! String)
-        let pet_bio = (pet.value(forKeyPath: "bio") as! String)
-        selectedSavedPet = Animal(petID: "", orgID: "", breed: pet_breed, color: "", age: pet_age, sex: pet_sex, size: "", coat: pet_coat, petName: pet_name, bio: pet_bio, status: "", location: pet_location, url: "")
+        let pet_age = (pet.value(forKeyPath: "age") as? String)
+        let pet_breed = (pet.value(forKeyPath: "breed") as? String)
+        let pet_color = (pet.value(forKeyPath: "color") as? String)
+        let pet_sex = (pet.value(forKeyPath: "sex") as? String)
+        let pet_coat = (pet.value(forKeyPath: "coat") as? String)
+        let pet_bio = (pet.value(forKeyPath: "bio") as? String)
+        let pet_size = (pet.value(forKeyPath: "size") as? String)
+        let pet_id = (pet.value(forKeyPath: "id") as? Int)
+        let pet_url = (pet.value(forKeyPath: "url") as? String)
+        let pet_imgURL = (pet.value(forKeyPath: "imgURL") as? String)
+        selectedSavedPet = Animal(newID: pet_id, newURL: pet_url, newBreed: pet_breed, newColor: pet_color, newAge: pet_age, newSex: pet_sex, newSize: pet_size, newCoat: pet_coat, newName: pet_name, newBio: pet_bio, newImgURL: pet_imgURL, newImg: pet_image)
         selectedSavedPet?.image = pet_image
         print(selectedSavedPet!)
         self.performSegue(withIdentifier: "BioViewSegue", sender: self)
     }
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
 
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
@@ -110,21 +105,6 @@ class SavedPetsViewController: UITableViewController {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
     
     // MARK: - Navigation
 

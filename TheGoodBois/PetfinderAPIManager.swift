@@ -8,9 +8,8 @@
 
 //---------------------------------------------------------------------------------------------------------------------------------------------
 // TODO:
-// 2. Investigate image downloading procedures vis-a-vis asynchronous loading prior to segue (function with segue in completion handler?)
-// 3. Implement response data handlers in PreferencesViewController such that all data is already in JSON object and only needs to be retrieved
-// 4. Implement setting functions for retrieved JSON Data
+// 1. Fix BioViewController
+// 3. First swipeviewcontroller image is empty
 // 5. IF TIME: Add status code switch to error handling
 //---------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -20,8 +19,7 @@ import SwiftyJSON
 
 protocol PetfinderAPIProtocol {
     func requestError(errType: String)
-    func setAnimals()
-    func setFields()
+    //func setFields(fields: Fields)
 }
 
 class PetfinderAPIManager {
@@ -55,6 +53,7 @@ class PetfinderAPIManager {
     func getData(searchType: String, searchStr: String?, params: Parameters?, completion: @escaping ([Any]) -> ()) {
         self.performOAuthLogin {
             switch(searchType){
+            // NOTE: Due to time constraints, we retroactively restricted our apps to dogs only, so the types requests are no longer necessary; instead, the allowed values of breeds, coats & colors are hardcoded
             case("types"):
                 if searchStr != nil {
                     self.getTypesRequest(type: searchStr!, completion: { coatsData, colorsData in
@@ -216,10 +215,8 @@ class PetfinderAPIManager {
                             let resultData = JSON(response.result.value!)
                             let animalsData = resultData["animals"]
                             for (_, subJSON) in animalsData {
-                                let newID = subJSON["id"].string
-                                let newOrg = subJSON["organization_id"].string
+                                let newID = subJSON["id"].int
                                 let newURL = subJSON["url"].string
-                                let newSpecies = subJSON["species"].string
                                 let breeds = subJSON["breeds"].dictionary
                                 let newBreed = breeds!["primary"]!.string
                                 let colors = subJSON["colors"].dictionary
@@ -228,14 +225,17 @@ class PetfinderAPIManager {
                                 let newSex = subJSON["gender"].string
                                 let newSize = subJSON["size"].string
                                 let newCoat = subJSON["coat"].string
-                                let newEnv = subJSON["environment"].dictionary
                                 let newName = subJSON["name"].string
                                 let newBio = subJSON["description"].string
                                 let photos = subJSON["photos"].array
-                                let photoOne = photos![0].dictionary
-                                let newImg = photoOne!["full"]!.string
-                                
-                                let newAnimal = Animal(newID: newID, newOrg: newOrg, newURL: newURL, newSpecies: newSpecies, newBreed: newBreed, newColor: newColor, newAge: newAge, newSex: newSex, newSize: newSize, newCoat: newCoat, newName: newName, newBio: newBio, newImg: newImg)
+                                var photoOne:[String : JSON]?
+                                if photos!.count > 0 {
+                                    photoOne = photos![0].dictionary
+                                } else {
+                                    photoOne = ["full" : JSON()]
+                                }
+                                let newImgURL = photoOne!["full"]!.string
+                                let newAnimal = Animal(newID: newID, newURL: newURL, newBreed: newBreed, newColor: newColor, newAge: newAge, newSex: newSex, newSize: newSize, newCoat: newCoat, newName: newName, newBio: newBio, newImgURL: newImgURL, newImg: nil)
                                 animals.append(newAnimal)
                             }
                             
@@ -295,10 +295,8 @@ class PetfinderAPIManager {
                                 let resultData = JSON(response.result.value!)
                                 let animalsData = resultData["animals"]
                                 for (_, subJSON) in animalsData {
-                                    let newID = subJSON["id"].string
-                                    let newOrg = subJSON["organization_id"].string
+                                    let newID = subJSON["id"].int
                                     let newURL = subJSON["url"].string
-                                    let newSpecies = subJSON["species"].string
                                     let breeds = subJSON["breeds"].dictionary
                                     let newBreed = breeds!["primary"]!.string
                                     let colors = subJSON["colors"].dictionary
@@ -307,14 +305,18 @@ class PetfinderAPIManager {
                                     let newSex = subJSON["gender"].string
                                     let newSize = subJSON["size"].string
                                     let newCoat = subJSON["coat"].string
-                                    let newEnv = subJSON["environment"].dictionary
                                     let newName = subJSON["name"].string
                                     let newBio = subJSON["description"].string
                                     let photos = subJSON["photos"].array
-                                    let photoOne = photos![0].dictionary
-                                    let newImg = photoOne!["full"]!.string
+                                    var photoOne:[String : JSON]?
+                                    if photos!.count > 0 {
+                                        photoOne = photos![0].dictionary
+                                    } else {
+                                        photoOne = ["full" : JSON()]
+                                    }
+                                    let newImgURL = photoOne!["full"]!.string
                                     
-                                    let newAnimal = Animal(newID: newID, newOrg: newOrg, newURL: newURL, newSpecies: newSpecies, newBreed: newBreed, newColor: newColor, newAge: newAge, newSex: newSex, newSize: newSize, newCoat: newCoat, newEnv: newEnv, newName: newName, newBio: newBio, newImg: newImg, newStatus: newStatus)
+                                    let newAnimal = Animal(newID: newID, newURL: newURL, newBreed: newBreed, newColor: newColor, newAge: newAge, newSex: newSex, newSize: newSize, newCoat: newCoat, newName: newName, newBio: newBio, newImgURL: newImgURL, newImg: nil)
                                     animals.append(newAnimal)
                                 }
                                 let pageData = resultData["pagination"]
@@ -365,7 +367,7 @@ class PetfinderAPIManager {
     func responseError(type: String, block: String, message: String) {
         // If time allows, implement more advanced error handling
         print("-----ERROR: {\(type)-----\nIn block: \(block)\nMessage: \(message)\n")
-        self.delegate!.requestError(type)
+        self.delegate!.requestError(errType: type)
     }
     
     // MARK: - Get/Set methods

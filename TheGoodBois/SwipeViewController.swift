@@ -108,33 +108,49 @@ class SwipeViewController: UIViewController {
     func resetImage() {
         if direction == "right" {
             let safeNumber = self.currentAnimal
+            guard let image = self.animalResults![safeNumber].image else {
+                print("resetImage(): Nil image found")
+                return
+            }
             convertQueue.async{
-                guard let img = UIImageJPEGRepresentation(self.animalResults![safeNumber].image!, 1.0) else {
+                guard let img = UIImageJPEGRepresentation(image, 1.0) else {
                     return
                 }
                 
                 self.saveQueue.sync(flags: .barrier){
-                    // Dummy data
-                    // 2
+                    
+                    // Grab pet entity from core data
                     let entity = NSEntityDescription.entity(forEntityName: "Pet", in: self.managedContext!)!
                     let pet = NSManagedObject(entity: entity, insertInto: self.managedContext)
-                    // 3
-                    let age = self.animalResults![safeNumber].age
-                    let bio = self.animalResults![safeNumber].bio
+                    
+                    // Grab new values from Animal object
+                    let id = self.animalResults![safeNumber].petID
+                    let url = self.animalResults![safeNumber].url
                     let breed = self.animalResults![safeNumber].breed
-                    let coat = self.animalResults![safeNumber].coat
-                    let loc = self.animalResults![safeNumber].location
-                    let name = self.animalResults![safeNumber].petName
+                    let color = self.animalResults![safeNumber].color
+                    let age = self.animalResults![safeNumber].age
                     let sex = self.animalResults![safeNumber].sex
+                    let size = self.animalResults![safeNumber].size
+                    let coat = self.animalResults![safeNumber].coat
+                    let name = self.animalResults![safeNumber].name
+                    let bio = self.animalResults![safeNumber].bio
+                    let imgURL = self.animalResults![safeNumber].imgURL
+                    
+                    // Set values for new pet core data object
+                    pet.setValue(id, forKey: "id")
                     pet.setValue(age, forKey: "age")
                     pet.setValue(bio, forKey: "bio")
                     pet.setValue(breed, forKey: "breed")
                     pet.setValue(coat, forKey: "coat")
                     pet.setValue(img, forKey: "img")
-                    pet.setValue(loc, forKey: "loc")
                     pet.setValue(name, forKey: "name")
                     pet.setValue(sex, forKey: "sex")
-                    // 4
+                    pet.setValue(size, forKey: "size")
+                    pet.setValue(url, forKey: "url")
+                    pet.setValue(color, forKey: "color")
+                    pet.setValue(imgURL, forKey: "imgURL")
+                    
+                    // Save pet object to core data
                     do {
                         try self.managedContext?.save()
                         savedPets.append(pet)
@@ -151,23 +167,14 @@ class SwipeViewController: UIViewController {
             if currentAnimal == animalResults!.count - 1 {
                 currentAnimal = 0
                 
-            }else{
+            } else{
                 currentAnimal += 1
                 print("Current animal is: \(currentAnimal)")
             }
             swipeImageView.image = animalResults![currentAnimal].image
         }
-        /*
-         if direction == "right" {
-         if currentImage == 0 {
-         currentImage = imageNames.count - 1
-         }else{
-         currentImage -= 1
-         }
-         swipeImageView.image = UIImage(named: imageNames[currentImage])
-         }*/
+        
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -247,16 +254,5 @@ class SwipeViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
+
 }
